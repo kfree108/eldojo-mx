@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>El Dojo - Club de Artes Marciales en Valle de Bravo</title>
+    <meta
+      name="description"
+      content="Club tradicional de artes marciales en Valle de Bravo inspirado en Bushido. Brazilian Jiu-Jitsu, Judo, Karate, Aikido y Sambo."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="El Dojo inicio">
+        <img src="assets/el-dojo-logo-full-ink.png" alt="El Dojo" />
+      </a>
+      <div class="header-actions">
+        <div class="language-toggle" aria-label="Language selector">
+          <button type="button" class="active" data-lang="es">ES</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+        <button class="menu-button" type="button" data-menu-button aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="nav" data-nav aria-label="Navegacion principal">
+        <a href="#inicio" class="active" data-i18n="nav.home">Inicio</a>
+        <a href="#filosofia" data-i18n="nav.about">Quiénes somos</a>
+        <a href="#artes" data-i18n="nav.arts">Artes marciales</a>
+        <a href="#maestros" data-i18n="nav.teachers">Maestros</a>
+        <a href="#horario" data-i18n="nav.schedule">Horario</a>
+        <a href="#precios" data-i18n="nav.pricing">Precios</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-panel" id="inicio">
+        <div class="hero-media" data-parallax="0.18"></div>
+        <div class="hero-shade"></div>
+        <div class="enso enso-hero" data-parallax="-0.08" aria-hidden="true"></div>
+        <div class="hero-content">
+          <img class="hero-logo-image reveal" src="assets/el-dojo-logo-full-ink.png" alt="El Dojo" />
+          <p class="hero-subtitle reveal" data-i18n-html="hero.title">El camino hacia<br />el dominio personal</p>
+          <p class="hero-copy reveal" data-i18n="hero.copy">
+            Club tradicional de artes marciales en Valle de Bravo, inspirado en las virtudes
+            del Bushido.
+          </p>
+          <p class="disciplines reveal">Brazilian Jiu-Jitsu · Judo · Karate · Aikido · Sambo</p>
+          <a class="button primary reveal" href="#contacto" data-i18n="cta.visit">Agenda una visita</a>
+          <a class="hero-secondary reveal" href="#filosofia" data-i18n="cta.know">Conoce el dojo</a>
+        </div>
+        <a class="scroll-cue" href="#filosofia" aria-label="Ir a filosofia">
+          <span></span>
+        </a>
+      </section>
+
+      <section class="philosophy section-panel" id="filosofia">
+        <div class="split">
+          <div class="image-reveal tall reveal">
+            <img
+              src="assets/dojo-interior.png"
+              alt="Interior sereno inspirado en un dojo tradicional"
+            />
+          </div>
+          <div class="copy-block">
+            <p class="section-kicker reveal" data-i18n="kicker.philosophy">01 / Filosofía</p>
+            <h2 class="reveal" data-i18n-html="philosophy.title">Inspirado en Bushido,<br />el camino del guerrero.</h2>
+            <p class="lead reveal" data-i18n="philosophy.copy">
+              Bushido significa “el camino del guerrero”. En El Dojo, esta filosofía
+              inspira una práctica basada en justicia, valor, compasión, respeto,
+              sinceridad, honor, lealtad y autocontrol.
+            </p>
+            <div class="virtues">
+              <article class="virtue reveal">
+                <strong>義</strong>
+                <div>
+                  <h3 data-i18n="virtue.gi.title">Gi — Justicia</h3>
+                  <p data-i18n="virtue.gi.copy">Actuar con rectitud dentro y fuera del tatami.</p>
+                </div>
+              </article>
+              <article class="virtue reveal">
+                <strong>勇</strong>
+                <div>
+                  <h3 data-i18n="virtue.yu.title">Yu — Valor</h3>
+                  <p data-i18n="virtue.yu.copy">Enfrentar el miedo con calma y decisión.</p>
+                </div>
+              </article>
+              <article class="virtue reveal">
+                <strong>仁</strong>
+                <div>
+                  <h3 data-i18n="virtue.jin.title">Jin — Compasión</h3>
+                  <p data-i18n="virtue.jin.copy">Usar la fuerza con cuidado y humanidad.</p>
+                </div>
+              </article>
+              <article class="virtue reveal">
+                <strong>礼</strong>
+                <div>
+                  <h3 data-i18n="virtue.rei.title">Rei — Respeto</h3>
+                  <p data-i18n="virtue.rei.copy">Honrar al maestro, al compañero y a uno mismo.</p>
+                </div>
+              </article>
+              <article class="virtue reveal">
+                <strong>誠</strong>
+                <div>
+                  <h3 data-i18n="virtue.makoto.title">Makoto — Sinceridad</h3>
+                  <p data-i18n="virtue.makoto.copy">Practicar con palabra clara e intención honesta.</p>
+                </div>
+              </article>
+              <article class="virtue reveal">
+                <strong>名</strong>
+                <div>
+                  <h3 data-i18n="virtue.meiyo.title">Meiyo — Honor</h3>
+                  <p data-i18n="virtue.meiyo.copy">Cuidar la conducta incluso cuando nadie observa.</p>
+                </div>
+              </article>
+              <article class="virtue reveal">
+                <strong>忠</strong>
+                <div>
+                  <h3 data-i18n="virtue.chugi.title">Chugi — Lealtad</h3>
+                  <p data-i18n="virtue.chugi.copy">Comprometerse con el camino, el grupo y la práctica.</p>
+                </div>
+              </article>
+              <article class="virtue reveal">
+                <strong>制</strong>
+                <div>
+                  <h3 data-i18n="virtue.jisei.title">Jisei — Autodominio</h3>
+                  <p data-i18n="virtue.jisei.copy">Responder con dominio propio, no con impulso.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="dojo-band">
+          <div class="dojo-copy reveal">
+            <p class="section-kicker" data-i18n="kicker.dojo">02 / Nuestro dojo</p>
+            <h2 data-i18n="dojo.title">Un espacio para entrenar cuerpo, mente y carácter.</h2>
+            <p data-i18n="dojo.copy">
+              En el corazón de Valle de Bravo, El Dojo ofrece un espacio dedicado al camino
+              marcial: un lugar para aprender, entrenar, respirar, caer, levantarse y crecer.
+            </p>
+          </div>
+          <div class="image-strip reveal">
+            <img
+              src="assets/dojo-exterior.png"
+              alt="Lago y montañas en un paisaje tranquilo"
+            />
+            <img
+              src="assets/dojo-interior.png"
+              alt="Interior de madera con luz natural"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1555988402-6d65bb5e5461?auto=format&fit=crop&w=700&q=80"
+              alt="Lago y montañas de Valle de Bravo"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="arts section-panel" id="artes">
+        <div class="section-head reveal">
+          <p class="section-kicker" data-i18n="kicker.arts">03 / Artes marciales</p>
+          <h2 data-i18n="arts.title">Cinco disciplinas. Un mismo camino.</h2>
+          <p data-i18n="arts.copy">Disciplina, técnica y espíritu en cada práctica.</p>
+        </div>
+        <div class="art-grid">
+          <article class="art-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1747331796135-0e2354a712e4?auto=format&fit=crop&w=650&q=80"
+              alt="Práctica de Brazilian Jiu-Jitsu"
+            />
+            <h3>Brazilian Jiu-Jitsu</h3>
+            <p data-i18n="art.bjj.copy">Suelo, palancas, control, paciencia y calma bajo presión.</p>
+            <span data-i18n="art.bjj.for">Ideal para: adultos, jóvenes y defensa personal.</span>
+            <small data-i18n="art.bjj.teacher">Maestro: Fernando Álvarez</small>
+            <button type="button" class="art-detail" data-art="bjj" data-i18n="cta.learn">Conocer arte</button>
+          </article>
+          <article class="art-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1598300606161-4019d0dfec28?auto=format&fit=crop&w=650&q=80"
+              alt="Práctica de Judo"
+            />
+            <h3>Judo</h3>
+            <p data-i18n="art.judo.copy">Proyecciones, balance, timing, caídas seguras y disciplina.</p>
+            <span data-i18n="art.judo.for">Ideal para: niños, adultos y familias.</span>
+            <small data-i18n="art.judo.teacher">Maestro: Diego Morales</small>
+            <button type="button" class="art-detail" data-art="judo" data-i18n="cta.learn">Conocer arte</button>
+          </article>
+          <article class="art-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&w=650&q=80"
+              alt="Práctica de Karate"
+            />
+            <h3>Karate</h3>
+            <p data-i18n="art.karate.copy">Golpeo, postura, precisión, enfoque, formas y espíritu marcial.</p>
+            <span data-i18n="art.karate.for">Ideal para: niños, principiantes y practicantes técnicos.</span>
+            <small data-i18n="art.karate.teacher">Maestro: Rodrigo Salazar</small>
+            <button type="button" class="art-detail" data-art="karate" data-i18n="cta.learn">Conocer arte</button>
+          </article>
+          <article class="art-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1476525223214-c31ff100e1ae?auto=format&fit=crop&w=650&q=80"
+              alt="Entrenamiento marcial"
+            />
+            <h3>Aikido</h3>
+            <p data-i18n="art.aikido.copy">Redirección, armonía, movimiento, respiración y control sin agresión.</p>
+            <span data-i18n="art.aikido.for">Ideal para: adultos, movilidad y práctica contemplativa.</span>
+            <small data-i18n="art.aikido.teacher">Maestra: Yuko Tanaka</small>
+            <button type="button" class="art-detail" data-art="aikido" data-i18n="cta.learn">Conocer arte</button>
+          </article>
+          <article class="art-card reveal">
+            <img
+              src="assets/sambo-athlete.jpg"
+              alt="Atleta de Sambo con kurtka y shorts"
+            />
+            <h3>Sambo</h3>
+            <p data-i18n="art.sambo.copy">Derribos, grappling, resiliencia, adaptación y movimiento práctico.</p>
+            <span data-i18n="art.sambo.for">Ideal para: atletas, jóvenes y practicantes de grappling.</span>
+            <small data-i18n="art.sambo.teacher">Maestro: Iván Petrov</small>
+            <button type="button" class="art-detail" data-art="sambo" data-i18n="cta.learn">Conocer arte</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="teachers section-panel" id="maestros">
+        <div class="section-head reveal">
+          <p class="section-kicker" data-i18n="kicker.teachers">04 / Maestros</p>
+          <h2 data-i18n="teachers.title">Maestros y guías.</h2>
+        </div>
+        <div class="teacher-grid">
+          <article class="teacher-card reveal">
+            <div class="portrait p1"></div>
+            <h3>Fernando Álvarez</h3>
+            <p>Brazilian Jiu-Jitsu</p>
+            <span data-i18n="teacher.fernando.rank">Cinturón negro 2do Dan</span>
+            <a href="#contacto" data-i18n="cta.profile">Ver perfil</a>
+          </article>
+          <article class="teacher-card reveal">
+            <div class="portrait p2"></div>
+            <h3>Diego Morales</h3>
+            <p>Judo</p>
+            <span data-i18n="teacher.diego.rank">Ex-seleccionado nacional</span>
+            <a href="#contacto" data-i18n="cta.profile">Ver perfil</a>
+          </article>
+          <article class="teacher-card reveal">
+            <div class="portrait p3"></div>
+            <h3>Yuko Tanaka</h3>
+            <p>Aikido</p>
+            <span data-i18n="teacher.yuko.rank">Formación en Japón</span>
+            <a href="#contacto" data-i18n="cta.profile">Ver perfil</a>
+          </article>
+          <article class="teacher-card reveal">
+            <div class="portrait p4"></div>
+            <h3>Rodrigo Salazar</h3>
+            <p>Karate</p>
+            <span data-i18n="teacher.rodrigo.rank">Más de 20 años de práctica</span>
+            <a href="#contacto" data-i18n="cta.profile">Ver perfil</a>
+          </article>
+          <article class="teacher-card reveal">
+            <div class="portrait p5"></div>
+            <h3>Iván Petrov</h3>
+            <p>Sambo</p>
+            <span data-i18n="teacher.ivan.rank">Competidor internacional</span>
+            <a href="#contacto" data-i18n="cta.profile">Ver perfil</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="schedule-pricing section-panel" id="horario">
+        <div class="schedule-block reveal">
+          <p class="section-kicker" data-i18n="kicker.schedule">05 / Horario</p>
+          <h2 data-i18n="schedule.title">Horario de clases</h2>
+          <div class="schedule-wrap">
+            <div class="filters" aria-label="Filtros de horario">
+              <button type="button" data-i18n="filter.adults">Adultos</button>
+              <button type="button">Kids</button>
+              <button type="button" data-i18n="filter.families">Familias</button>
+              <button type="button">Brazilian Jiu-Jitsu</button>
+              <button type="button">Judo</button>
+              <button type="button">Karate</button>
+              <button type="button">Aikido</button>
+              <button type="button">Sambo</button>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th data-i18n="day.mon">Lunes</th>
+                  <th data-i18n="day.tue">Martes</th>
+                  <th data-i18n="day.wed">Miércoles</th>
+                  <th data-i18n="day.thu">Jueves</th>
+                  <th data-i18n="day.fri">Viernes</th>
+                  <th data-i18n="day.sat">Sábado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>07:00</th>
+                  <td>Aikido</td>
+                  <td></td>
+                  <td>Aikido</td>
+                  <td></td>
+                  <td>Aikido</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>08:30</th>
+                  <td></td>
+                  <td>Brazilian Jiu-Jitsu<br /><small>08:30-10:00</small></td>
+                  <td></td>
+                  <td>Brazilian Jiu-Jitsu<br /><small>08:30-10:00</small></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>10:00</th>
+                  <td></td>
+                  <td>Judo</td>
+                  <td></td>
+                  <td>Judo</td>
+                  <td></td>
+                  <td class="accent">Open Mat<br /><small>10:00-12:00</small></td>
+                </tr>
+                <tr>
+                  <th>12:00</th>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>Karate</td>
+                </tr>
+                <tr>
+                  <th>16:00</th>
+                  <td>Karate</td>
+                  <td></td>
+                  <td>Brazilian Jiu-Jitsu<br /><small>16:00-17:30</small></td>
+                  <td>Brazilian Jiu-Jitsu<br /><small>16:00-17:30</small></td>
+                  <td>Karate</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>18:00</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>19:30</th>
+                  <td></td>
+                  <td>Judo</td>
+                  <td></td>
+                  <td>Judo</td>
+                  <td class="seal-cell">Sambo</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>20:30</th>
+                  <td></td>
+                  <td>Aikido</td>
+                  <td></td>
+                  <td>Aikido</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="mobile-agenda" aria-label="Horario móvil">
+              <article class="agenda-day">
+                <h3 data-i18n="day.mon">Lunes</h3>
+                <div class="agenda-item"><time>07:00</time><span>Aikido</span><small data-i18n="agenda.adults">Adultos</small></div>
+                <div class="agenda-item"><time>16:30</time><span>Karate</span><small data-i18n="agenda.kids">Kids</small></div>
+              </article>
+              <article class="agenda-day">
+                <h3 data-i18n="day.tue">Martes</h3>
+                <div class="agenda-item"><time>08:30-10:00</time><span>Brazilian Jiu-Jitsu</span><small data-i18n="agenda.adults">Adultos</small></div>
+                <div class="agenda-item"><time>10:00</time><span>Judo</span><small data-i18n="agenda.families">Familias</small></div>
+                <div class="agenda-item"><time>19:30</time><span>Judo</span><small data-i18n="agenda.adults">Adultos</small></div>
+                <div class="agenda-item"><time>20:30</time><span>Aikido</span><small data-i18n="agenda.adults">Adultos</small></div>
+              </article>
+              <article class="agenda-day">
+                <h3 data-i18n="day.wed">Miércoles</h3>
+                <div class="agenda-item"><time>07:00</time><span>Aikido</span><small data-i18n="agenda.adults">Adultos</small></div>
+                <div class="agenda-item"><time>16:00-17:30</time><span>Brazilian Jiu-Jitsu</span><small data-i18n="agenda.adults">Adultos</small></div>
+              </article>
+              <article class="agenda-day">
+                <h3 data-i18n="day.thu">Jueves</h3>
+                <div class="agenda-item"><time>08:30-10:00</time><span>Brazilian Jiu-Jitsu</span><small data-i18n="agenda.adults">Adultos</small></div>
+                <div class="agenda-item"><time>10:00</time><span>Judo</span><small data-i18n="agenda.families">Familias</small></div>
+                <div class="agenda-item"><time>16:00-17:30</time><span>Brazilian Jiu-Jitsu</span><small data-i18n="agenda.adults">Adultos</small></div>
+                <div class="agenda-item"><time>19:30</time><span>Judo</span><small data-i18n="agenda.adults">Adultos</small></div>
+                <div class="agenda-item"><time>20:30</time><span>Aikido</span><small data-i18n="agenda.adults">Adultos</small></div>
+              </article>
+              <article class="agenda-day">
+                <h3 data-i18n="day.fri">Viernes</h3>
+                <div class="agenda-item"><time>07:00</time><span>Aikido</span><small data-i18n="agenda.adults">Adultos</small></div>
+                <div class="agenda-item"><time>16:30</time><span>Karate</span><small data-i18n="agenda.kids">Kids</small></div>
+                <div class="agenda-item seal"><time>19:30</time><span>Sambo</span><small data-i18n="agenda.adults">Adultos</small></div>
+              </article>
+              <article class="agenda-day">
+                <h3 data-i18n="day.sat">Sábado</h3>
+                <div class="agenda-item"><time>10:00-12:00</time><span>Open Mat</span><small>Brazilian Jiu-Jitsu</small></div>
+                <div class="agenda-item"><time>12:00</time><span>Karate</span><small data-i18n="agenda.kids">Kids</small></div>
+              </article>
+            </div>
+          </div>
+          <p class="note" data-i18n="schedule.note">Horarios sujetos a cambios. Consulta actualizaciones en nuestras redes.</p>
+        </div>
+
+        <div class="pricing-block reveal" id="precios">
+          <p class="section-kicker" data-i18n="kicker.pricing">06 / Membresías</p>
+          <h2 data-i18n="pricing.title">Membresías</h2>
+          <div class="pricing-grid">
+            <article class="price-card">
+              <h3 data-i18n="pricing.basic">Básica</h3>
+              <p class="price">$1,300 <span data-i18n="pricing.month">/mes</span></p>
+              <p data-i18n="pricing.basic.copy">Acceso a 1 disciplina</p>
+              <ul>
+                <li data-i18n="pricing.group">Clases grupales</li>
+                <li data-i18n="pricing.regular">Horario regular</li>
+                <li data-i18n="pricing.locker">Vestidor y regaderas</li>
+              </ul>
+              <a class="button quiet" href="#contacto" data-i18n="cta.plan">Elegir plan</a>
+            </article>
+            <article class="price-card featured">
+              <h3 data-i18n="pricing.complete">Completa</h3>
+              <p class="price">$1,900 <span data-i18n="pricing.month">/mes</span></p>
+              <p data-i18n="pricing.complete.copy">Acceso a todas las disciplinas</p>
+              <ul>
+                <li data-i18n="pricing.unlimited">Clases ilimitadas</li>
+                <li data-i18n="pricing.allDisciplines">Todas las disciplinas</li>
+                <li data-i18n="pricing.communityDojo">Comunidad Dojo</li>
+              </ul>
+              <a class="button light" href="#contacto" data-i18n="cta.plan">Elegir plan</a>
+            </article>
+            <article class="price-card">
+              <h3 data-i18n="pricing.family">Familiar</h3>
+              <p class="price">$3,000 <span data-i18n="pricing.month">/mes</span></p>
+              <p data-i18n="pricing.family.copy">Para 2 integrantes de la misma familia</p>
+              <ul>
+                <li data-i18n="pricing.unlimited">Clases ilimitadas</li>
+                <li data-i18n="pricing.extended">Horarios extendidos</li>
+                <li data-i18n="pricing.events">Eventos de comunidad</li>
+              </ul>
+              <a class="button quiet" href="#contacto" data-i18n="cta.plan">Elegir plan</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="features section-panel">
+        <article class="feature reveal">
+          <span>○</span>
+          <h3 data-i18n="feature.visit.title">Visita inicial</h3>
+          <p data-i18n="feature.visit.copy">Conoce el espacio y encuentra tu disciplina.</p>
+        </article>
+        <article class="feature reveal">
+          <span>⌁</span>
+          <h3 data-i18n="feature.contract.title">Sin contrato</h3>
+          <p data-i18n="feature.contract.copy">Cancela cuando quieras.</p>
+        </article>
+        <article class="feature reveal">
+          <span>◎</span>
+          <h3 data-i18n="feature.community.title">Comunidad</h3>
+          <p data-i18n="feature.community.copy">Más que un dojo, una familia.</p>
+        </article>
+        <article class="feature reveal">
+          <span>⌖</span>
+          <h3 data-i18n="feature.location.title">Ubicación</h3>
+          <p data-i18n="feature.location.copy">Valle de Bravo, rodeado de naturaleza.</p>
+        </article>
+      </section>
+
+      <section class="contact section-panel" id="contacto">
+        <div class="enso enso-footer" aria-hidden="true"></div>
+        <div class="contact-inner reveal">
+          <p class="section-kicker" data-i18n="kicker.contact">07 / Contacto</p>
+          <h2 data-i18n="contact.title">Agenda una visita</h2>
+          <p data-i18n="contact.copy">
+            Escríbenos por WhatsApp y te ayudamos a elegir la disciplina, horario y maestro
+            ideal para comenzar.
+          </p>
+          <div class="contact-actions">
+            <a class="button primary" href="https://wa.me/5210000000000" data-i18n="cta.whatsapp">Escríbenos por WhatsApp</a>
+            <a class="button quiet" href="mailto:hola@eldojo.mx">hola@eldojo.mx</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="brand footer-brand" href="#inicio">
+        <img src="assets/el-dojo-logo-full-ink.png" alt="El Dojo" />
+      </a>
+      <p data-i18n-html="footer.copy">Club de artes marciales<br />Valle de Bravo</p>
+    </footer>
+
+    <a class="whatsapp" href="https://wa.me/5210000000000" aria-label="Escríbenos por WhatsApp">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M12.04 3.5a8.43 8.43 0 0 0-7.18 12.84L3.9 20.5l4.25-1.02a8.45 8.45 0 1 0 3.89-15.98Zm0 1.52a6.93 6.93 0 0 1 5.91 10.56 6.89 6.89 0 0 1-8.94 2.38l-.28-.15-2.54.61.58-2.47-.18-.3a6.91 6.91 0 0 1 5.45-10.63Zm-2.7 3.4c-.14 0-.36.05-.55.26-.19.2-.72.7-.72 1.72 0 1.01.74 1.99.84 2.13.1.13 1.43 2.29 3.54 3.12 1.75.69 2.11.55 2.49.52.38-.04 1.23-.5 1.4-.99.17-.48.17-.9.12-.99-.05-.08-.19-.13-.4-.24-.21-.1-1.23-.61-1.42-.68-.19-.07-.33-.1-.47.11-.14.21-.54.68-.66.82-.12.14-.24.16-.45.06-.21-.1-.88-.32-1.68-1.03-.62-.55-1.04-1.23-1.16-1.44-.12-.21-.01-.32.09-.43.09-.09.21-.24.31-.36.1-.12.14-.21.21-.35.07-.14.04-.26-.02-.36-.05-.11-.47-1.14-.65-1.56-.17-.41-.34-.35-.47-.36h-.4Z"
+        />
+      </svg>
+    </a>
+
+    <div class="art-modal" data-art-modal aria-hidden="true">
+      <div class="art-modal-backdrop" data-art-close></div>
+      <article class="art-modal-panel" role="dialog" aria-modal="true" aria-labelledby="art-modal-title">
+        <button class="art-modal-close" type="button" data-art-close aria-label="Cerrar">×</button>
+        <p class="section-kicker" data-art-kicker>Artes marciales</p>
+        <h2 id="art-modal-title" data-art-title></h2>
+        <div class="art-modal-copy" data-art-copy></div>
+      </article>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
