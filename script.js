@@ -31,7 +31,8 @@ const translations = {
     "cta.learn": "Conocer arte",
     "cta.profile": "Ver perfil",
     "cta.plan": "Elegir plan",
-    "cta.whatsapp": "Escríbenos por WhatsApp",
+    "cta.whatsapp": "Habla con Coach Arturo",
+    "whatsapp.coach": "Habla con Coach Arturo",
     "kicker.philosophy": "01 / Filosofía",
     "philosophy.title": "Inspirado en Bushido,<br />el camino del guerrero.",
     "philosophy.copy":
@@ -123,7 +124,7 @@ const translations = {
     "kicker.contact": "07 / Contacto",
     "contact.title": "Agenda una visita",
     "contact.copy":
-      "Escríbenos por WhatsApp y te ayudamos a elegir la disciplina, horario y maestro ideal para comenzar.",
+      "Habla directamente con Coach Arturo por WhatsApp. Él te ayudará a elegir la disciplina y el horario ideales para comenzar.",
     "footer.copy": "Club de artes marciales<br />Valle de Bravo",
   },
   en: {
@@ -143,7 +144,8 @@ const translations = {
     "cta.learn": "Learn more",
     "cta.profile": "View profile",
     "cta.plan": "Choose plan",
-    "cta.whatsapp": "Message us on WhatsApp",
+    "cta.whatsapp": "Talk to Coach Arturo",
+    "whatsapp.coach": "Talk to Coach Arturo",
     "kicker.philosophy": "01 / Philosophy",
     "philosophy.title": "Inspired by Bushido,<br />the way of the warrior.",
     "philosophy.copy":
@@ -235,7 +237,7 @@ const translations = {
     "kicker.contact": "07 / Contact",
     "contact.title": "Schedule a visit",
     "contact.copy":
-      "Message us on WhatsApp and we will help you choose the right discipline, schedule, and teacher to begin.",
+      "Talk directly with Coach Arturo on WhatsApp. He will help you choose the right discipline and schedule to begin.",
     "footer.copy": "Martial arts club<br />Valle de Bravo",
   },
 };
