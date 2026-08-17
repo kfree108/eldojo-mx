@@ -696,7 +696,7 @@ h2 {
   border-radius: 50%;
   background:
     linear-gradient(rgba(245, 241, 232, 0.12), rgba(245, 241, 232, 0.36)),
-    var(--portrait) center/cover;
+    var(--portrait) var(--portrait-position, center)/cover;
   filter: grayscale(1) contrast(1.08);
 }
 
@@ -705,7 +705,8 @@ h2 {
 }
 
 .p2 {
-  --portrait: url("https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=260&q=80");
+  --portrait: url("assets/tal-judo-teacher.jpg");
+  --portrait-position: center 35%;
 }
 
 .p3 {
