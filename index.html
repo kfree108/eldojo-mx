@@ -10,6 +10,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="assets/dojo-group-hero.webp" as="image" type="image/webp" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Permanent+Marker&display=swap"
       rel="stylesheet"
@@ -45,7 +46,13 @@
 
     <main>
       <section class="hero section-panel" id="inicio">
-        <div class="hero-media" data-parallax="0.18"></div>
+        <div
+          class="hero-media"
+          role="img"
+          aria-label="Grupo de practicantes en el tatami de El Dojo"
+          data-i18n-aria="hero.group.alt"
+          data-parallax="0.18"
+        ></div>
         <div class="hero-shade"></div>
         <div class="enso enso-hero" data-parallax="-0.08" aria-hidden="true"></div>
         <div class="hero-content">
@@ -68,8 +75,8 @@
         <div class="split">
           <div class="image-reveal tall reveal">
             <img
-              src="assets/dojo-interior.png"
-              alt="Interior sereno inspirado en un dojo tradicional"
+              src="assets/dojo-interior-tatami.webp"
+              alt="Tatami de El Dojo con estructura de madera y luz natural"
             />
           </div>
           <div class="copy-block">
@@ -151,16 +158,14 @@
           </div>
           <div class="image-strip reveal">
             <img
-              src="assets/dojo-exterior.png"
-              alt="Lago y montañas en un paisaje tranquilo"
+              src="assets/dojo-exterior-night.webp"
+              alt="Exterior iluminado de El Dojo por la noche"
+              loading="lazy"
             />
             <img
-              src="assets/dojo-interior.png"
-              alt="Interior de madera con luz natural"
-            />
-            <img
-              src="https://images.unsplash.com/photo-1555988402-6d65bb5e5461?auto=format&fit=crop&w=700&q=80"
-              alt="Lago y montañas de Valle de Bravo"
+              src="assets/dojo-interior-tatami.webp"
+              alt="Tatami de El Dojo con estructura de madera y luz natural"
+              loading="lazy"
             />
           </div>
         </div>
@@ -181,7 +186,7 @@
             <h3>Brazilian Jiu-Jitsu</h3>
             <p data-i18n="art.bjj.copy">Suelo, palancas, control, paciencia y calma bajo presión.</p>
             <span data-i18n="art.bjj.for">Ideal para: adultos, jóvenes y defensa personal.</span>
-            <small data-i18n="art.bjj.teacher">Maestro: Fernando Álvarez</small>
+            <small data-i18n="art.bjj.teacher">Maestro: Gabriel</small>
             <button type="button" class="art-detail" data-art="bjj" data-i18n="cta.learn">Conocer arte</button>
           </article>
           <article class="art-card reveal">
@@ -203,7 +208,6 @@
             <h3>Karate</h3>
             <p data-i18n="art.karate.copy">Golpeo, postura, precisión, enfoque, formas y espíritu marcial.</p>
             <span data-i18n="art.karate.for">Ideal para: niños, principiantes y practicantes técnicos.</span>
-            <small data-i18n="art.karate.teacher">Maestro: Rodrigo Salazar</small>
             <button type="button" class="art-detail" data-art="karate" data-i18n="cta.learn">Conocer arte</button>
           </article>
           <article class="art-card reveal">
@@ -214,7 +218,6 @@
             <h3>Aikido</h3>
             <p data-i18n="art.aikido.copy">Redirección, armonía, movimiento, respiración y control sin agresión.</p>
             <span data-i18n="art.aikido.for">Ideal para: adultos, movilidad y práctica contemplativa.</span>
-            <small data-i18n="art.aikido.teacher">Maestra: Yuko Tanaka</small>
             <button type="button" class="art-detail" data-art="aikido" data-i18n="cta.learn">Conocer arte</button>
           </article>
           <article class="art-card reveal">
@@ -225,7 +228,6 @@
             <h3>Sambo</h3>
             <p data-i18n="art.sambo.copy">Derribos, grappling, resiliencia, adaptación y movimiento práctico.</p>
             <span data-i18n="art.sambo.for">Ideal para: atletas, jóvenes y practicantes de grappling.</span>
-            <small data-i18n="art.sambo.teacher">Maestro: Iván Petrov</small>
             <button type="button" class="art-detail" data-art="sambo" data-i18n="cta.learn">Conocer arte</button>
           </article>
         </div>
@@ -238,38 +240,27 @@
         </div>
         <div class="teacher-grid">
           <article class="teacher-card reveal">
-            <div class="portrait p1"></div>
-            <h3>Fernando Álvarez</h3>
+            <div
+              class="portrait p1"
+              role="img"
+              aria-label="Gabriel, maestro de Jiu Jitsu"
+              data-i18n-aria="teacher.gabriel.alt"
+            ></div>
+            <h3 translate="no">Gabriel</h3>
             <p>Brazilian Jiu-Jitsu</p>
-            <span data-i18n="teacher.fernando.rank">Cinturón negro 2do Dan</span>
+            <span data-i18n="teacher.gabriel.role">Maestro de Jiu Jitsu</span>
             <a href="#contacto" data-i18n="cta.profile">Ver perfil</a>
           </article>
           <article class="teacher-card reveal">
-            <div class="portrait p2"></div>
-            <h3>Tal</h3>
+            <div
+              class="portrait p2"
+              role="img"
+              aria-label="Tal, maestro de Judo"
+              data-i18n-aria="teacher.tal.alt"
+            ></div>
+            <h3 translate="no">Tal</h3>
             <p>Judo</p>
             <span data-i18n="teacher.tal.role">Maestro de Judo</span>
-            <a href="#contacto" data-i18n="cta.profile">Ver perfil</a>
-          </article>
-          <article class="teacher-card reveal">
-            <div class="portrait p3"></div>
-            <h3>Yuko Tanaka</h3>
-            <p>Aikido</p>
-            <span data-i18n="teacher.yuko.rank">Formación en Japón</span>
-            <a href="#contacto" data-i18n="cta.profile">Ver perfil</a>
-          </article>
-          <article class="teacher-card reveal">
-            <div class="portrait p4"></div>
-            <h3>Rodrigo Salazar</h3>
-            <p>Karate</p>
-            <span data-i18n="teacher.rodrigo.rank">Más de 20 años de práctica</span>
-            <a href="#contacto" data-i18n="cta.profile">Ver perfil</a>
-          </article>
-          <article class="teacher-card reveal">
-            <div class="portrait p5"></div>
-            <h3>Iván Petrov</h3>
-            <p>Sambo</p>
-            <span data-i18n="teacher.ivan.rank">Competidor internacional</span>
             <a href="#contacto" data-i18n="cta.profile">Ver perfil</a>
           </article>
         </div>

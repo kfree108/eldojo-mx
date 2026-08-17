@@ -25,6 +25,7 @@ const translations = {
     "hero.title": "El camino hacia<br />el dominio personal",
     "hero.copy":
       "Club tradicional de artes marciales en Valle de Bravo, inspirado en las virtudes del Bushido.",
+    "hero.group.alt": "Grupo de practicantes en el tatami de El Dojo",
     "cta.visit": "Agenda una visita",
     "cta.know": "Conoce el dojo",
     "cta.classes": "Ver clases",
@@ -62,26 +63,22 @@ const translations = {
     "arts.copy": "Disciplina, técnica y espíritu en cada práctica.",
     "art.bjj.copy": "Suelo, palancas, control, paciencia y calma bajo presión.",
     "art.bjj.for": "Ideal para: adultos, jóvenes y defensa personal.",
-    "art.bjj.teacher": "Maestro: Fernando Álvarez",
+    "art.bjj.teacher": "Maestro: Gabriel",
     "art.judo.copy": "Proyecciones, balance, timing, caídas seguras y disciplina.",
     "art.judo.for": "Ideal para: niños, adultos y familias.",
     "art.judo.teacher": "Maestro: Tal",
     "art.karate.copy": "Golpeo, postura, precisión, enfoque, formas y espíritu marcial.",
     "art.karate.for": "Ideal para: niños, principiantes y practicantes técnicos.",
-    "art.karate.teacher": "Maestro: Rodrigo Salazar",
     "art.aikido.copy": "Redirección, armonía, movimiento, respiración y control sin agresión.",
     "art.aikido.for": "Ideal para: adultos, movilidad y práctica contemplativa.",
-    "art.aikido.teacher": "Maestra: Yuko Tanaka",
     "art.sambo.copy": "Derribos, grappling, resiliencia, adaptación y movimiento práctico.",
     "art.sambo.for": "Ideal para: atletas, jóvenes y practicantes de grappling.",
-    "art.sambo.teacher": "Maestro: Iván Petrov",
     "kicker.teachers": "04 / Maestros",
     "teachers.title": "Maestros y guías.",
-    "teacher.fernando.rank": "Cinturón negro 2do Dan",
+    "teacher.gabriel.role": "Maestro de Jiu Jitsu",
+    "teacher.gabriel.alt": "Gabriel, maestro de Jiu Jitsu",
     "teacher.tal.role": "Maestro de Judo",
-    "teacher.yuko.rank": "Formación en Japón",
-    "teacher.rodrigo.rank": "Más de 20 años de práctica",
-    "teacher.ivan.rank": "Competidor internacional",
+    "teacher.tal.alt": "Tal, maestro de Judo",
     "kicker.schedule": "05 / Horario",
     "schedule.title": "Horario de clases",
     "filter.adults": "Adultos",
@@ -138,6 +135,7 @@ const translations = {
     "hero.title": "The path toward<br />personal mastery",
     "hero.copy":
       "A traditional martial arts club in Valle de Bravo, inspired by the virtues of Bushido.",
+    "hero.group.alt": "El Dojo martial arts group on the tatami",
     "cta.visit": "Schedule a visit",
     "cta.know": "Discover the dojo",
     "cta.classes": "View classes",
@@ -175,26 +173,22 @@ const translations = {
     "arts.copy": "Discipline, technique, and spirit in every practice.",
     "art.bjj.copy": "Ground work, leverage, control, patience, and calm under pressure.",
     "art.bjj.for": "Best for: adults, youth, and self-defense.",
-    "art.bjj.teacher": "Teacher: Fernando Álvarez",
+    "art.bjj.teacher": "Teacher: Gabriel",
     "art.judo.copy": "Throws, balance, timing, safe falling, and discipline.",
     "art.judo.for": "Best for: kids, adults, and families.",
     "art.judo.teacher": "Teacher: Tal",
     "art.karate.copy": "Striking, posture, precision, focus, forms, and martial spirit.",
     "art.karate.for": "Best for: kids, beginners, and technical practitioners.",
-    "art.karate.teacher": "Teacher: Rodrigo Salazar",
     "art.aikido.copy": "Redirection, harmony, movement, breath, and control without aggression.",
     "art.aikido.for": "Best for: adults, mobility, and contemplative practice.",
-    "art.aikido.teacher": "Teacher: Yuko Tanaka",
     "art.sambo.copy": "Takedowns, grappling, resilience, adaptability, and practical movement.",
     "art.sambo.for": "Best for: athletes, youth, and grappling practitioners.",
-    "art.sambo.teacher": "Teacher: Iván Petrov",
     "kicker.teachers": "04 / Teachers",
     "teachers.title": "Teachers and Guides",
-    "teacher.fernando.rank": "Black belt, 2nd Dan",
+    "teacher.gabriel.role": "Jiu Jitsu teacher",
+    "teacher.gabriel.alt": "Gabriel, Jiu Jitsu teacher",
     "teacher.tal.role": "Judo teacher",
-    "teacher.yuko.rank": "Trained in Japan",
-    "teacher.rodrigo.rank": "More than 20 years of practice",
-    "teacher.ivan.rank": "International competitor",
+    "teacher.tal.alt": "Tal, Judo teacher",
     "kicker.schedule": "05 / Schedule",
     "schedule.title": "Class schedule",
     "filter.adults": "Adults",
@@ -353,6 +347,10 @@ const setLanguage = (lang) => {
     const value = dictionary[node.dataset.i18nHtml];
     if (value) node.innerHTML = value;
   });
+  document.querySelectorAll("[data-i18n-aria]").forEach((node) => {
+    const value = dictionary[node.dataset.i18nAria];
+    if (value) node.setAttribute("aria-label", value);
+  });
   langButtons.forEach((button) => {
     button.classList.toggle("active", button.dataset.lang === lang);
   });
@@ -367,6 +365,10 @@ const setHeaderState = () => {
 const setParallax = () => {
   const viewport = window.innerHeight;
   parallaxItems.forEach((item) => {
+    if (window.innerWidth <= 820 && item.classList.contains("hero-media")) {
+      item.style.transform = "none";
+      return;
+    }
     const speed = Number(item.dataset.parallax || 0);
     const rect = item.getBoundingClientRect();
     if (rect.bottom < 0 || rect.top > viewport) return;
