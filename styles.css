@@ -21,6 +21,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 110px;
 }
 
 body {
@@ -749,87 +750,96 @@ h2 {
 }
 
 .schedule-wrap {
-  overflow-x: auto;
+  overflow: visible;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  align-items: start;
+}
+
+.agenda-day {
+  overflow: hidden;
   border: 1px solid var(--soft-line);
   border-radius: 8px;
+  background: rgba(251, 248, 240, 0.72);
 }
 
-.filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  padding: 12px;
-  border-bottom: 1px solid var(--soft-line);
-  background: rgba(245, 241, 232, 0.68);
-}
-
-.filters button {
-  min-height: 30px;
-  border: 1px solid rgba(18, 18, 18, 0.18);
-  border-radius: 999px;
-  background: rgba(251, 248, 240, 0.74);
-  color: var(--moss-dark);
-  font-family: var(--sans);
-  font-size: 0.68rem;
-  font-weight: 800;
+.agenda-day h3 {
+  margin: 0;
+  padding: 12px 14px;
+  background: var(--moss);
+  color: var(--paper);
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
-table {
-  width: 100%;
-  min-width: 700px;
-  border-collapse: collapse;
-  background: rgba(251, 248, 240, 0.7);
+.agenda-item {
+  display: grid;
+  grid-template-columns: 102px minmax(0, 1fr);
+  gap: 6px 12px;
+  align-items: center;
+  min-height: 64px;
+  padding: 11px 14px;
+  border-bottom: 1px solid rgba(18, 18, 18, 0.08);
+}
+
+.agenda-item:last-child {
+  border-bottom: 0;
+}
+
+.agenda-item time {
+  color: var(--moss-dark);
   font-family: var(--serif);
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.agenda-item > span {
+  font-family: var(--serif);
+  font-size: 0.96rem;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+  line-height: 1.15;
   text-transform: uppercase;
 }
 
-.mobile-agenda {
-  display: none;
-}
-
-th,
-td {
-  height: 52px;
-  border: 1px solid rgba(18, 18, 18, 0.12);
-  padding: 10px;
-  text-align: center;
-  font-size: 0.86rem;
+.agenda-item small {
+  grid-column: 2;
+  justify-self: start;
+  color: rgba(18, 18, 18, 0.62);
+  font-size: 0.68rem;
   font-weight: 700;
+  letter-spacing: 0.045em;
+  line-height: 1.25;
+  text-transform: uppercase;
 }
 
-td small {
-  display: block;
-  margin-top: 3px;
-  font-family: var(--sans);
-  font-size: 0.58rem;
-  letter-spacing: 0.06em;
+.agenda-item small b {
+  color: var(--ink);
+  font-weight: 800;
 }
 
-thead th,
-tbody th,
-td:not(:empty):not(:first-child) {
-  background: rgba(79, 91, 67, 0.88);
-  color: var(--paper);
+.agenda-item[data-discipline="jiu-jitsu"] {
+  box-shadow: inset 4px 0 rgba(69, 116, 143, 0.72);
 }
 
-tbody td {
-  color: rgba(18, 18, 18, 0.72);
-  transition: transform 180ms ease, background 180ms ease;
+.agenda-item[data-discipline="judo"] {
+  box-shadow: inset 4px 0 rgba(109, 139, 72, 0.82);
 }
 
-tbody td:not(:empty):hover {
-  background: var(--moss-dark);
-  transform: scale(1.02);
+.agenda-item[data-discipline="aikido"] {
+  box-shadow: inset 4px 0 rgba(176, 143, 50, 0.78);
 }
 
-td.accent {
-  background: rgba(79, 91, 67, 0.62) !important;
-}
-
-td.seal-cell {
-  background: var(--seal) !important;
+.agenda-item[data-discipline="lucha"] {
+  box-shadow: inset 4px 0 rgba(142, 44, 44, 0.66);
 }
 
 .note {
@@ -1079,9 +1089,12 @@ li::before {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .schedule-pricing,
-  .pricing-grid {
+  .schedule-pricing {
     grid-template-columns: 1fr;
+  }
+
+  .schedule-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -1300,7 +1313,7 @@ li::before {
   .schedule-block,
   .pricing-block,
   .schedule-wrap,
-  .mobile-agenda,
+  .schedule-grid,
   .pricing-grid {
     width: 100%;
     max-width: 100%;
@@ -1309,100 +1322,17 @@ li::before {
 
   .schedule-wrap {
     overflow: visible;
-    border: 0;
-    border-radius: 0;
-    background: transparent;
   }
 
-  .schedule-wrap table {
-    display: none;
-  }
-
-  .filters {
-    margin-bottom: 16px;
-    padding: 0;
-    border-bottom: 0;
-    background: transparent;
-  }
-
-  .filters button {
-    min-height: 32px;
-    padding: 0 12px;
-    font-size: 0.62rem;
-  }
-
-  .mobile-agenda {
-    display: grid;
-    gap: 12px;
-  }
-
-  .agenda-day {
-    overflow: hidden;
-    border: 1px solid var(--soft-line);
-    border-radius: 8px;
-    background: rgba(251, 248, 240, 0.72);
-  }
-
-  .agenda-day h3 {
-    margin: 0;
-    padding: 12px 14px;
-    background: var(--moss);
-    color: var(--paper);
-    font-family: var(--serif);
-    font-size: 1.08rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+  .schedule-grid,
+  .pricing-grid {
+    grid-template-columns: 1fr;
   }
 
   .agenda-item {
-    display: grid;
-    grid-template-columns: 78px minmax(0, 1fr);
-    gap: 6px 12px;
-    align-items: center;
-    min-height: 52px;
-    padding: 11px 14px;
-    border-bottom: 1px solid rgba(18, 18, 18, 0.08);
-  }
-
-  .agenda-item:last-child {
-    border-bottom: 0;
-  }
-
-  .agenda-item time {
-    color: var(--moss-dark);
-    font-family: var(--serif);
-    font-size: 0.88rem;
-    font-weight: 700;
-  }
-
-  .agenda-item span {
-    font-family: var(--serif);
-    font-size: 1.02rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-  }
-
-  .agenda-item small {
-    grid-column: 2;
-    justify-self: start;
-    padding: 5px 8px;
-    border: 1px solid rgba(18, 18, 18, 0.12);
-    border-radius: 999px;
-    color: rgba(18, 18, 18, 0.66);
-    font-size: 0.62rem;
-    font-weight: 800;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-  }
-
-  .agenda-item.seal {
-    background: rgba(142, 44, 44, 0.1);
-  }
-
-  .agenda-item.seal span {
-    color: var(--seal);
+    grid-template-columns: 86px minmax(0, 1fr);
+    min-height: 60px;
+    padding: 11px 12px;
   }
 
   .image-strip {
