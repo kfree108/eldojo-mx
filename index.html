@@ -271,139 +271,118 @@
           <p class="section-kicker" data-i18n="kicker.schedule">05 / Horario</p>
           <h2 data-i18n="schedule.title">Horario de clases</h2>
           <div class="schedule-wrap">
-            <div class="filters" aria-label="Filtros de horario">
-              <button type="button" data-i18n="filter.adults">Adultos</button>
-              <button type="button">Kids</button>
-              <button type="button" data-i18n="filter.families">Familias</button>
-              <button type="button">Brazilian Jiu-Jitsu</button>
-              <button type="button">Judo</button>
-              <button type="button">Karate</button>
-              <button type="button">Aikido</button>
-              <button type="button">Sambo</button>
-            </div>
-            <table>
-              <thead>
-                <tr>
-                  <th></th>
-                  <th data-i18n="day.mon">Lunes</th>
-                  <th data-i18n="day.tue">Martes</th>
-                  <th data-i18n="day.wed">Miércoles</th>
-                  <th data-i18n="day.thu">Jueves</th>
-                  <th data-i18n="day.fri">Viernes</th>
-                  <th data-i18n="day.sat">Sábado</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>07:00</th>
-                  <td>Aikido</td>
-                  <td></td>
-                  <td>Aikido</td>
-                  <td></td>
-                  <td>Aikido</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th>08:30</th>
-                  <td></td>
-                  <td>Brazilian Jiu-Jitsu<br /><small>08:30-10:00</small></td>
-                  <td></td>
-                  <td>Brazilian Jiu-Jitsu<br /><small>08:30-10:00</small></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th>10:00</th>
-                  <td></td>
-                  <td>Judo</td>
-                  <td></td>
-                  <td>Judo</td>
-                  <td></td>
-                  <td class="accent">Open Mat<br /><small>10:00-12:00</small></td>
-                </tr>
-                <tr>
-                  <th>12:00</th>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>Karate</td>
-                </tr>
-                <tr>
-                  <th>16:00</th>
-                  <td>Karate</td>
-                  <td></td>
-                  <td>Brazilian Jiu-Jitsu<br /><small>16:00-17:30</small></td>
-                  <td>Brazilian Jiu-Jitsu<br /><small>16:00-17:30</small></td>
-                  <td>Karate</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th>18:00</th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th>19:30</th>
-                  <td></td>
-                  <td>Judo</td>
-                  <td></td>
-                  <td>Judo</td>
-                  <td class="seal-cell">Sambo</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th>20:30</th>
-                  <td></td>
-                  <td>Aikido</td>
-                  <td></td>
-                  <td>Aikido</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="mobile-agenda" aria-label="Horario móvil">
+            <div
+              class="schedule-grid"
+              aria-label="Horario semanal de clases"
+              data-i18n-aria="schedule.aria"
+            >
               <article class="agenda-day">
                 <h3 data-i18n="day.mon">Lunes</h3>
-                <div class="agenda-item"><time>07:00</time><span>Aikido</span><small data-i18n="agenda.adults">Adultos</small></div>
-                <div class="agenda-item"><time>16:30</time><span>Karate</span><small data-i18n="agenda.kids">Kids</small></div>
+                <div class="agenda-item" data-discipline="jiu-jitsu">
+                  <time>09:00–10:30</time>
+                  <span data-i18n="schedule.bjjChicas">Jiu Jitsu Chicas</span>
+                  <small><span data-i18n="schedule.instructor">Instructor</span>: <b translate="no">Arturo</b></small>
+                </div>
+                <div class="agenda-item" data-discipline="jiu-jitsu">
+                  <time>16:00–17:00</time>
+                  <span data-i18n="schedule.bjjKids">Jiu Jitsu niños</span>
+                  <small><span data-i18n="schedule.age79">7 a 9 años</span> · <b translate="no">Arturo</b></small>
+                </div>
+                <div class="agenda-item" data-discipline="aikido">
+                  <time>18:30–20:00</time>
+                  <span>Aikido</span>
+                  <small><span data-i18n="schedule.instructor">Instructor</span>: <b translate="no">Félix</b></small>
+                </div>
+                <div class="agenda-item" data-discipline="aikido">
+                  <time>20:00–21:00</time>
+                  <span data-i18n="schedule.aikidoWeapons">Aikido armas</span>
+                  <small><span data-i18n="schedule.instructor">Instructor</span>: <b translate="no">Félix</b></small>
+                </div>
               </article>
               <article class="agenda-day">
                 <h3 data-i18n="day.tue">Martes</h3>
-                <div class="agenda-item"><time>08:30-10:00</time><span>Brazilian Jiu-Jitsu</span><small data-i18n="agenda.adults">Adultos</small></div>
-                <div class="agenda-item"><time>10:00</time><span>Judo</span><small data-i18n="agenda.families">Familias</small></div>
-                <div class="agenda-item"><time>19:30</time><span>Judo</span><small data-i18n="agenda.adults">Adultos</small></div>
-                <div class="agenda-item"><time>20:30</time><span>Aikido</span><small data-i18n="agenda.adults">Adultos</small></div>
+                <div class="agenda-item" data-discipline="jiu-jitsu">
+                  <time>08:30–10:00</time>
+                  <span>Jiu Jitsu</span>
+                  <small><span data-i18n="schedule.instructor">Instructor</span>: <b translate="no">Ken</b></small>
+                </div>
+                <div class="agenda-item" data-discipline="jiu-jitsu">
+                  <time>16:00–17:00</time>
+                  <span data-i18n="schedule.bjjKids">Jiu Jitsu niños</span>
+                  <small><span data-i18n="schedule.age79">7 a 9 años</span> · <b translate="no">Arturo</b></small>
+                </div>
+                <div class="agenda-item" data-discipline="jiu-jitsu">
+                  <time>17:30–18:30</time>
+                  <span data-i18n="schedule.bjjJuniors">Jiu Jitsu Jrs</span>
+                  <small><span data-i18n="schedule.age1012">10 a 12 años</span> · <b translate="no">Arturo</b></small>
+                </div>
+                <div class="agenda-item" data-discipline="jiu-jitsu">
+                  <time>20:00–21:30</time>
+                  <span>Jiu Jitsu</span>
+                  <small><span data-i18n="schedule.instructor">Instructor</span>: <b translate="no">Gabriel</b></small>
+                </div>
               </article>
               <article class="agenda-day">
                 <h3 data-i18n="day.wed">Miércoles</h3>
-                <div class="agenda-item"><time>07:00</time><span>Aikido</span><small data-i18n="agenda.adults">Adultos</small></div>
-                <div class="agenda-item"><time>16:00-17:30</time><span>Brazilian Jiu-Jitsu</span><small data-i18n="agenda.adults">Adultos</small></div>
+                <div class="agenda-item" data-discipline="lucha">
+                  <time>08:30–10:00</time>
+                  <span>Lucha</span>
+                  <small><span data-i18n="schedule.instructor">Instructor</span>: <b translate="no">Mato</b></small>
+                </div>
+                <div class="agenda-item" data-discipline="judo">
+                  <time>16:30–17:30</time>
+                  <span data-i18n="schedule.judoKids">Judo niños</span>
+                  <small><span data-i18n="schedule.instructor">Instructor</span>: <b translate="no">Tal</b></small>
+                </div>
+                <div class="agenda-item" data-discipline="judo">
+                  <time>18:00–19:30</time>
+                  <span data-i18n="schedule.judoJuniorsAdults">Judo Jrs / Adultos</span>
+                  <small><span data-i18n="schedule.instructor">Instructor</span>: <b translate="no">Tal</b></small>
+                </div>
+                <div class="agenda-item" data-discipline="aikido">
+                  <time>19:30–21:00</time>
+                  <span>Aikido</span>
+                  <small><span data-i18n="schedule.instructor">Instructor</span>: <b translate="no">Félix</b></small>
+                </div>
               </article>
               <article class="agenda-day">
                 <h3 data-i18n="day.thu">Jueves</h3>
-                <div class="agenda-item"><time>08:30-10:00</time><span>Brazilian Jiu-Jitsu</span><small data-i18n="agenda.adults">Adultos</small></div>
-                <div class="agenda-item"><time>10:00</time><span>Judo</span><small data-i18n="agenda.families">Familias</small></div>
-                <div class="agenda-item"><time>16:00-17:30</time><span>Brazilian Jiu-Jitsu</span><small data-i18n="agenda.adults">Adultos</small></div>
-                <div class="agenda-item"><time>19:30</time><span>Judo</span><small data-i18n="agenda.adults">Adultos</small></div>
-                <div class="agenda-item"><time>20:30</time><span>Aikido</span><small data-i18n="agenda.adults">Adultos</small></div>
+                <div class="agenda-item" data-discipline="jiu-jitsu">
+                  <time>08:30–10:00</time>
+                  <span>Jiu Jitsu</span>
+                  <small><span data-i18n="schedule.instructor">Instructor</span>: <b translate="no">Ken</b></small>
+                </div>
+                <div class="agenda-item" data-discipline="jiu-jitsu">
+                  <time>16:00–17:00</time>
+                  <span data-i18n="schedule.bjjKids">Jiu Jitsu niños</span>
+                  <small><span data-i18n="schedule.age79">7 a 9 años</span> · <b translate="no">Arturo</b></small>
+                </div>
+                <div class="agenda-item" data-discipline="jiu-jitsu">
+                  <time>17:30–18:30</time>
+                  <span data-i18n="schedule.bjjJuniors">Jiu Jitsu Jrs</span>
+                  <small><span data-i18n="schedule.age1012">10 a 12 años</span> · <b translate="no">Arturo</b></small>
+                </div>
+                <div class="agenda-item" data-discipline="jiu-jitsu">
+                  <time>20:00–21:30</time>
+                  <span>Jiu Jitsu</span>
+                  <small><span data-i18n="schedule.instructor">Instructor</span>: <b translate="no">Gabriel</b></small>
+                </div>
               </article>
               <article class="agenda-day">
                 <h3 data-i18n="day.fri">Viernes</h3>
-                <div class="agenda-item"><time>07:00</time><span>Aikido</span><small data-i18n="agenda.adults">Adultos</small></div>
-                <div class="agenda-item"><time>16:30</time><span>Karate</span><small data-i18n="agenda.kids">Kids</small></div>
-                <div class="agenda-item seal"><time>19:30</time><span>Sambo</span><small data-i18n="agenda.adults">Adultos</small></div>
+                <div class="agenda-item" data-discipline="lucha">
+                  <time>08:30–10:00</time>
+                  <span>Lucha</span>
+                  <small><span data-i18n="schedule.instructor">Instructor</span>: <b translate="no">Mato</b></small>
+                </div>
               </article>
               <article class="agenda-day">
                 <h3 data-i18n="day.sat">Sábado</h3>
-                <div class="agenda-item"><time>10:00-12:00</time><span>Open Mat</span><small>Brazilian Jiu-Jitsu</small></div>
-                <div class="agenda-item"><time>12:00</time><span>Karate</span><small data-i18n="agenda.kids">Kids</small></div>
+                <div class="agenda-item" data-discipline="jiu-jitsu">
+                  <time>08:30–10:30</time>
+                  <span data-i18n="schedule.openMat">Jiu Jitsu · Open Mat</span>
+                  <small data-i18n="schedule.openPractice">Práctica abierta</small>
+                </div>
               </article>
             </div>
           </div>
@@ -415,37 +394,37 @@
           <h2 data-i18n="pricing.title">Membresías</h2>
           <div class="pricing-grid">
             <article class="price-card">
-              <h3 data-i18n="pricing.basic">Básica</h3>
-              <p class="price">$1,300 <span data-i18n="pricing.month">/mes</span></p>
-              <p data-i18n="pricing.basic.copy">Acceso a 1 disciplina</p>
+              <h3 data-i18n="pricing.dropin">Drop-in</h3>
+              <p class="price">$250 <span data-i18n="pricing.perClass">MXN · / clase</span></p>
+              <p data-i18n="pricing.dropin.copy">Una clase, sin compromiso.</p>
               <ul>
-                <li data-i18n="pricing.group">Clases grupales</li>
-                <li data-i18n="pricing.regular">Horario regular</li>
-                <li data-i18n="pricing.locker">Vestidor y regaderas</li>
+                <li data-i18n="pricing.oneClass">Una clase</li>
+                <li data-i18n="pricing.allDisciplines">Todas las disciplinas</li>
+                <li data-i18n="pricing.waiverRequired">Carta responsiva requerida</li>
+              </ul>
+              <a class="button quiet" href="#contacto" data-i18n="cta.plan">Elegir plan</a>
+            </article>
+            <article class="price-card">
+              <h3 data-i18n="pricing.monthly">Mensual</h3>
+              <p class="price">$1,500 <span data-i18n="pricing.perMonth">MXN · / mes</span></p>
+              <p data-i18n="pricing.monthly.copy">Clases ilimitadas durante un mes.</p>
+              <ul>
+                <li data-i18n="pricing.unlimited">Clases ilimitadas</li>
+                <li data-i18n="pricing.allDisciplines">Todas las disciplinas</li>
+                <li data-i18n="pricing.oneMonth">Vigencia de un mes</li>
               </ul>
               <a class="button quiet" href="#contacto" data-i18n="cta.plan">Elegir plan</a>
             </article>
             <article class="price-card featured">
-              <h3 data-i18n="pricing.complete">Completa</h3>
-              <p class="price">$1,900 <span data-i18n="pricing.month">/mes</span></p>
-              <p data-i18n="pricing.complete.copy">Acceso a todas las disciplinas</p>
+              <h3 data-i18n="pricing.semester">Semestral</h3>
+              <p class="price">$7,200 <span data-i18n="pricing.perSixMonths">MXN · / 6 meses</span></p>
+              <p data-i18n="pricing.semester.copy">Clases ilimitadas durante seis meses.</p>
               <ul>
                 <li data-i18n="pricing.unlimited">Clases ilimitadas</li>
                 <li data-i18n="pricing.allDisciplines">Todas las disciplinas</li>
-                <li data-i18n="pricing.communityDojo">Comunidad Dojo</li>
+                <li data-i18n="pricing.semesterSavings">Ahorra $1,800 frente al plan mensual</li>
               </ul>
               <a class="button light" href="#contacto" data-i18n="cta.plan">Elegir plan</a>
-            </article>
-            <article class="price-card">
-              <h3 data-i18n="pricing.family">Familiar</h3>
-              <p class="price">$3,000 <span data-i18n="pricing.month">/mes</span></p>
-              <p data-i18n="pricing.family.copy">Para 2 integrantes de la misma familia</p>
-              <ul>
-                <li data-i18n="pricing.unlimited">Clases ilimitadas</li>
-                <li data-i18n="pricing.extended">Horarios extendidos</li>
-                <li data-i18n="pricing.events">Eventos de comunidad</li>
-              </ul>
-              <a class="button quiet" href="#contacto" data-i18n="cta.plan">Elegir plan</a>
             </article>
           </div>
         </div>
@@ -459,8 +438,8 @@
         </article>
         <article class="feature reveal">
           <span>⌁</span>
-          <h3 data-i18n="feature.contract.title">Sin contrato</h3>
-          <p data-i18n="feature.contract.copy">Cancela cuando quieras.</p>
+          <h3 data-i18n="feature.plans.title">Planes claros</h3>
+          <p data-i18n="feature.plans.copy">Elige clase suelta, mensual o semestral.</p>
         </article>
         <article class="feature reveal">
           <span>◎</span>
