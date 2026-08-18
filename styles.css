@@ -220,10 +220,11 @@ a {
 
 .hero-media {
   z-index: -3;
-  scale: 1.02;
+  scale: 1.08;
+  translate: 4% 0;
   background:
     linear-gradient(to bottom, rgba(245, 241, 232, 0.06), rgba(18, 18, 18, 0.58)),
-    url("assets/dojo-group-hero.webp") center bottom/cover;
+    url("assets/dojo-group-hero.webp") center center/cover;
   filter: saturate(0.86) contrast(1) brightness(0.84);
 }
 
@@ -1220,6 +1221,7 @@ li::before {
     bottom: auto;
     height: calc((100vw - 24px) * 0.5625);
     scale: 1;
+    translate: 0;
     background: url("assets/dojo-group-hero.webp") center/cover no-repeat;
     filter: none;
   }
