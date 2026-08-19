@@ -15,6 +15,75 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Permanent+Marker&display=swap"
       rel="stylesheet"
     />
+    <link rel="canonical" href="https://eldojo.mx/" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="El Dojo" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:title" content="El Dojo — Club de Artes Marciales en Valle de Bravo" />
+    <meta property="og:description" content="Club tradicional de artes marciales en Valle de Bravo: Brazilian Jiu-Jitsu, Judo, Karate, Aikido y Sambo. Clases para niños y adultos. Primera clase de prueba." />
+    <meta property="og:url" content="https://eldojo.mx/" />
+    <meta property="og:image" content="https://eldojo.mx/assets/dojo-group-hero.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="El Dojo — Artes Marciales en Valle de Bravo" />
+    <meta name="twitter:description" content="Brazilian Jiu-Jitsu, Judo, Karate, Aikido y Sambo en Valle de Bravo. Niños y adultos." />
+    <meta name="twitter:image" content="https://eldojo.mx/assets/dojo-group-hero.webp" />
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1GHSK2H613"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-1GHSK2H613');
+      // WhatsApp click = the conversion event for this business
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('a[href*="wa.me"], a[href^="tel:"]').forEach(function (el) {
+          el.addEventListener('click', function () {
+            gtag('event', 'contacto_whatsapp', {
+              method: el.href.indexOf('wa.me') > -1 ? 'whatsapp' : 'telefono',
+              origen: document.title
+            });
+          });
+        });
+      });
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsActivityLocation",
+      "@id": "https://eldojo.mx/#dojo",
+      "name": "El Dojo",
+      "description": "Club tradicional de artes marciales en Valle de Bravo inspirado en el Bushido. Brazilian Jiu-Jitsu, Judo, Karate, Aikido y Sambo para niños, jóvenes y adultos.",
+      "url": "https://eldojo.mx/",
+      "telephone": "+52-1-55-4700-0332",
+      "image": "https://eldojo.mx/assets/dojo-group-hero.webp",
+      "logo": "https://eldojo.mx/assets/el-dojo-logo-full-ink.png",
+      "priceRange": "$$",
+      "currenciesAccepted": "MXN",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Valle de Bravo",
+        "addressRegion": "Estado de México",
+        "addressCountry": "MX"
+      },
+      "sport": ["Brazilian Jiu-Jitsu", "Judo", "Karate", "Aikido", "Sambo", "Lucha"],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "09:00", "closes": "21:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "08:30", "closes": "21:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "08:30", "closes": "21:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "08:30", "closes": "21:30"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "08:30", "closes": "10:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:30", "closes": "10:30"}
+      ],
+      "makesOffer": [
+        {"@type": "Offer", "name": "Clase suelta / visitantes", "price": "250", "priceCurrency": "MXN"},
+        {"@type": "Offer", "name": "Mensualidad", "price": "1500", "priceCurrency": "MXN"},
+        {"@type": "Offer", "name": "Anualidad", "price": "7200", "priceCurrency": "MXN"}
+      ]
+    }
+    </script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -476,6 +545,11 @@
         <img src="assets/el-dojo-logo-full-ink.png" alt="El Dojo" />
       </a>
       <p data-i18n-html="footer.copy">Club de artes marciales<br />Valle de Bravo</p>
+      <nav class="footer-links" aria-label="Guias" style="margin-top:18px;font-size:14px;line-height:2;text-align:center">
+        <a href="/entrena-de-visita/" style="margin:0 10px">Entrena de visita</a>
+        <a href="/guias/que-hacer-en-valle-de-bravo/" style="margin:0 10px">Qué hacer en Valle de Bravo</a>
+        <a href="/guias/valle-de-bravo-cuando-llueve/" style="margin:0 10px">Valle de Bravo cuando llueve</a>
+      </nav>
     </footer>
 
     <a class="whatsapp" href="https://wa.me/5215547000332?text=Hola%20Coach%20Arturo%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20sobre%20El%20Dojo." target="_blank" rel="noopener noreferrer" aria-label="Habla con Coach Arturo por WhatsApp" title="Habla con Coach Arturo por WhatsApp">

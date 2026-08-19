@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /waiver/
+
+Sitemap: https://eldojo.mx/sitemap.xml
