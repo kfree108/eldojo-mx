@@ -727,6 +727,14 @@ h2 {
   --portrait-position: center 35%;
 }
 
+.p3 {
+  --portrait: url("assets/ken-jiu-jitsu-teacher.webp");
+}
+
+.p4 {
+  --portrait: url("assets/arturo-youth-jiu-jitsu-teacher.webp");
+}
+
 .teacher-card a {
   display: inline-block;
   margin-top: 18px;
