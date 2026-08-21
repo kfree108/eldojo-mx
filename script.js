@@ -34,6 +34,7 @@ const translations = {
     "cta.plan": "Elegir plan",
     "cta.whatsapp": "Habla con Coach Arturo",
     "whatsapp.coach": "Habla con Coach Arturo",
+    "whatsapp.aria": "Habla con Coach Arturo por WhatsApp",
     "kicker.philosophy": "01 / Filosofía",
     "philosophy.title": "Inspirado en Bushido,<br />el camino del guerrero.",
     "philosophy.copy":
@@ -59,7 +60,7 @@ const translations = {
     "dojo.copy":
       "En el corazón de Valle de Bravo, El Dojo ofrece un espacio dedicado al camino marcial: un lugar para aprender, entrenar, respirar, caer, levantarse y crecer.",
     "kicker.arts": "03 / Artes marciales",
-    "arts.title": "Cinco disciplinas. Un mismo camino.",
+    "arts.title": "Cuatro disciplinas. Un mismo camino.",
     "arts.copy": "Disciplina, técnica y espíritu en cada práctica.",
     "art.bjj.copy": "Suelo, palancas, control, paciencia y calma bajo presión.",
     "art.bjj.for": "Ideal para: adultos, jóvenes y defensa personal.",
@@ -67,18 +68,21 @@ const translations = {
     "art.judo.copy": "Proyecciones, balance, timing, caídas seguras y disciplina.",
     "art.judo.for": "Ideal para: niños, adultos y familias.",
     "art.judo.teacher": "Maestro: Tal",
-    "art.karate.copy": "Golpeo, postura, precisión, enfoque, formas y espíritu marcial.",
-    "art.karate.for": "Ideal para: niños, principiantes y practicantes técnicos.",
     "art.aikido.copy": "Redirección, armonía, movimiento, respiración y control sin agresión.",
     "art.aikido.for": "Ideal para: adultos, movilidad y práctica contemplativa.",
-    "art.sambo.copy": "Derribos, grappling, resiliencia, adaptación y movimiento práctico.",
-    "art.sambo.for": "Ideal para: atletas, jóvenes y practicantes de grappling.",
+    "art.wrestling.copy": "Derribos, control, presión, agilidad y técnica en movimiento.",
+    "art.wrestling.for": "Ideal para: jóvenes, adultos y practicantes de grappling.",
     "kicker.teachers": "04 / Maestros",
     "teachers.title": "Maestros y guías.",
     "teacher.gabriel.role": "Maestro de Jiu Jitsu",
     "teacher.gabriel.alt": "Gabriel, maestro de Jiu Jitsu",
     "teacher.tal.role": "Maestro de Judo",
     "teacher.tal.alt": "Tal, maestro de Judo",
+    "teacher.ken.role": "Maestro de Jiu Jitsu",
+    "teacher.ken.alt": "Ken, maestro de Jiu Jitsu",
+    "teacher.arturo.focus": "Jiu Jitsu infantil y juvenil",
+    "teacher.arturo.role": "Maestro de Jiu Jitsu infantil y juvenil",
+    "teacher.arturo.alt": "Arturo, maestro de Jiu Jitsu infantil y juvenil",
     "kicker.schedule": "05 / Horario",
     "schedule.title": "Horario de clases",
     "schedule.aria": "Horario semanal de clases",
@@ -151,6 +155,7 @@ const translations = {
     "cta.plan": "Choose plan",
     "cta.whatsapp": "Talk to Coach Arturo",
     "whatsapp.coach": "Talk to Coach Arturo",
+    "whatsapp.aria": "Talk to Coach Arturo on WhatsApp",
     "kicker.philosophy": "01 / Philosophy",
     "philosophy.title": "Inspired by Bushido,<br />the way of the warrior.",
     "philosophy.copy":
@@ -176,7 +181,7 @@ const translations = {
     "dojo.copy":
       "In the heart of Valle de Bravo, El Dojo offers a space dedicated to the martial path: a place to learn, train, breathe, fall, rise, and grow.",
     "kicker.arts": "03 / Martial arts",
-    "arts.title": "Five disciplines. One path.",
+    "arts.title": "Four disciplines. One path.",
     "arts.copy": "Discipline, technique, and spirit in every practice.",
     "art.bjj.copy": "Ground work, leverage, control, patience, and calm under pressure.",
     "art.bjj.for": "Best for: adults, youth, and self-defense.",
@@ -184,18 +189,21 @@ const translations = {
     "art.judo.copy": "Throws, balance, timing, safe falling, and discipline.",
     "art.judo.for": "Best for: kids, adults, and families.",
     "art.judo.teacher": "Teacher: Tal",
-    "art.karate.copy": "Striking, posture, precision, focus, forms, and martial spirit.",
-    "art.karate.for": "Best for: kids, beginners, and technical practitioners.",
     "art.aikido.copy": "Redirection, harmony, movement, breath, and control without aggression.",
     "art.aikido.for": "Best for: adults, mobility, and contemplative practice.",
-    "art.sambo.copy": "Takedowns, grappling, resilience, adaptability, and practical movement.",
-    "art.sambo.for": "Best for: athletes, youth, and grappling practitioners.",
+    "art.wrestling.copy": "Takedowns, control, pressure, agility, and technique in motion.",
+    "art.wrestling.for": "Best for: youth, adults, and grappling practitioners.",
     "kicker.teachers": "04 / Teachers",
     "teachers.title": "Teachers and Guides",
     "teacher.gabriel.role": "Jiu Jitsu teacher",
     "teacher.gabriel.alt": "Gabriel, Jiu Jitsu teacher",
     "teacher.tal.role": "Judo teacher",
     "teacher.tal.alt": "Tal, Judo teacher",
+    "teacher.ken.role": "Jiu Jitsu teacher",
+    "teacher.ken.alt": "Ken, Jiu Jitsu teacher",
+    "teacher.arturo.focus": "Kids and Youth Jiu Jitsu",
+    "teacher.arturo.role": "Kids and Youth Jiu Jitsu teacher",
+    "teacher.arturo.alt": "Arturo, Kids and Youth Jiu Jitsu teacher",
     "kicker.schedule": "05 / Schedule",
     "schedule.title": "Class schedule",
     "schedule.aria": "Weekly class schedule",
@@ -268,14 +276,6 @@ const artDetails = {
         "Prácticamente, el judo incluye proyecciones, barridos, agarres, caídas seguras, inmovilizaciones y trabajo de control. Es excelente para niños y adultos porque desarrolla coordinación, respeto, postura, disciplina y confianza al caer y levantarse.",
       ],
     },
-    karate: {
-      title: "Karate",
-      paragraphs: [
-        "El karate se desarrolló en Okinawa y después se consolidó en Japón como un arte marcial de golpeo, forma y carácter. Su historia combina influencias locales de Okinawa con prácticas marciales chinas y japonesas.",
-        "La sabiduría del karate está en la precisión. Cada postura, golpe y respiración entrena presencia, autocontrol y claridad mental. No se trata de agresión, sino de cultivar una respuesta firme, medida y consciente.",
-        "En clase se practican golpes, bloqueos, patadas, desplazamientos, kata, trabajo con compañero y ejercicios de enfoque. Es una vía directa para desarrollar postura, coordinación, concentración y espíritu marcial.",
-      ],
-    },
     aikido: {
       title: "Aikido",
       paragraphs: [
@@ -284,12 +284,12 @@ const artDetails = {
         "En la práctica se trabajan desplazamientos circulares, controles articulares, proyecciones, caídas, respiración y sensibilidad con el compañero. Es una disciplina profunda para movilidad, presencia, equilibrio y control sin violencia.",
       ],
     },
-    sambo: {
-      title: "Sambo",
+    wrestling: {
+      title: "Wrestling",
       paragraphs: [
-        "El sambo surgió en la Unión Soviética en el siglo XX como una síntesis práctica de lucha, judo y sistemas regionales de combate. Su nombre proviene de una expresión rusa relacionada con la defensa personal sin armas.",
-        "Su sabiduría es la adaptabilidad. El practicante aprende a resolver situaciones cambiantes con decisión, resiliencia y claridad táctica, integrando derribos, agarres y controles de forma directa.",
-        "En clase se practican entradas a derribo, control de cuerpo, transiciones, inmovilizaciones, escapes y sumisiones según el nivel. Es una disciplina intensa y técnica para construir resistencia, confianza y capacidad de reacción.",
+        "El wrestling, o lucha, es una de las formas de combate más antiguas y se practica hoy en estilos deportivos como la lucha libre y la grecorromana.",
+        "Su enseñanza central es dominar la posición con equilibrio, presión y movimiento. El practicante aprende a entrar con decisión, mantener una base sólida y responder con técnica bajo esfuerzo.",
+        "En clase se trabajan posturas, agarres, desplazamientos, derribos, defensa, control y transiciones de manera progresiva. Es una práctica intensa para desarrollar coordinación, resistencia y confianza corporal.",
       ],
     },
   },
@@ -310,14 +310,6 @@ const artDetails = {
         "Practically, judo includes throws, sweeps, gripping, safe falling, pins, and control work. It is excellent for children and adults because it develops coordination, respect, posture, discipline, and confidence in falling and rising again.",
       ],
     },
-    karate: {
-      title: "Karate",
-      paragraphs: [
-        "Karate developed in Okinawa and later took shape in Japan as an art of striking, form, and character. Its history blends Okinawan traditions with Chinese and Japanese martial influences.",
-        "The wisdom of karate is precision. Every stance, strike, and breath trains presence, self-mastery, and mental clarity. It is not about aggression, but about cultivating a firm, measured, and conscious response.",
-        "Classes include strikes, blocks, kicks, footwork, kata, partner drills, and focus exercises. It is a direct path for building posture, coordination, concentration, and martial spirit.",
-      ],
-    },
     aikido: {
       title: "Aikido",
       paragraphs: [
@@ -326,12 +318,12 @@ const artDetails = {
         "Practice includes circular footwork, joint controls, throws, falling, breathing, and partner sensitivity. It is a deep discipline for mobility, presence, balance, and control without violence.",
       ],
     },
-    sambo: {
-      title: "Sambo",
+    wrestling: {
+      title: "Wrestling",
       paragraphs: [
-        "Sambo emerged in the Soviet Union in the twentieth century as a practical synthesis of wrestling, judo, and regional combat systems. Its name comes from a Russian expression connected to self-defense without weapons.",
-        "Its wisdom is adaptability. The practitioner learns to solve changing situations with decision, resilience, and tactical clarity, integrating takedowns, grips, and controls in a direct way.",
-        "Classes include takedown entries, body control, transitions, pins, escapes, and submissions according to level. It is an intense and technical discipline for building endurance, confidence, and reaction ability.",
+        "Wrestling is one of the world’s oldest forms of combat and is practiced today through sporting styles such as freestyle and Greco-Roman wrestling.",
+        "Its central lesson is controlling position through balance, pressure, and movement. Practitioners learn to enter decisively, maintain a strong base, and respond with technique under effort.",
+        "Classes develop stance, grips, movement, takedowns, defense, control, and transitions progressively. It is an intense practice for building coordination, endurance, and body confidence.",
       ],
     },
   },
@@ -350,8 +342,8 @@ const setLanguage = (lang) => {
     ?.setAttribute(
       "content",
       lang === "es"
-        ? "Club tradicional de artes marciales en Valle de Bravo inspirado en Bushido. Brazilian Jiu-Jitsu, Judo, Karate, Aikido y Sambo."
-        : "Traditional martial arts club in Valle de Bravo inspired by Bushido. Brazilian Jiu-Jitsu, Judo, Karate, Aikido, and Sambo."
+        ? "Club tradicional de artes marciales en Valle de Bravo inspirado en Bushido. Brazilian Jiu-Jitsu, Judo, Aikido y Wrestling."
+        : "Traditional martial arts club in Valle de Bravo inspired by Bushido. Brazilian Jiu-Jitsu, Judo, Aikido, and Wrestling."
     );
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const value = dictionary[node.dataset.i18n];

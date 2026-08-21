@@ -543,7 +543,7 @@ h2 {
 
 .art-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -725,6 +725,14 @@ h2 {
 .p2 {
   --portrait: url("assets/tal-judo-teacher.jpg");
   --portrait-position: center 35%;
+}
+
+.p3 {
+  --portrait: url("assets/ken-jiu-jitsu-teacher.webp");
+}
+
+.p4 {
+  --portrait: url("assets/arturo-youth-jiu-jitsu-teacher.webp");
 }
 
 .teacher-card a {
@@ -989,22 +997,34 @@ li::before {
   right: 34px;
   bottom: 30px;
   z-index: 45;
+  isolation: isolate;
   display: flex;
-  min-height: 68px;
+  min-height: 72px;
   align-items: center;
   gap: 12px;
-  padding: 0 22px 0 17px;
+  padding: 0 24px 0 18px;
   border: 1px solid rgba(245, 241, 232, 0.48);
-  border-radius: 34px;
+  border-radius: 999px;
   background: #237a45;
   color: #fff;
   box-shadow: 0 12px 34px rgba(18, 18, 18, 0.28);
   font-family: Inter, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 800;
   letter-spacing: 0;
   text-decoration: none;
-  animation: whatsappIn 900ms ease 800ms both;
+  animation: whatsappIn 900ms ease 800ms backwards;
+  transition: background 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.whatsapp::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  border-radius: inherit;
+  pointer-events: none;
+  animation: whatsappPulse 2.8s ease-out 1.8s infinite;
 }
 
 .whatsapp svg {
@@ -1023,6 +1043,12 @@ li::before {
   transform: translateY(-2px);
 }
 
+.whatsapp:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 4px;
+  box-shadow: 0 0 0 8px rgba(35, 122, 69, 0.32), 0 12px 34px rgba(18, 18, 18, 0.28);
+}
+
 @keyframes whatsappIn {
   from {
     opacity: 0;
@@ -1031,6 +1057,19 @@ li::before {
   to {
     opacity: 1;
     transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes whatsappPulse {
+  0%,
+  36%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(35, 122, 69, 0.46);
+    opacity: 0.9;
+  }
+  72% {
+    box-shadow: 0 0 0 17px rgba(35, 122, 69, 0);
+    opacity: 0;
   }
 }
 
@@ -1087,7 +1126,7 @@ li::before {
   }
 
   .art-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .schedule-pricing {
@@ -1353,22 +1392,21 @@ li::before {
   }
 
   .whatsapp {
-    right: 18px;
-    bottom: 18px;
-    width: 64px;
-    min-height: 64px;
-    padding: 0;
+    right: 12px;
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+    width: auto;
+    max-width: calc(100vw - 24px);
+    min-height: 68px;
+    gap: 10px;
+    padding: 0 18px 0 15px;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 999px;
+    font-size: 13px;
   }
 
-  .whatsapp span {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
+  .whatsapp svg {
+    width: 36px;
+    flex-basis: 36px;
   }
 }
 
@@ -1386,5 +1424,14 @@ li::before {
     opacity: 1;
     transform: none;
     clip-path: none;
+  }
+
+  .whatsapp {
+    animation: none;
+  }
+
+  .whatsapp::before {
+    display: none;
+    animation: none;
   }
 }
