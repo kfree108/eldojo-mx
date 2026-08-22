@@ -758,6 +758,10 @@ h2 {
   font-size: clamp(2rem, 3vw, 3.1rem);
 }
 
+.schedule-block {
+  min-width: 0;
+}
+
 .schedule-scroll-hint {
   display: none;
   margin: -14px 0 12px;
@@ -887,7 +891,7 @@ h2 {
   background: rgba(255, 253, 247, 0.92);
 }
 
-.weekly-class time {
+.weekly-class .class-time {
   color: var(--moss-dark);
   font-family: var(--serif);
   font-size: 0.74rem;
