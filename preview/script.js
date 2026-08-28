@@ -15,6 +15,67 @@ let currentLang = "es";
 
 const translations = {
   es: {
+    "nav.visitors": "Visitantes",
+    "nav.guides": "Guías",
+    "cta.book": "Agenda tu clase",
+    "cta.team": "Conoce a todo nuestro equipo",
+    "hero.h1a": "Artes marciales",
+    "hero.h1b": "para todos",
+    "hero.audience": "Niños · Mujeres · Hombres · Todos los niveles",
+    "hero.disciplines": "Jiu Jitsu · Judo · Aikido · Lucha",
+    "values.titleA": "El camino hacia",
+    "values.titleB": "el dominio personal",
+    "values.copy":
+      "En El Dojo cultivamos el cuerpo, la mente y el carácter a través de las artes marciales. Más que técnicas, enseñamos valores que te acompañan dentro y fuera del tatami, para que seas tu mejor versión cada día.",
+    "values.bushido":
+      "Nuestra práctica está inspirada en el Bushido, «el camino del guerrero»: justicia, valor, compasión, respeto, sinceridad, honor, lealtad y autodominio.",
+    "value.respect.title": "Respeto",
+    "value.respect.copy": "Reconocemos el valor de los demás y de nuestro entorno.",
+    "value.courage.title": "Valor",
+    "value.courage.copy": "Enfrentamos los retos con determinación y honestidad.",
+    "value.compassion.title": "Compasión",
+    "value.compassion.copy": "Entrenamos la empatía y el apoyo mutuo en cada acción.",
+    "value.selfcontrol.title": "Autodominio",
+    "value.selfcontrol.copy": "Controlamos impulsos para tomar mejores decisiones.",
+    "virtues.label": "Las ocho virtudes del Bushido",
+    "art.bjj.short": "Técnica, control y estrategia para la defensa personal.",
+    "art.judo.short": "Equilibrio, proyección y respeto para superar cualquier reto.",
+    "art.aikido.short": "Armonía, energía y movimiento en perfecta coordinación.",
+    "art.wrestling.name": "Lucha",
+    "art.wrestling.short": "Fortaleza, resistencia y técnica para el combate cuerpo a cuerpo.",
+    "audience.titleA": "Encuentra",
+    "audience.titleB": "tu clase",
+    "audience.kids": "Niños",
+    "audience.teens": "Jóvenes",
+    "audience.adults": "Adultos",
+    "audience.chip": "Principiantes bienvenidos",
+    "audience.hint": "Toca un grupo para ver sus clases marcadas en el horario.",
+    "audience.photo.alt": "Interior del dojo con tatami y estructura de madera",
+    "dojo.exterior.alt": "Exterior iluminado de El Dojo por la noche",
+    "schedule.heading": "Horario semanal",
+    "schedule.openMatShort": "Open Mat",
+    "schedule.asideTitle": "Consulta los horarios actualizados",
+    "schedule.asideCta": "Ver actualizaciones",
+    "day.mon.short": "Lun",
+    "day.tue.short": "Mar",
+    "day.wed.short": "Mié",
+    "day.thu.short": "Jue",
+    "day.fri.short": "Vie",
+    "day.sat.short": "Sáb",
+    "teachers.heading": "Maestros y guías",
+    "family.titleA": "Más que un dojo,",
+    "family.titleB": "una familia.",
+    "family.copy":
+      "Entrenamos juntos, crecemos juntos y celebramos cada logro como equipo. Aquí siempre habrá un lugar para ti.",
+    "pricing.heading": "Elige tu plan",
+    "pricing.dropinName": "Clase suelta",
+    "pricing.monthlyName": "Mensualidad",
+    "pricing.semesterName": "6 meses",
+    "pricing.scholarships": "Becas disponibles",
+    "contact.heading": "Ven a conocernos",
+    "footer.visit": "Entrena de visita",
+    "footer.guide1": "Qué hacer en Valle de Bravo",
+    "footer.guide2": "Valle de Bravo cuando llueve",
     "nav.home": "Inicio",
     "nav.about": "Quiénes somos",
     "nav.arts": "Artes marciales",
@@ -32,10 +93,9 @@ const translations = {
     "cta.learn": "Conocer arte",
     "cta.profile": "Ver perfil",
     "cta.plan": "Elegir plan",
-    "cta.whatsapp": "Habla con Ken",
-    "whatsapp.coach": "Habla con Ken",
-    "whatsapp.chat": "Chatea con nosotros",
-    "whatsapp.aria": "Chatea con nosotros por WhatsApp",
+    "cta.whatsapp": "Habla con Coach Arturo",
+    "whatsapp.coach": "Habla con Coach Arturo",
+    "whatsapp.aria": "Habla con Coach Arturo por WhatsApp",
     "kicker.philosophy": "01 / Filosofía",
     "philosophy.title": "Inspirado en Bushido,<br />el camino del guerrero.",
     "philosophy.copy":
@@ -138,10 +198,71 @@ const translations = {
     "kicker.contact": "07 / Contacto",
     "contact.title": "Agenda una visita",
     "contact.copy":
-      "Escríbenos por WhatsApp y con gusto te ayudamos a elegir la disciplina y el horario ideales para comenzar.",
+      "Habla directamente con Coach Arturo por WhatsApp. Él te ayudará a elegir la disciplina y el horario ideales para comenzar.",
     "footer.copy": "Club de artes marciales<br />Valle de Bravo",
   },
   en: {
+    "nav.visitors": "Visitors",
+    "nav.guides": "Guides",
+    "cta.book": "Book your class",
+    "cta.team": "Meet the whole team",
+    "hero.h1a": "Martial arts",
+    "hero.h1b": "for everyone",
+    "hero.audience": "Kids · Women · Men · All levels",
+    "hero.disciplines": "Jiu Jitsu · Judo · Aikido · Wrestling",
+    "values.titleA": "The path to",
+    "values.titleB": "personal mastery",
+    "values.copy":
+      "At El Dojo we train the body, the mind and the character through martial arts. Beyond technique, we teach values that stay with you on and off the mat, so you can be your best self every day.",
+    "values.bushido":
+      "Our practice is inspired by Bushido, \u201cthe way of the warrior\u201d: justice, courage, compassion, respect, sincerity, honour, loyalty and self-control.",
+    "value.respect.title": "Respect",
+    "value.respect.copy": "We honour the worth of others and of the place we train in.",
+    "value.courage.title": "Courage",
+    "value.courage.copy": "We meet challenges with determination and honesty.",
+    "value.compassion.title": "Compassion",
+    "value.compassion.copy": "We train empathy and mutual support in every action.",
+    "value.selfcontrol.title": "Self-control",
+    "value.selfcontrol.copy": "We master impulse so we can make better decisions.",
+    "virtues.label": "The eight virtues of Bushido",
+    "art.bjj.short": "Technique, control and strategy for self-defence.",
+    "art.judo.short": "Balance, throws and respect to overcome any challenge.",
+    "art.aikido.short": "Harmony, energy and movement in perfect coordination.",
+    "art.wrestling.name": "Wrestling",
+    "art.wrestling.short": "Strength, endurance and technique for close combat.",
+    "audience.titleA": "Find",
+    "audience.titleB": "your class",
+    "audience.kids": "Kids",
+    "audience.teens": "Youth",
+    "audience.adults": "Adults",
+    "audience.chip": "Beginners welcome",
+    "audience.hint": "Tap a group to highlight its classes in the schedule.",
+    "audience.photo.alt": "Inside the dojo: tatami and timber structure",
+    "dojo.exterior.alt": "El Dojo lit up at night from the outside",
+    "schedule.heading": "Weekly schedule",
+    "schedule.openMatShort": "Open Mat",
+    "schedule.asideTitle": "Check the latest schedule updates",
+    "schedule.asideCta": "See updates",
+    "day.mon.short": "Mon",
+    "day.tue.short": "Tue",
+    "day.wed.short": "Wed",
+    "day.thu.short": "Thu",
+    "day.fri.short": "Fri",
+    "day.sat.short": "Sat",
+    "teachers.heading": "Teachers and guides",
+    "family.titleA": "More than a dojo,",
+    "family.titleB": "a family.",
+    "family.copy":
+      "We train together, we grow together and we celebrate every milestone as a team. There will always be a place for you here.",
+    "pricing.heading": "Choose your plan",
+    "pricing.dropinName": "Drop-in class",
+    "pricing.monthlyName": "Monthly",
+    "pricing.semesterName": "6 months",
+    "pricing.scholarships": "Scholarships available",
+    "contact.heading": "Come and meet us",
+    "footer.visit": "Train as a visitor",
+    "footer.guide1": "What to do in Valle de Bravo",
+    "footer.guide2": "Valle de Bravo when it rains",
     "nav.home": "Home",
     "nav.about": "About",
     "nav.arts": "Martial arts",
@@ -159,10 +280,9 @@ const translations = {
     "cta.learn": "Learn more",
     "cta.profile": "View profile",
     "cta.plan": "Choose plan",
-    "cta.whatsapp": "Talk to Ken",
-    "whatsapp.coach": "Talk to Ken",
-    "whatsapp.chat": "Chat with us",
-    "whatsapp.aria": "Chat with us on WhatsApp",
+    "cta.whatsapp": "Talk to Coach Arturo",
+    "whatsapp.coach": "Talk to Coach Arturo",
+    "whatsapp.aria": "Talk to Coach Arturo on WhatsApp",
     "kicker.philosophy": "01 / Philosophy",
     "philosophy.title": "Inspired by Bushido,<br />the way of the warrior.",
     "philosophy.copy":
@@ -265,7 +385,7 @@ const translations = {
     "kicker.contact": "07 / Contact",
     "contact.title": "Schedule a visit",
     "contact.copy":
-      "Message us on WhatsApp and we will gladly help you choose the right discipline and schedule to get started.",
+      "Talk directly with Coach Arturo on WhatsApp. He will help you choose the right discipline and schedule to begin.",
     "footer.copy": "Martial arts club<br />Valle de Bravo",
   },
 };
@@ -368,6 +488,10 @@ const setLanguage = (lang) => {
   document.querySelectorAll("[data-i18n-aria]").forEach((node) => {
     const value = dictionary[node.dataset.i18nAria];
     if (value) node.setAttribute("aria-label", value);
+  });
+  document.querySelectorAll("[data-i18n-alt]").forEach((node) => {
+    const value = dictionary[node.dataset.i18nAlt];
+    if (value) node.setAttribute("alt", value);
   });
   langButtons.forEach((button) => {
     button.classList.toggle("active", button.dataset.lang === lang);
@@ -494,28 +618,31 @@ setLanguage(localStorage.getItem("eldojo-lang") || "es");
 onScroll();
 
 
-/* Floating chat bubble: some browsers need an explicit play() after the clip is
-   ready, and we fall back to the poster frame if the video cannot play at all. */
-const chatVideo = document.querySelector(".chat-widget-video");
-if (chatVideo) {
-  const playChatVideo = () => {
-    chatVideo.muted = true;
-    const played = chatVideo.play();
-    if (played && typeof played.catch === "function") {
-      played.catch(() => {
-        if (chatVideo.error) chatVideo.style.display = "none";
-      });
+/* ---- "Encuentra tu clase" -> highlight matching classes in the schedule ---- */
+const audienceCards = [...document.querySelectorAll("[data-audience-group] .audience-card")];
+const scheduleSection = document.querySelector(".schedule");
+const scheduleChips = [...document.querySelectorAll(".weekly-schedule .chip")];
+let activeAudience = null;
+
+const applyAudience = (audience) => {
+  activeAudience = audience;
+  audienceCards.forEach((card) => {
+    card.classList.toggle("selected", card.dataset.audience === audience);
+  });
+  if (!scheduleSection) return;
+  scheduleSection.classList.toggle("filtering", Boolean(audience));
+  scheduleChips.forEach((chip) => {
+    const groups = (chip.dataset.audience || "").split(/\s+/);
+    chip.classList.toggle("match", Boolean(audience) && groups.includes(audience));
+  });
+};
+
+audienceCards.forEach((card) => {
+  card.addEventListener("click", () => {
+    const next = activeAudience === card.dataset.audience ? null : card.dataset.audience;
+    applyAudience(next);
+    if (next) {
+      document.getElementById("horario")?.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-  };
-  chatVideo.addEventListener("error", () => {
-    chatVideo.style.display = "none";
   });
-  if (chatVideo.readyState >= 2) {
-    playChatVideo();
-  } else {
-    chatVideo.addEventListener("canplay", playChatVideo, { once: true });
-  }
-  document.addEventListener("visibilitychange", () => {
-    if (!document.hidden) playChatVideo();
-  });
-}
+});
