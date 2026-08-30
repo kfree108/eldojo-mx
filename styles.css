@@ -1245,6 +1245,15 @@ li::before {
   object-fit: cover;
   object-position: center;
   border: 0;
+  /* iOS swallows a tap that lands on a <video> inside a link, so the coach's
+     face — the obvious thing to tap — did nothing. Every part of the widget
+     must pass its tap through to the anchor. */
+  pointer-events: none;
+}
+
+.chat-widget-avatar,
+.chat-widget-media {
+  pointer-events: none;
 }
 
 .chat-widget-online {
@@ -1497,7 +1506,10 @@ li::before {
   }
 
   .hero {
-    min-height: 760px;
+    /* Was pinned to 760px, which left ~200px of empty gradient under the
+       buttons — the scroll arrow that used to fill it is hidden on phones.
+       Let the hero end where its content ends. */
+    min-height: 0;
     margin-top: 24px;
     background: linear-gradient(145deg, var(--paper) 0%, #dfcdb0 72%, #b99b77 100%);
   }
