@@ -60,6 +60,10 @@
   .err{background:#fdecea;border:1px solid var(--rust);color:#8f2f19;border-radius:7px;
     padding:11px 13px;font-size:.86rem;margin-top:14px;display:none}
   .err.on{display:block}
+  .ok{background:#eaf7ef;border:1px solid #237a45;color:#14532d;border-radius:7px;
+    padding:12px 14px;font-size:.88rem;margin-top:14px;display:none;font-weight:600}
+  .ok.on{display:block}
+  .btn[disabled]{opacity:.55;pointer-events:none}
   footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--soft);
     font-size:.76rem;color:#66727e;text-align:center}
   .declar{background:var(--paper-2);border-radius:8px;padding:14px 16px;font-weight:600;margin:20px 0 0}
@@ -251,10 +255,12 @@
   </div>
 
   <div class="err" id="err"></div>
+  <div class="ok" id="ok"></div>
 
   <div class="actions noprint">
-    <button class="btn primary" id="save">Guardar mi copia en PDF</button>
-    <a class="btn wa" id="wa" href="#">Enviar mis datos al dojo por WhatsApp</a>
+    <button class="btn primary" id="send">Firmar y enviar al dojo</button>
+    <button class="btn ghost" id="save">Guardar mi copia en PDF</button>
+    <a class="btn wa" id="wa" href="#" style="display:none">Enviarla por WhatsApp</a>
     <a class="btn ghost" href="/">Volver a eldojo.mx</a>
   </div>
 
@@ -341,6 +347,73 @@
   }
 
   $("save").addEventListener("click", function(){ if(guard()) window.print(); });
+
+  function payload(){
+    var ini = {};
+    ["i1","i2","i3","i4","i5","i6","i7"].forEach(function(id, n){ ini[n+1] = $(id).value.trim(); });
+    return {
+      nombre: $("nombre").value.trim(),
+      nacimiento: $("nacimiento").value,
+      tel: $("tel").value.trim(),
+      domicilio: $("domicilio").value.trim(),
+      correo: $("correo").value.trim(),
+      ine: $("ine").value.trim(),
+      emerg: $("emerg").value.trim(),
+      emergTel: $("emergTel").value.trim(),
+      medico: $("medico").value.trim(),
+      menor: $("minorBox").classList.contains("on"),
+      tutor: $("tutor").value.trim(),
+      tutorTel: $("tutorTel").value.trim(),
+      iniciales: ini,
+      lugar: $("lugar").value.trim(),
+      fecha: $("fecha").value,
+      firma_png: hasInk ? c.toDataURL("image/png") : "",
+      agente: navigator.userAgent.slice(0, 120)
+    };
+  }
+
+  // Where the dojo receives it. Published separately so the address can be
+  // changed without touching this page.
+  function endpoint(){
+    return fetch("/waiver/endpoint.json?t=" + Date.now())
+      .then(function(r){ return r.json(); })
+      .then(function(j){ return j.url; });
+  }
+
+  $("send").addEventListener("click", function(){
+    if(!guard()) return;
+    var btn = this;
+    btn.disabled = true; btn.textContent = "Enviando…";
+    $("ok").className = "ok"; $("err").className = "err";
+
+    endpoint()
+      .then(function(url){
+        return fetch(url, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload())
+        });
+      })
+      .then(function(r){ return r.ok ? r.json() : Promise.reject(new Error("http " + r.status)); })
+      .then(function(j){
+        if(!j.ok) throw new Error(j.error || "rechazada");
+        $("ok").className = "ok on";
+        $("ok").textContent = "✓ Listo, ya la recibimos en el dojo. Guarda también tu copia en PDF si quieres.";
+        btn.textContent = "Enviada ✓";
+        $("save").className = "btn primary";
+        window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+      })
+      .catch(function(){
+        // The record must never be lost just because the desk machine is off.
+        $("err").className = "err on";
+        $("err").innerHTML = "No pudimos guardarla automáticamente. " +
+          "Toca <strong>Enviarla por WhatsApp</strong> aquí abajo y guarda tu PDF — " +
+          "así queda registrada igual.";
+        $("wa").style.display = "block";
+        btn.disabled = false; btn.textContent = "Reintentar envío";
+        window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+      });
+  });
 
   $("wa").addEventListener("click", function(e){
     e.preventDefault();
