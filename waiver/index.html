@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carta Responsiva · El Dojo</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --paper:#f5f1e8; --paper-2:#efe8da; --ink:#16202b; --navy:#14293f;
+    --rust:#b8442a; --teal:#1a6a67; --line:rgba(20,41,63,.2);
+    --soft:rgba(20,41,63,.11);
+    --serif:"Cormorant Garamond",Georgia,serif; --sans:"Inter",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+    font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:720px;margin:0 auto;padding:22px 18px 80px}
+  header{text-align:center;padding-bottom:18px;border-bottom:2px solid var(--navy);margin-bottom:22px}
+  header img{width:150px;margin:0 auto 10px;display:block}
+  h1{font-family:var(--serif);font-size:1.6rem;margin:0;color:var(--navy);line-height:1.15}
+  .sub{margin:6px 0 0;font-size:.82rem;color:#5b6672;letter-spacing:.03em}
+  .alert{background:#fff8e6;border:1px solid #e6c65c;border-left:4px solid #e6c65c;
+    border-radius:6px;padding:12px 14px;font-size:.86rem;margin:0 0 22px}
+  h2{font-family:var(--serif);font-size:1.12rem;color:var(--navy);margin:26px 0 8px}
+  .clause{background:#fbf8f1;border:1px solid var(--soft);border-radius:8px;padding:14px 16px;margin:0 0 14px}
+  .clause p{margin:0 0 8px}
+  .clause ol,.clause ul{margin:6px 0 8px;padding-left:20px}
+  .clause li{margin:3px 0}
+  .ini{display:flex;align-items:center;gap:10px;margin-top:10px;padding-top:10px;
+    border-top:1px dashed var(--soft)}
+  .ini label{font-size:.78rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--navy)}
+  .ini input{width:86px;padding:7px 9px;border:1.5px solid var(--line);border-radius:6px;
+    text-transform:uppercase;font-weight:700;text-align:center;font-family:var(--sans)}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}}
+  .f{display:flex;flex-direction:column;gap:5px}
+  .f label{font-size:.74rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#46525f}
+  .f input,.f textarea,.f select{padding:10px 11px;border:1.5px solid var(--line);
+    border-radius:7px;font-family:var(--sans);font-size:15px;background:#fff;color:var(--ink)}
+  .f textarea{min-height:74px;resize:vertical}
+  .f input:focus,.f textarea:focus{outline:2px solid var(--teal);outline-offset:1px}
+  .full{grid-column:1/-1}
+  #minorBox{display:none;border:1px solid var(--rust);border-radius:8px;padding:14px 16px;margin-top:14px;background:#fdf3f0}
+  #minorBox.on{display:block}
+  .sigwrap{border:1.5px solid var(--line);border-radius:8px;background:#fff;touch-action:none}
+  canvas{display:block;width:100%;height:170px;border-radius:8px;touch-action:none}
+  .sigbar{display:flex;justify-content:space-between;align-items:center;margin-top:6px;font-size:.78rem;color:#5b6672}
+  .sigbar button{background:none;border:0;color:var(--rust);font-weight:700;cursor:pointer;font-size:.78rem}
+  .actions{display:flex;flex-direction:column;gap:10px;margin-top:26px}
+  .btn{display:block;width:100%;padding:15px 18px;border:2px solid transparent;border-radius:8px;
+    font-family:var(--sans);font-size:15px;font-weight:700;letter-spacing:.02em;text-align:center;
+    cursor:pointer;text-decoration:none}
+  .btn.primary{background:var(--rust);color:#fff}
+  .btn.wa{background:#237a45;color:#fff}
+  .btn.ghost{background:transparent;border-color:var(--navy);color:var(--navy)}
+  .err{background:#fdecea;border:1px solid var(--rust);color:#8f2f19;border-radius:7px;
+    padding:11px 13px;font-size:.86rem;margin-top:14px;display:none}
+  .err.on{display:block}
+  footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--soft);
+    font-size:.76rem;color:#66727e;text-align:center}
+  .declar{background:var(--paper-2);border-radius:8px;padding:14px 16px;font-weight:600;margin:20px 0 0}
+
+  @media print{
+    body{background:#fff;font-size:11px}
+    .wrap{max-width:none;padding:0}
+    .noprint,.actions,.alert,.err{display:none !important}
+    .clause{break-inside:avoid;background:#fff;border:1px solid #ccc}
+    .f input,.f textarea{border:0;border-bottom:1px solid #333;border-radius:0;padding:2px 0}
+    canvas{border:1px solid #333}
+    header{border-bottom:1px solid #000}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img src="/assets/el-dojo-logo-geometric-navy.png" alt="El Dojo">
+    <h1>Carta Responsiva, Consentimiento Informado<br>y Liberación de Responsabilidad</h1>
+    <p class="sub">Huizaches 22 · San Mateo Acatitlán · Valle de Bravo, Estado de México</p>
+  </header>
+
+  <p class="alert noprint"><strong>Lea este documento completo antes de firmar.</strong>
+     Es un documento legal que afecta sus derechos. Ponga sus iniciales en cada
+     cláusula, firme al final y guarde o envíe su copia.</p>
+
+  <h2>Datos del participante</h2>
+  <div class="grid">
+    <div class="f full"><label>Nombre completo</label><input id="nombre" autocomplete="name"></div>
+    <div class="f"><label>Fecha de nacimiento</label><input id="nacimiento" type="date"></div>
+    <div class="f"><label>Teléfono</label><input id="tel" type="tel" inputmode="tel"></div>
+    <div class="f full"><label>Domicilio</label><input id="domicilio"></div>
+    <div class="f"><label>Correo electrónico</label><input id="correo" type="email" inputmode="email"></div>
+    <div class="f"><label>Identificación oficial</label><input id="ine" placeholder="INE / pasaporte"></div>
+    <div class="f"><label>Contacto de emergencia</label><input id="emerg"></div>
+    <div class="f"><label>Teléfono de emergencia</label><input id="emergTel" type="tel" inputmode="tel"></div>
+    <div class="f full"><label>Condiciones médicas, lesiones previas, alergias o medicamentos que deban conocerse</label>
+      <textarea id="medico" placeholder="Escriba «ninguna» si no aplica"></textarea></div>
+  </div>
+
+  <div id="minorBox">
+    <strong>El participante es menor de edad.</strong> Debe firmar el padre, madre o tutor.
+    <div class="grid" style="margin-top:10px">
+      <div class="f"><label>Nombre del padre, madre o tutor</label><input id="tutor"></div>
+      <div class="f"><label>Teléfono del tutor</label><input id="tutorTel" type="tel" inputmode="tel"></div>
+    </div>
+  </div>
+
+  <h2>Primera. Naturaleza de la actividad</h2>
+  <div class="clause">
+    <p>EL PARTICIPANTE manifiesta que desea participar de forma libre y voluntaria en las
+    actividades impartidas por EL DOJO, que incluyen de manera enunciativa mas no limitativa:
+    jiu jitsu brasileño, judo, aikido, lucha (grappling), sparring, rodadas (rolling),
+    acondicionamiento físico y uso de las instalaciones y equipo.</p>
+    <p>Reconoce que se trata de <strong>actividades de contacto físico directo y de alta
+    exigencia física</strong>, en las que existe contacto intencional entre practicantes,
+    incluyendo llaves, estrangulaciones, palancas, proyecciones y derribos.</p>
+    <div class="ini"><label>Iniciales</label><input class="in" maxlength="4" id="i1"></div>
+  </div>
+
+  <h2>Segunda. Declaración de aptitud física y médica</h2>
+  <div class="clause">
+    <p>EL PARTICIPANTE declara bajo protesta de decir verdad que:</p>
+    <ol type="a">
+      <li>Se encuentra en condiciones físicas y de salud adecuadas para realizar las actividades descritas;</li>
+      <li>No padece enfermedad, lesión, condición cardiaca, respiratoria, ósea, articular o de
+          cualquier otra naturaleza que le impida participar o que se agrave con el ejercicio
+          físico intenso, salvo lo declarado por escrito arriba;</li>
+      <li>Ha consultado a un médico o asume voluntariamente la decisión de no hacerlo;</li>
+      <li>Se obliga a informar por escrito a EL DOJO de cualquier cambio en su estado de salud,
+          embarazo, cirugía, lesión o tratamiento médico posterior a la firma.</li>
+    </ol>
+    <div class="ini"><label>Iniciales</label><input class="in" maxlength="4" id="i2"></div>
+  </div>
+
+  <h2>Tercera. Asunción voluntaria de riesgos</h2>
+  <div class="clause">
+    <p>EL PARTICIPANTE conoce, comprende y acepta voluntariamente que las actividades conllevan
+    riesgos inherentes que no pueden eliminarse por completo, aun observando todas las medidas
+    de seguridad razonables. Dichos riesgos incluyen, de manera enunciativa mas no limitativa:</p>
+    <ol>
+      <li>Contusiones, raspaduras, cortaduras y hemorragias;</li>
+      <li>Esguinces, desgarres musculares, luxaciones y fracturas;</li>
+      <li>Lesiones articulares en rodillas, hombros, codos, cuello y columna vertebral;</li>
+      <li>Pérdida temporal del conocimiento derivada de estrangulaciones o golpes;</li>
+      <li>Lesiones craneoencefálicas o de columna, incluyendo daño neurológico;</li>
+      <li>Deshidratación, golpe de calor, eventos cardiovasculares o respiratorios;</li>
+      <li>Contagio de infecciones cutáneas (tiña, impétigo, herpes gladiatorum), virales o
+          bacterianas derivadas del contacto piel con piel o con superficies;</li>
+      <li>Lesiones ocasionadas por la conducta, impericia o descuido de otros participantes;</li>
+      <li>Incapacidad parcial o total, permanente o temporal, e incluso la muerte.</li>
+    </ol>
+    <p>Asume dichos riesgos de forma libre, informada y voluntaria, y confirma que su
+    participación no obedece a obligación, presión o coacción alguna.</p>
+    <div class="ini"><label>Iniciales</label><input class="in" maxlength="4" id="i3"></div>
+  </div>
+
+  <h2>Cuarta. Liberación de responsabilidad</h2>
+  <div class="clause">
+    <p>En la máxima medida permitida por la legislación aplicable, EL PARTICIPANTE libera a
+    EL DOJO, así como a sus socios, representantes legales, entrenadores, instructores,
+    empleados, arrendadores y demás practicantes, de toda responsabilidad civil, así como de
+    cualquier reclamación, demanda, acción, daño o perjuicio derivado de lesiones,
+    padecimientos, daño a bienes o pérdidas que sufra con motivo de:</p>
+    <ol type="a">
+      <li>Su participación en clases, entrenamientos, sparring, seminarios, competencias,
+          exhibiciones o eventos organizados por EL DOJO, dentro o fuera de sus instalaciones;</li>
+      <li>El uso de las instalaciones, equipo, colchonetas, vestidores, regaderas y áreas comunes;</li>
+      <li>La conducta, acción u omisión de otros participantes;</li>
+      <li>Su traslado hacia o desde las instalaciones o eventos.</li>
+    </ol>
+    <p>Esta liberación se extiende a sus herederos, causahabientes y representantes legales.</p>
+    <p><strong>Salvedad legal.</strong> Las partes reconocen expresamente que, conforme al
+    artículo 2106 del Código Civil Federal y sus correlativos en los códigos civiles estatales,
+    la presente liberación no ampara ni exime a EL DOJO de la responsabilidad derivada de dolo,
+    mala fe o negligencia grave. Ninguna disposición de este documento pretende limitar derechos
+    irrenunciables conforme a la ley.</p>
+    <div class="ini"><label>Iniciales</label><input class="in" maxlength="4" id="i4"></div>
+  </div>
+
+  <h2>Quinta. Reglamento y conducta</h2>
+  <div class="clause">
+    <p>EL PARTICIPANTE se obliga a:</p>
+    <ol>
+      <li>Acatar en todo momento las instrucciones de los instructores y el reglamento interno;</li>
+      <li>No participar bajo el influjo del alcohol, drogas o medicamentos que alteren sus capacidades;</li>
+      <li>Respetar de inmediato la señal de rendición (tap), verbal o física, propia o del compañero;</li>
+      <li>Abstenerse de aplicar técnicas para las que no ha sido autorizado conforme a su nivel;</li>
+      <li>Presentarse con higiene personal adecuada, uñas cortas y sin joyería;</li>
+      <li>Abstenerse de entrenar si presenta lesión cutánea, infección o enfermedad transmisible;</li>
+      <li>Reportar de inmediato al instructor cualquier lesión ocurrida durante la clase;</li>
+      <li>Utilizar el equipo de protección que le sea requerido.</li>
+    </ol>
+    <p>EL DOJO se reserva el derecho de suspender o dar por terminada la participación de quien
+    incumpla lo anterior, sin responsabilidad alguna.</p>
+    <div class="ini"><label>Iniciales</label><input class="in" maxlength="4" id="i5"></div>
+  </div>
+
+  <h2>Sexta. Atención médica de emergencia</h2>
+  <div class="clause">
+    <p>EL PARTICIPANTE autoriza a EL DOJO para que, en caso de emergencia y ante la
+    imposibilidad de obtener su consentimiento, solicite servicios médicos de urgencia, primeros
+    auxilios o traslado hospitalario en su nombre, aceptando cubrir los costos que ello genere.
+    EL DOJO no asume obligación de contar con personal médico en sitio.</p>
+    <div class="ini"><label>Iniciales</label><input class="in" maxlength="4" id="i6"></div>
+  </div>
+
+  <h2>Séptima. Autorización de uso de imagen</h2>
+  <div class="clause">
+    <p>EL PARTICIPANTE autoriza expresamente a EL DOJO a captar, reproducir y utilizar su
+    imagen, voz y semejanza en fotografías, videos y grabaciones tomadas durante clases,
+    entrenamientos, eventos, seminarios o competencias, con fines de promoción y difusión en
+    redes sociales, sitio web, material publicitario y comunicaciones de EL DOJO, en cualquier
+    medio y formato, sin límite territorial y sin contraprestación alguna.</p>
+    <p>EL DOJO se obliga a no utilizar el material en contextos difamatorios, denigrantes u
+    ofensivos. Si no desea aparecer en dicho material, escriba <strong>«NO AUTORIZO»</strong>
+    en el espacio de iniciales de esta cláusula.</p>
+    <div class="ini"><label>Iniciales</label><input class="in" maxlength="12" id="i7"></div>
+  </div>
+
+  <h2>Disposiciones generales</h2>
+  <div class="clause">
+    <p><strong>Divisibilidad.</strong> Si alguna cláusula fuere declarada nula o inaplicable por
+    autoridad competente, las demás conservarán plena validez y fuerza legal.</p>
+    <p><strong>Vigencia.</strong> Este documento permanecerá vigente durante toda la relación de
+    EL PARTICIPANTE con EL DOJO, aplicando a cada visita, clase o evento, sin necesidad de
+    renovarse, salvo que se revoque por escrito.</p>
+    <p><strong>Ley y jurisdicción.</strong> Para su interpretación y cumplimiento, las partes se
+    someten a las leyes aplicables y a los tribunales competentes de Valle de Bravo, Estado de
+    México, renunciando a cualquier otro fuero.</p>
+  </div>
+
+  <p class="declar">He leído íntegramente este documento, comprendo su contenido y alcance legal,
+  se me permitió formular preguntas, y lo firmo de manera libre, voluntaria y sin coacción
+  alguna, en pleno uso de mis facultades.</p>
+
+  <h2>Firma</h2>
+  <div class="sigwrap"><canvas id="sig"></canvas></div>
+  <div class="sigbar">
+    <span id="sigHint">Firme con el dedo dentro del recuadro</span>
+    <button type="button" id="clearSig">Borrar firma</button>
+  </div>
+
+  <div class="grid" style="margin-top:14px">
+    <div class="f"><label>Lugar</label><input id="lugar" value="Valle de Bravo, Edo. de México"></div>
+    <div class="f"><label>Fecha</label><input id="fecha" type="date"></div>
+  </div>
+
+  <div class="err" id="err"></div>
+
+  <div class="actions noprint">
+    <button class="btn primary" id="save">Guardar mi copia en PDF</button>
+    <a class="btn wa" id="wa" href="#">Enviar mis datos al dojo por WhatsApp</a>
+    <a class="btn ghost" href="/">Volver a eldojo.mx</a>
+  </div>
+
+  <footer>
+    El Dojo · Documento de uso interno. Conserve su copia firmada.<br>
+    Dudas: <a href="https://wa.me/5215547000332" style="color:var(--teal)">WhatsApp +52 55 4700 0332</a>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var $ = function(id){ return document.getElementById(id); };
+
+  // today's date, prefilled
+  var d = new Date(), pad = function(n){ return String(n).padStart(2,"0"); };
+  $("fecha").value = d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate());
+
+  // minor guardian block appears automatically
+  $("nacimiento").addEventListener("change", function(){
+    if(!this.value) return;
+    var b = new Date(this.value), age = (Date.now()-b)/31557600000;
+    $("minorBox").classList.toggle("on", age < 18);
+  });
+
+  // ---- signature pad (mouse + touch) ----
+  var c = $("sig"), ctx = c.getContext("2d"), drawing = false, hasInk = false;
+  function fit(){
+    var r = c.getBoundingClientRect(), dpr = window.devicePixelRatio || 1;
+    var data = hasInk ? c.toDataURL() : null;
+    c.width = r.width * dpr; c.height = r.height * dpr;
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+    ctx.lineWidth = 2.2; ctx.lineCap = "round"; ctx.lineJoin = "round";
+    ctx.strokeStyle = "#16202b";
+    if(data){ var i = new Image(); i.onload = function(){ ctx.drawImage(i,0,0,r.width,r.height); }; i.src = data; }
+  }
+  window.addEventListener("resize", fit); fit();
+
+  function pos(e){
+    var r = c.getBoundingClientRect();
+    var t = e.touches ? e.touches[0] : e;
+    return { x: t.clientX - r.left, y: t.clientY - r.top };
+  }
+  function start(e){ e.preventDefault(); drawing = true; var p = pos(e);
+    ctx.beginPath(); ctx.moveTo(p.x, p.y); }
+  function move(e){ if(!drawing) return; e.preventDefault(); var p = pos(e);
+    ctx.lineTo(p.x, p.y); ctx.stroke(); hasInk = true; $("sigHint").textContent = "Firma registrada"; }
+  function end(){ drawing = false; }
+  ["mousedown","touchstart"].forEach(function(ev){ c.addEventListener(ev, start, {passive:false}); });
+  ["mousemove","touchmove"].forEach(function(ev){ c.addEventListener(ev, move, {passive:false}); });
+  ["mouseup","mouseleave","touchend","touchcancel"].forEach(function(ev){ c.addEventListener(ev, end); });
+  $("clearSig").addEventListener("click", function(){
+    ctx.clearRect(0,0,c.width,c.height); hasInk = false;
+    $("sigHint").textContent = "Firme con el dedo dentro del recuadro";
+  });
+
+  // ---- validation ----
+  function missing(){
+    var out = [];
+    if(!$("nombre").value.trim()) out.push("nombre completo");
+    if(!$("nacimiento").value) out.push("fecha de nacimiento");
+    if(!$("tel").value.trim()) out.push("teléfono");
+    if(!$("emerg").value.trim() || !$("emergTel").value.trim()) out.push("contacto de emergencia");
+    if(!$("medico").value.trim()) out.push("condiciones médicas (escriba «ninguna» si no aplica)");
+    var faltan = [];
+    ["i1","i2","i3","i4","i5","i6","i7"].forEach(function(id, n){
+      if(!$(id).value.trim()) faltan.push(n+1);
+    });
+    if(faltan.length) out.push("iniciales en la(s) cláusula(s) " + faltan.join(", "));
+    if($("minorBox").classList.contains("on") && !$("tutor").value.trim())
+      out.push("nombre del padre, madre o tutor");
+    if(!hasInk) out.push("su firma");
+    return out;
+  }
+  function guard(){
+    var m = missing();
+    if(m.length){
+      $("err").className = "err on";
+      $("err").textContent = "Falta: " + m.join("; ") + ".";
+      $("err").scrollIntoView({behavior:"smooth", block:"center"});
+      return false;
+    }
+    $("err").className = "err";
+    return true;
+  }
+
+  $("save").addEventListener("click", function(){ if(guard()) window.print(); });
+
+  $("wa").addEventListener("click", function(e){
+    e.preventDefault();
+    if(!guard()) return;
+    var menor = $("minorBox").classList.contains("on");
+    var t = "CARTA RESPONSIVA — El Dojo%0A%0A" +
+      "Nombre: " + encodeURIComponent($("nombre").value) + "%0A" +
+      "Nacimiento: " + $("nacimiento").value + "%0A" +
+      "Teléfono: " + encodeURIComponent($("tel").value) + "%0A" +
+      (menor ? "Tutor: " + encodeURIComponent($("tutor").value + " · " + $("tutorTel").value) + "%0A" : "") +
+      "Emergencia: " + encodeURIComponent($("emerg").value + " · " + $("emergTel").value) + "%0A" +
+      "Médico: " + encodeURIComponent($("medico").value) + "%0A" +
+      "Firmada el " + $("fecha").value + " en " + encodeURIComponent($("lugar").value) + "%0A%0A" +
+      "Acepto las cláusulas 1 a 7 (iniciales puestas). Envío mi copia firmada en PDF.";
+    window.open("https://wa.me/5215547000332?text=" + t, "_blank", "noopener");
+  });
+})();
+</script>
+</body>
+</html>
