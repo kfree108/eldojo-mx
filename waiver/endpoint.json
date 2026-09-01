@@ -1,5 +1,5 @@
 {
-  "url": "https://vision-oxide-trinity-layer.trycloudflare.com/waiver",
-  "nota": "Endpoint donde la carta responsiva se guarda. El tunel de cloudflared cambia de URL cada vez que se reinicia: si eso pasa, actualiza esta linea y listo, la pagina la lee sola.",
-  "actualizado": "2026-08-31 15:11"
+  "url": "https://equality-detailed-saw-handles.trycloudflare.com/waiver",
+  "nota": "Donde se guarda la carta responsiva. El tunel de cloudflared cambia de URL al reiniciarse; si dejan de llegar cartas, es esto. Actualiza esta linea y listo.",
+  "actualizado": "2026-09-01 17:59"
 }
