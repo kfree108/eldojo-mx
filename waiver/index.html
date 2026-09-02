@@ -372,12 +372,36 @@
     };
   }
 
-  // Where the dojo receives it. Published separately so the address can be
-  // changed without touching this page.
-  function endpoint(){
+  // Primary: straight into the dojo's Supabase. The anon key can only INSERT
+  // into this one table (row-level security), so it is safe in a public page.
+  var SUPA_URL = "https://yzlfhvacjukrlhalqwbc.supabase.co";
+  var SUPA_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl6bGZodmFjanVrcmxoYWxxd2JjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODcxNTgxNDcsImV4cCI6MjEwMjczNDE0N30.mt6BTqLTbktOECFaoNpJiiehK2F64m34gcq18p_EKXg";
+  function saveToSupabase(p){
+    var row = {
+      nombre: p.nombre, nacimiento: p.nacimiento || null, menor: p.menor,
+      tutor: p.tutor || null, tutor_tel: p.tutorTel || null, tel: p.tel || null,
+      domicilio: p.domicilio || null, correo: p.correo || null, ine: p.ine || null,
+      emergencia: p.emerg || null, emergencia_tel: p.emergTel || null,
+      medico: p.medico || null, iniciales: p.iniciales, lugar: p.lugar || null,
+      fecha_firma: p.fecha || null, firma_png: p.firma_png || null,
+      origen: "web", agente: p.agente
+    };
+    return fetch(SUPA_URL + "/rest/v1/cartas_responsivas", {
+      method: "POST",
+      headers: { "apikey": SUPA_KEY, "Authorization": "Bearer " + SUPA_KEY,
+                 "Content-Type": "application/json", "Prefer": "return=minimal" },
+      body: JSON.stringify(row)
+    }).then(function(r){ if(!r.ok) throw new Error("supabase " + r.status); return true; });
+  }
+
+  // Secondary, best effort: the bot on the dojo Mac (disk copy + CRM card).
+  // Its address rotates, so a failure here is not a failure of the record.
+  function saveToDojoMac(p){
     return fetch("/waiver/endpoint.json?t=" + Date.now())
       .then(function(r){ return r.json(); })
-      .then(function(j){ return j.url; });
+      .then(function(j){ return fetch(j.url, { method: "POST",
+        headers: { "Content-Type": "application/json" }, body: JSON.stringify(p) }); })
+      .catch(function(){ /* optional */ });
   }
 
   $("send").addEventListener("click", function(){
@@ -386,17 +410,14 @@
     btn.disabled = true; btn.textContent = "Enviando…";
     $("ok").className = "ok"; $("err").className = "err";
 
-    endpoint()
-      .then(function(url){
-        return fetch(url, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload())
-        });
+    var p = payload();
+    saveToSupabase(p)
+      .then(function(){
+        saveToDojoMac(p);                 // fire and forget
+        return { ok: true };
       })
-      .then(function(r){ return r.ok ? r.json() : Promise.reject(new Error("http " + r.status)); })
       .then(function(j){
-        if(!j.ok) throw new Error(j.error || "rechazada");
+        if(!j.ok) throw new Error("rechazada");
         $("ok").className = "ok on";
         $("ok").textContent = "✓ Listo, ya la recibimos en el dojo. Guarda también tu copia en PDF si quieres.";
         btn.textContent = "Enviada ✓";
