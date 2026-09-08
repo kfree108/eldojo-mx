@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#14293f">
+<title>Empezar en El Dojo</title>
+<meta name="description" content="Cuéntanos para quién es y qué te interesa. Te contestamos por WhatsApp con los horarios que te sirven.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --ink:#16202b; --navy:#14293f; --rust:#b8442a; --teal:#1a6a67;
+  --paper:#f5f1e8; --paper-2:#efe8da; --paper-3:#e6dcc7;
+  --wood:#8b6b4a; --stone:#7f8a8f;
+  --line:rgba(20,41,63,.22); --soft:rgba(20,41,63,.10);
+  --display:"Anton","Haettenschweiler","Arial Narrow",sans-serif;
+  --cond:"Barlow Condensed","Arial Narrow",sans-serif;
+  --sans:"Inter",system-ui,-apple-system,sans-serif;
+  --notch:10px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;color:var(--ink);font-family:var(--sans);font-size:16.5px;line-height:1.6;
+  background:var(--paper);
+  background-image:
+    radial-gradient(circle at 18% 8%, rgba(139,107,74,.10), transparent 30rem),
+    radial-gradient(circle at 88% 42%, rgba(26,106,103,.07), transparent 26rem),
+    linear-gradient(155deg,var(--paper),#fbf8f0 44%,var(--paper-2));
+  background-attachment:fixed;-webkit-font-smoothing:antialiased}
+.grain{position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.30;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.86' numOctaves='3'/></filter><rect width='180' height='180' filter='url(%23n)' opacity='.45'/></svg>")}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--rust);outline-offset:2px}
+.shell{max-width:980px;margin:0 auto;padding:0 20px 40px}
+
+/* ---------- display type ---------- */
+h1,h2,h3,.dz{font-family:var(--display);font-weight:400;letter-spacing:.005em;text-wrap:balance;
+  text-transform:uppercase;line-height:.94;margin:0}
+.lab{font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.12em;line-height:1}
+
+/* ---------- notched plaque ---------- */
+.plaque{--c:var(--navy);position:relative;background:var(--paper-2);
+  clip-path:polygon(var(--notch) 0,calc(100% - var(--notch)) 0,100% var(--notch),
+    100% calc(100% - var(--notch)),calc(100% - var(--notch)) 100%,var(--notch) 100%,
+    0 calc(100% - var(--notch)),0 var(--notch));
+  box-shadow:inset 0 0 0 3px var(--c)}
+.plaque-in{padding:16px 18px}
+
+/* ---------- top bar ---------- */
+.bar{position:sticky;top:0;z-index:40;background:var(--navy);color:var(--paper);
+  border-bottom:4px solid var(--rust)}
+.bar .in{max-width:980px;margin:0 auto;padding:9px 20px;display:flex;align-items:center;gap:14px}
+.bar .mk{font-family:var(--cond);font-weight:700;font-size:12px;letter-spacing:.28em;
+  text-transform:uppercase;white-space:nowrap;opacity:.9}
+.bar .sp{flex:1;min-width:0}
+.pbar{height:9px;background:rgba(245,241,232,.20);position:relative;overflow:hidden;
+  border:1px solid rgba(245,241,232,.35)}
+.pbar i{position:absolute;inset:0 auto 0 0;width:0%;background:var(--teal);
+  transition:width .35s cubic-bezier(.2,.8,.2,1);display:block}
+.pnum{font-family:var(--cond);font-weight:700;font-size:12.5px;letter-spacing:.1em;
+  white-space:nowrap;text-transform:uppercase}
+.wa-mini{display:inline-flex;align-items:center;gap:6px;background:var(--teal);color:#fff;
+  font-family:var(--cond);font-weight:700;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;
+  padding:7px 12px;text-decoration:none;white-space:nowrap;border:2px solid rgba(245,241,232,.25)}
+.wa-mini:hover{background:#1f8079}
+@media(max-width:700px){.bar .mk{display:none}.wa-mini span{display:none}.wa-mini{padding:7px 9px}}
+
+/* ---------- cover ---------- */
+.cover{padding:34px 0 8px;text-align:center}
+.crest{font-family:var(--cond);font-weight:700;font-size:11.5px;letter-spacing:.3em;
+  text-transform:uppercase;color:var(--wood)}
+.rule-d{display:flex;align-items:center;gap:12px;justify-content:center;margin:14px 0}
+.rule-d::before,.rule-d::after{content:"";height:3px;background:var(--navy);flex:1;max-width:170px}
+.rule-d b{color:var(--rust);font-size:13px;letter-spacing:.32em}
+.cover h1{font-size:clamp(42px,9.2vw,84px);color:var(--navy);margin:6px 0 4px}
+.cover h1 em{font-style:normal;color:var(--rust)}
+.cover .sub{font-family:var(--cond);font-weight:700;font-size:clamp(15px,2.6vw,20px);
+  letter-spacing:.26em;text-transform:uppercase;color:var(--teal);margin:0 0 18px}
+.cover .lede{max-width:60ch;margin:0 auto 22px;font-size:17px;color:#2c3a46;text-align:left}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;
+  max-width:760px;margin:0 auto}
+.fx{--c:var(--teal)}
+.fx .plaque-in{padding:12px 10px;text-align:center}
+.fx dt{font-family:var(--cond);font-weight:700;font-size:10.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--stone);margin:0 0 3px}
+.fx dd{margin:0;font-family:var(--display);text-transform:uppercase;font-size:19px;color:var(--navy);line-height:1.05}
+
+/* ---------- section head ---------- */
+.sh{margin:44px 0 18px;text-align:center}
+.sh h2{font-size:clamp(25px,4.6vw,40px);color:var(--navy)}
+.sh p{max-width:62ch;margin:9px auto 0;color:#3a4650}
+
+/* ---------- track switch ---------- */
+.tracks{display:flex;gap:0;justify-content:center;margin:6px auto 26px;max-width:560px;
+  border:3px solid var(--navy);background:var(--paper-2)}
+.tracks button{flex:1;appearance:none;border:0;background:transparent;cursor:pointer;
+  font-family:var(--cond);font-weight:700;font-size:15px;letter-spacing:.12em;text-transform:uppercase;
+  padding:12px 8px;color:var(--navy);line-height:1.15}
+.tracks button+button{border-left:3px solid var(--navy)}
+.tracks button[aria-pressed="true"]{background:var(--navy);color:var(--paper)}
+.tracks button small{display:block;font-size:11px;letter-spacing:.06em;opacity:.72;font-weight:600}
+
+/* ---------- calendar ---------- */
+.cal{display:grid;grid-template-columns:repeat(auto-fit,minmax(214px,1fr));gap:12px}
+.wk{--c:var(--navy);text-decoration:none;display:block;color:inherit}
+.wk:nth-child(2){--c:var(--rust)} .wk:nth-child(3){--c:var(--teal)} .wk:nth-child(4){--c:var(--wood)}
+.wk .plaque-in{padding:0}
+.wk .hd{background:var(--c);color:var(--paper);padding:8px 12px;display:flex;
+  align-items:center;justify-content:space-between;gap:8px}
+.wk .hd .n{font-family:var(--display);font-size:15px;letter-spacing:.06em}
+.wk .hd .pc{font-family:var(--cond);font-weight:700;font-size:12px;letter-spacing:.08em}
+.wk .bd{padding:11px 12px 12px}
+.wk .bd h3{font-size:17px;color:var(--navy);margin-bottom:7px;line-height:1.06}
+.wk .days{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:9px}
+.wk .day-chip{font-family:var(--cond);font-weight:700;font-size:10.5px;letter-spacing:.1em;
+  text-transform:uppercase;border:2px solid var(--soft);padding:3px 7px;color:var(--stone)}
+.wk .meter{height:7px;background:var(--paper-3);position:relative;overflow:hidden}
+.wk .meter i{position:absolute;inset:0 auto 0 0;width:0;background:var(--c);transition:width .35s}
+.wk.is-done .hd{background:var(--teal)}
+.wk.is-done .hd .pc::after{content:" ✓"}
+
+/* ---------- week block ---------- */
+.week{margin:34px 0 0;--c:var(--navy)}
+.week[data-week="2"]{--c:var(--rust)} .week[data-week="3"]{--c:var(--teal)} .week[data-week="4"]{--c:var(--wood)}
+.week-hd{background:var(--c);color:var(--paper);padding:15px 18px 14px;
+  clip-path:polygon(var(--notch) 0,calc(100% - var(--notch)) 0,100% var(--notch),100% 100%,0 100%,0 var(--notch))}
+.week-hd .kick{font-family:var(--cond);font-weight:700;font-size:11.5px;letter-spacing:.24em;
+  text-transform:uppercase;opacity:.82}
+.week-hd h2{font-size:clamp(21px,3.6vw,31px);margin:5px 0 7px}
+.week-hd p{margin:0;font-size:15.4px;line-height:1.5;opacity:.94;max-width:72ch}
+.week-bd{border:3px solid var(--c);border-top:0;background:var(--paper-2)}
+.ses{border-bottom:3px solid var(--c)}
+.ses:last-child{border-bottom:0}
+.ses-hd{padding:12px 18px;background:rgba(20,41,63,.045);display:flex;gap:10px;
+  align-items:baseline;flex-wrap:wrap}
+.ses-hd .d{font-family:var(--display);font-size:15px;color:var(--c);letter-spacing:.05em}
+.ses-hd .w{font-size:14.4px;color:#4a555f;font-style:italic}
+
+/* ---------- technique card ---------- */
+.tec{border-top:1px dashed var(--line);padding:15px 18px 17px;display:grid;
+  grid-template-columns:36px 1fr;gap:0 13px;align-items:start;transition:background .2s}
+.tec:first-of-type{border-top:0}
+.chk{grid-row:1/99;appearance:none;border:0;background:transparent;padding:0;cursor:pointer;
+  width:32px;height:32px;position:relative;margin-top:1px}
+.chk::before{content:"";position:absolute;inset:0;border:3px solid var(--navy);background:var(--paper);
+  clip-path:polygon(6px 0,100% 0,100% calc(100% - 6px),calc(100% - 6px) 100%,0 100%,0 6px)}
+.chk::after{content:"✓";position:absolute;inset:0;display:grid;place-items:center;
+  font-size:20px;font-weight:800;color:var(--paper);opacity:0;transform:scale(.5)}
+.chk:hover::before{border-color:var(--teal)}
+.tec.done .chk::before{background:var(--teal);border-color:var(--teal)}
+.tec.done .chk::after{opacity:1;transform:scale(1);transition:.18s}
+.tec.done{background:rgba(26,106,103,.055)}
+.tec.done .th{color:var(--teal)}
+.th{font-family:var(--display);font-size:19.5px;color:var(--navy);line-height:1.06;
+  margin:0 0 3px;cursor:pointer}
+.tag-solo{display:inline-block;font-family:var(--cond);font-weight:700;font-size:10px;
+  letter-spacing:.14em;text-transform:uppercase;background:var(--teal);color:#fff;
+  padding:2px 7px;margin-left:7px;vertical-align:3px}
+.start{margin:0 0 9px;font-size:14.6px;color:var(--stone)}
+.steps{margin:0 0 11px;padding-left:20px;font-size:15.6px;color:#2f3b45}
+.steps li{margin:4px 0}
+.cue{display:block;background:var(--paper-3);border-left:5px solid var(--rust);
+  padding:9px 13px;margin:0 0 11px;font-size:15.4px;font-style:italic;color:#3a2a24}
+.vlink{display:inline-flex;align-items:center;gap:9px;text-decoration:none;background:var(--navy);
+  color:var(--paper);font-family:var(--cond);font-weight:700;font-size:12.5px;letter-spacing:.09em;
+  text-transform:uppercase;padding:8px 13px;max-width:100%;
+  clip-path:polygon(7px 0,100% 0,100% calc(100% - 7px),calc(100% - 7px) 100%,0 100%,0 7px)}
+.vlink:hover{background:var(--rust)}
+.vlink .tt{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0;
+  font-family:var(--sans);font-weight:500;letter-spacing:0;text-transform:none;font-size:12.5px;opacity:.92}
+.tec>div{min-width:0}
+.th,.start,.steps li,.cue{overflow-wrap:anywhere}
+
+/* ---------- session footer / game ---------- */
+.game{padding:14px 18px;background:rgba(26,106,103,.09);border-top:1px dashed var(--line);font-size:15.4px}
+.game b{display:block;font-family:var(--cond);font-weight:700;font-size:11px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--teal);margin-bottom:4px}
+.wk-done{padding:15px 18px;text-align:center;background:var(--paper-3)}
+.wk-done .lab{font-size:12px;color:var(--stone);display:block;margin-bottom:8px}
+.btn{display:inline-block;text-decoration:none;cursor:pointer;border:0;
+  font-family:var(--cond);font-weight:700;font-size:15px;letter-spacing:.11em;text-transform:uppercase;
+  padding:12px 22px;background:var(--rust);color:var(--paper);
+  clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px),calc(100% - 9px) 100%,0 100%,0 9px)}
+.btn:hover{background:#c94f33}
+.btn.teal{background:var(--teal)} .btn.teal:hover{background:#1f8079}
+.btn.ghost{background:transparent;color:var(--navy);box-shadow:inset 0 0 0 3px var(--navy)}
+.btn.ghost:hover{background:var(--navy);color:var(--paper)}
+
+/* ---------- rules / stop ---------- */
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.rule{--c:var(--teal)}
+.rule h3{font-size:18px;color:var(--navy);margin-bottom:5px}
+.rule p{margin:0;font-size:15.2px;color:#3a4650}
+.stop{--c:var(--rust);margin-top:14px}
+.stop h3{font-size:20px;color:var(--rust);margin-bottom:8px}
+.stop ul{margin:0;padding-left:20px;font-size:15.4px}
+.stop li{margin:5px 0}
+
+/* ---------- table ---------- */
+.tw{overflow-x:auto;border:3px solid var(--navy);background:var(--paper-2)}
+table{border-collapse:collapse;width:100%;font-size:15px;min-width:480px}
+th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--soft)}
+th{font-family:var(--cond);font-weight:700;font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  background:var(--navy);color:var(--paper)}
+tr:last-child td{border-bottom:0}
+td.n{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:600}
+
+/* ---------- closing CTA ---------- */
+.close{--c:var(--rust);margin-top:44px}
+.close .plaque-in{padding:0}
+.close .hd{background:var(--rust);color:var(--paper);text-align:center;padding:15px 18px}
+.close .hd h2{font-size:clamp(24px,4.4vw,38px)}
+.close .bd{padding:20px 20px 22px;text-align:center}
+.close .bd p{max-width:58ch;margin:0 auto 16px;color:#33404b}
+.btns{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.beca{margin-top:16px;background:var(--teal);color:var(--paper);padding:11px 16px;text-align:center}
+.beca .lab{font-size:17px;font-family:var(--display);letter-spacing:.06em;display:block}
+.beca span{font-size:14px;opacity:.92}
+
+/* ---------- foot ---------- */
+.band{margin-top:30px;height:46px;width:100%;display:block}
+.foot{padding:16px 0 8px;text-align:center;font-family:var(--cond);font-weight:600;
+  font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--stone)}
+.foot a{color:var(--navy)}
+.reset{background:none;border:0;color:var(--stone);font:inherit;cursor:pointer;text-decoration:underline}
+
+/* ---------- modal ---------- */
+.mo{position:fixed;inset:0;z-index:80;display:none;place-items:center;padding:20px;
+  background:rgba(20,41,63,.72)}
+.mo[open],.mo.on{display:grid}
+.mo-c{--c:var(--rust);max-width:480px;width:100%;background:var(--paper);position:relative;
+  clip-path:polygon(14px 0,calc(100% - 14px) 0,100% 14px,100% calc(100% - 14px),
+    calc(100% - 14px) 100%,14px 100%,0 calc(100% - 14px),0 14px);
+  box-shadow:inset 0 0 0 4px var(--rust),0 30px 70px rgba(20,41,63,.4)}
+.mo-hd{background:var(--rust);color:var(--paper);padding:14px 18px;text-align:center}
+.mo-hd .lab{font-size:11px;letter-spacing:.24em;opacity:.85;display:block;margin-bottom:5px}
+.mo-hd h3{font-size:clamp(21px,4.6vw,29px)}
+.mo-bd{padding:18px 20px 20px;text-align:center}
+.mo-bd p{margin:0 0 15px;font-size:16px;color:#33404b}
+.mo-x{background:none;border:0;color:var(--stone);font:inherit;cursor:pointer;
+  text-decoration:underline;font-size:14px;margin-top:12px;display:inline-block}
+
+@media(max-width:640px){
+  .shell{padding:0 14px 34px}
+  .tec{grid-template-columns:30px 1fr;gap:0 10px;padding:14px 14px 15px}
+  .chk{width:27px;height:27px}
+  .ses-hd,.game,.wk-done,.week-hd{padding-left:14px;padding-right:14px}
+  .cover .lede{font-size:16px}
+}
+@media print{
+  .bar,.mo,.tracks,.wa-mini,.btn,.band,.wk-done{display:none!important}
+  body{background:#fff}.grain{display:none}
+  .week,.tec,.plaque{break-inside:avoid}
+  .chk::before{border-color:#000}
+}
+
+body{font-size:17px}
+.shell{max-width:620px}
+.f-group{margin:0 0 20px}
+.f-lab{display:block;font-family:var(--cond);font-weight:700;font-size:12.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--navy);margin:0 0 8px}
+.f-lab span{color:var(--stone);letter-spacing:.04em;text-transform:none;font-size:12.5px;
+  font-weight:600;margin-left:6px}
+input[type=text],input[type=tel]{width:100%;font:inherit;font-size:17px;padding:14px 15px;
+  border:0;background:var(--paper-2);color:var(--ink);box-shadow:inset 0 0 0 3px var(--navy);
+  clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px),calc(100% - 9px) 100%,0 100%,0 9px)}
+input:focus{outline:none;box-shadow:inset 0 0 0 3px var(--rust)}
+input::placeholder{color:#9aa3a9}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{appearance:none;cursor:pointer;border:0;font:inherit;background:var(--paper-2);
+  font-family:var(--cond);font-weight:700;font-size:14.5px;letter-spacing:.08em;
+  text-transform:uppercase;padding:11px 15px;color:var(--navy);box-shadow:inset 0 0 0 3px var(--navy);
+  clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px)}
+.chip:hover{box-shadow:inset 0 0 0 3px var(--rust)}
+.chip[aria-pressed="true"]{background:var(--navy);color:var(--paper)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.f-send{width:100%;font-size:17px;padding:17px}
+.f-err{color:var(--rust);font-size:15px;margin:10px 0 0;display:none}
+.f-err.on{display:block}
+#done{display:none}
+#done.on{display:block}
+.ref-box{--c:var(--teal);margin:0 0 20px}
+.ref-box .plaque-in{padding:18px;text-align:center}
+.ref-code{font-family:var(--display);font-size:38px;color:var(--teal);letter-spacing:.1em;
+  line-height:1;margin:6px 0 0}
+.alt{display:block;text-align:center;margin:16px 0 0;font-size:15px;color:var(--stone)}
+.alt a{color:var(--navy)}
+.mini{font-size:14.4px;color:var(--stone);margin:8px 0 0}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="shell">
+<header class="cover" style="padding-bottom:18px">
+<p class="crest">El Dojo · Acatitlán · Valle de Bravo</p>
+<div class="rule-d"><b>◆◇◆</b></div>
+<h1>Empezar</h1>
+<p class="sub">Dos preguntas y te contestamos</p>
+<p class="lede" style="text-align:center;margin:0 auto 4px">Cuéntanos para quién es y qué te
+interesa. Te respondemos por WhatsApp con los horarios que de verdad te sirven, no con un
+catálogo entero.</p>
+</header>
+
+<form id="f" novalidate>
+<div class="f-group">
+<label class="f-lab" for="nombre">¿Cómo te llamas?</label>
+<input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre" maxlength="80" required>
+</div>
+
+<div class="f-group">
+<span class="f-lab">¿Para quién es?</span>
+<div class="chips"><button class="chip" type="button" data-f="para_quien" data-v="mi" aria-pressed="false">Para mí</button><button class="chip" type="button" data-f="para_quien" data-v="hijo" aria-pressed="false">Mi hijo</button><button class="chip" type="button" data-f="para_quien" data-v="hija" aria-pressed="false">Mi hija</button><button class="chip" type="button" data-f="para_quien" data-v="pareja" aria-pressed="false">Mi pareja</button><button class="chip" type="button" data-f="para_quien" data-v="familia" aria-pressed="false">La familia</button></div>
+</div>
+
+<div class="f-group" id="edad-wrap" hidden>
+<label class="f-lab" for="edad">¿Qué edad tiene? <span>opcional</span></label>
+<input id="edad" name="edad" type="text" inputmode="numeric" placeholder="Por ejemplo, 8" maxlength="20">
+</div>
+
+<div class="f-group">
+<span class="f-lab">¿Qué te interesa?</span>
+<div class="chips"><button class="chip" type="button" data-f="disciplina" data-v="jiujitsu" aria-pressed="false">Jiu Jitsu</button><button class="chip" type="button" data-f="disciplina" data-v="judo" aria-pressed="false">Judo</button><button class="chip" type="button" data-f="disciplina" data-v="aikido" aria-pressed="false">Aikido</button><button class="chip" type="button" data-f="disciplina" data-v="lucha" aria-pressed="false">Lucha</button><button class="chip" type="button" data-f="disciplina" data-v="nose" aria-pressed="false">No sé todavía</button></div>
+</div>
+
+<div class="f-group">
+<label class="f-lab" for="tel">Tu WhatsApp <span>opcional</span></label>
+<input id="tel" name="tel" type="tel" autocomplete="tel" placeholder="55 1234 5678" maxlength="20">
+<p class="mini">Solo por si se corta la conversación y queremos regresarte el mensaje.</p>
+</div>
+
+<div class="hp" aria-hidden="true"><label>No llenes esto<input type="text" id="hp" tabindex="-1" autocomplete="off"></label></div>
+
+<button class="btn f-send" type="submit">Continuar en WhatsApp →</button>
+<p class="f-err" id="err">No se pudo guardar. Escríbenos directo por WhatsApp y con gusto te atendemos.</p>
+<a class="alt" href="https://wa.me/5215547000332" target="_blank" rel="noopener">o escríbenos directo por WhatsApp</a>
+</form>
+
+<div id="done">
+<div class="ref-box plaque"><div class="plaque-in">
+<p class="f-lab" style="margin:0">Tu referencia</p>
+<p class="ref-code" id="ref">—</p>
+</div></div>
+<p class="lede" style="text-align:center">Ya quedó guardado. Toca el botón y se abre WhatsApp con
+tu mensaje listo — nada más dale enviar.</p>
+<a class="btn f-send" id="go" href="#" target="_blank" rel="noopener"
+   style="text-align:center;text-decoration:none">Abrir WhatsApp →</a>
+<a class="alt" href="/">volver a eldojo.mx</a>
+</div>
+</div>
+<svg class="band" viewBox="0 0 120 12" preserveAspectRatio="none" aria-hidden="true"><rect width="120" height="12" fill="#14293f"/><path d="M0 12 a5 5 0 0 1 10 0 z" fill="#b8442a"/><path d="M10 12 a5 5 0 0 1 10 0 z" fill="#f5f1e8"/><path d="M20 12 a5 5 0 0 1 10 0 z" fill="#1a6a67"/><path d="M30 12 a5 5 0 0 1 10 0 z" fill="#e6dcc7"/><path d="M40 12 a5 5 0 0 1 10 0 z" fill="#b8442a"/><path d="M50 12 a5 5 0 0 1 10 0 z" fill="#f5f1e8"/><path d="M60 12 a5 5 0 0 1 10 0 z" fill="#1a6a67"/><path d="M70 12 a5 5 0 0 1 10 0 z" fill="#e6dcc7"/><path d="M80 12 a5 5 0 0 1 10 0 z" fill="#b8442a"/><path d="M90 12 a5 5 0 0 1 10 0 z" fill="#f5f1e8"/><path d="M100 12 a5 5 0 0 1 10 0 z" fill="#1a6a67"/><path d="M110 12 a5 5 0 0 1 10 0 z" fill="#e6dcc7"/></svg>
+<div class="shell"><p class="foot">
+El Dojo · Huizaches 22, San Mateo Acatitlán, Valle de Bravo<br>
+<a href="https://maps.app.goo.gl/EtLiNdqs4cvGwf5M9" target="_blank" rel="noopener">Mapa</a> · <a href="https://eldojo.mx">eldojo.mx</a>
+</p></div>
+<script>
+(function(){
+  var SB="https://yzlfhvacjukrlhalqwbc.supabase.co", KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl6bGZodmFjanVrcmxoYWxxd2JjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODcxNTgxNDcsImV4cCI6MjEwMjczNDE0N30.mt6BTqLTbktOECFaoNpJiiehK2F64m34gcq18p_EKXg", WA="5215547000332";
+  var t0=Date.now(), sel={};
+  var $=function(s){return document.querySelector(s)};
+  document.addEventListener("click",function(ev){
+    var c=ev.target.closest(".chip"); if(!c) return;
+    ev.preventDefault();
+    var f=c.dataset.f;
+    document.querySelectorAll('.chip[data-f="'+f+'"]').forEach(function(b){
+      b.setAttribute("aria-pressed", String(b===c));
+    });
+    sel[f]=c.dataset.v;
+    if(f==="para_quien") $("#edad-wrap").hidden = (c.dataset.v==="mi");
+  });
+  function label(f,v){
+    var b=document.querySelector('.chip[data-f="'+f+'"][data-v="'+v+'"]');
+    return b?b.textContent.toLowerCase():"";
+  }
+  $("#f").addEventListener("submit",async function(ev){
+    ev.preventDefault();
+    var nombre=$("#nombre").value.trim();
+    if(!nombre){ $("#nombre").focus(); return; }
+    var btn=$(".f-send"); btn.disabled=true; btn.textContent="Guardando…";
+    var body={p_nombre:nombre,p_para_quien:sel.para_quien||null,
+      p_edad:$("#edad").value.trim()||null,p_disciplina:sel.disciplina||null,
+      p_telefono:$("#tel").value.trim()||null,p_origen:"sitio",
+      p_hp:$("#hp").value,p_ms:Date.now()-t0};
+    var out=null;
+    try{
+      var r=await fetch(SB+"/rest/v1/rpc/intake_submit",{method:"POST",
+        headers:{apikey:KEY,Authorization:"Bearer "+KEY,"Content-Type":"application/json"},
+        body:JSON.stringify(body)});
+      out=await r.json();
+    }catch(e){}
+    // build the message either way — a saving problem must never block the person
+    var partes=[];
+    partes.push("Hola, soy "+nombre+".");
+    if(sel.para_quien) partes.push("Es "+label("para_quien",sel.para_quien).replace("para mí","para mí")+
+      ($("#edad").value.trim() && sel.para_quien!=="mi" ? " de "+$("#edad").value.trim()+" años" : "")+".");
+    if(sel.disciplina) partes.push(sel.disciplina==="nose"
+      ? "Todavía no sé qué disciplina me conviene." : "Me interesa "+label("disciplina",sel.disciplina)+".");
+    if(out&&out.ok) partes.push("(ref "+out.ref+")");
+    var msg=partes.join(" ");
+    var href="https://wa.me/"+WA+"?text="+encodeURIComponent(msg);
+    if(out&&out.ok){
+      $("#ref").textContent=out.ref;
+      $("#go").href=href;
+      $("#go").addEventListener("click",function(){
+        try{ navigator.sendBeacon(SB+"/rest/v1/rpc/intake_opened_whatsapp?apikey="+encodeURIComponent(KEY),
+          new Blob([JSON.stringify({p_token:out.token})],{type:"application/json"})); }catch(e){}
+      });
+      try{ localStorage.setItem("eldojo:u", out.token); }catch(e){}
+      $("#f").style.display="none"; $("#done").classList.add("on");
+      window.scrollTo({top:0,behavior:"smooth"});
+    }else{
+      $("#err").classList.add("on");
+      btn.disabled=false; btn.textContent="Continuar en WhatsApp →";
+      window.open(href,"_blank","noopener");
+    }
+  });
+})();
+</script>
+</body>
+</html>
