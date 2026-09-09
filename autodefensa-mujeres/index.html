@@ -656,6 +656,22 @@ body.on-lesson .save-box{display:none}
 .vwrap.no-embed .yt-badge{display:block}
 .vwrap.no-embed img{filter:brightness(.62)}
 .yt-out{display:none}
+
+/* ===== week cards: one shape, whatever the text does =====
+   Titles wrap to two lines, session chips to two rows, and the meter is pinned
+   to the bottom, so every card in the row ends at the same place. */
+.cal{align-items:stretch}
+.wk,.wk>.plaque{height:100%}
+.wk>.plaque{display:flex}
+.wk .plaque-in{display:flex;flex-direction:column;flex:1;min-height:0}
+.wk .hd{flex:none}
+.wk .wk-img{flex:none}
+.wk .bd{flex:1;display:flex;flex-direction:column;gap:0}
+.wk .bd h3{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
+  overflow:hidden;min-height:2.12em;margin-bottom:8px}
+.wk .days{flex:1;align-content:flex-start;margin-bottom:10px}
+.wk .meter{margin-top:auto;flex:none}
+.wk .day-chip{line-height:1.25}
 </style>
 <script>var SLUG="autodefensa",DEFTRACK="a",TRACKS=[],WA_NUM="5215547000332",SB="https://yzlfhvacjukrlhalqwbc.supabase.co",SBK="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl6bGZodmFjanVrcmxoYWxxd2JjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODcxNTgxNDcsImV4cCI6MjEwMjczNDE0N30.mt6BTqLTbktOECFaoNpJiiehK2F64m34gcq18p_EKXg";</script>
 </head>
@@ -698,7 +714,7 @@ body.on-lesson .save-box{display:none}
 <div class="cal"><a class="wk" data-week="1" href="#l1">
 <div class="plaque"><div class="plaque-in">
 <div class="hd"><span class="n">Semana 1</span><span class="pc">0%</span></div>
-<div class="wk-img"><img src="../assets/tec/Usl27joTiSU.webp" alt="Semana 1: La base"
+<div class="wk-img"><img src="../assets/tec/mRrX89AmYuY.webp" alt="Semana 1: La base"
  loading="lazy" decoding="async" width="640" height="360"></div>
 <div class="bd"><h3>La base: distancia, caídas y la guardia</h3><div class="days">
 <span class="day-chip">Sesión 1 · Sola</span><span class="day-chip">Sesión 2 · Con compañera</span>
@@ -782,10 +798,10 @@ body.on-lesson .save-box{display:none}
 <span class="tec-name">Postura defensiva y manejo de distancia<span class="tag-solo">Sola</span></span>
 <span class="tec-mark" role="checkbox" aria-checked="false" tabindex="0"
  aria-label="Marcar como practicada: Postura defensiva y manejo de distancia"></span></button>
-<div class="tec-bd"><div class="vwrap" role="button" tabindex="0" data-v="Usl27joTiSU"
- data-title="Self Defence For Women — How To Manage The Distance" aria-label="Reproducir el video: Postura defensiva y manejo de distancia">
-<img src="../assets/tec/Usl27joTiSU.webp" alt="Postura defensiva y manejo de distancia — demostración" loading="eager" decoding="async" width="640" height="360">
-<span class="play"><i></i></span><span class="cap">Ver · Self Defence For Women — How To Manage The Distance</span>
+<div class="tec-bd"><div class="vwrap" role="button" tabindex="0" data-v="mRrX89AmYuY"
+ data-title="Gracie Self-Defense Course · Distance Control · Gracie Schwarzwald" aria-label="Reproducir el video: Postura defensiva y manejo de distancia">
+<img src="../assets/tec/mRrX89AmYuY.webp" alt="Postura defensiva y manejo de distancia — demostración" loading="eager" decoding="async" width="640" height="360">
+<span class="play"><i></i></span><span class="cap">Ver · Gracie Self-Defense Course · Distance Control · Grac</span>
 <span class="yt-badge">Ver en YouTube ↗</span></div>
 <p class="start">Inicio: De pie, frente a un espejo o a una pared.</p><ol class="steps"><li>Pies a lo ancho de los hombros, uno ligeramente adelante. Rodillas suaves, nunca trabadas.</li><li>Manos arriba a la altura del pecho, palmas abiertas hacia afuera: es una postura que no parece agresiva pero ya te está protegiendo.</li><li>Barbilla abajo, hombros relajados. Mira el pecho, no los ojos: el pecho te avisa antes.</li><li>Muévete hacia atrás y en diagonal, nunca en línea recta. Practica 2 minutos: alguien imaginario avanza, tú retrocedes en ángulo.</li></ol>
 <em class="cue">La primera técnica de defensa personal es no estar ahí. Todo lo demás es el plan B.</em>
