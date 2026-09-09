@@ -656,6 +656,22 @@ body.on-lesson .save-box{display:none}
 .vwrap.no-embed .yt-badge{display:block}
 .vwrap.no-embed img{filter:brightness(.62)}
 .yt-out{display:none}
+
+/* ===== week cards: one shape, whatever the text does =====
+   Titles wrap to two lines, session chips to two rows, and the meter is pinned
+   to the bottom, so every card in the row ends at the same place. */
+.cal{align-items:stretch}
+.wk,.wk>.plaque{height:100%}
+.wk>.plaque{display:flex}
+.wk .plaque-in{display:flex;flex-direction:column;flex:1;min-height:0}
+.wk .hd{flex:none}
+.wk .wk-img{flex:none}
+.wk .bd{flex:1;display:flex;flex-direction:column;gap:0}
+.wk .bd h3{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
+  overflow:hidden;min-height:2.12em;margin-bottom:8px}
+.wk .days{flex:1;align-content:flex-start;margin-bottom:10px}
+.wk .meter{margin-top:auto;flex:none}
+.wk .day-chip{line-height:1.25}
 body[data-track="a"] .screen[data-track]:not([data-track="a"]),body[data-track="a"] .cal[data-track]:not([data-track="a"]),body[data-track="a"] .toc-group[data-track]:not([data-track="a"]){display:none!important}body[data-track="b"] .screen[data-track]:not([data-track="b"]),body[data-track="b"] .cal[data-track]:not([data-track="b"]),body[data-track="b"] .toc-group[data-track]:not([data-track="b"]){display:none!important}</style>
 <script>var SLUG="ninos",DEFTRACK="a",TRACKS=[{"k": "a", "q": "7-9"}, {"k": "b", "q": "10-12"}],WA_NUM="5215547000332",SB="https://yzlfhvacjukrlhalqwbc.supabase.co",SBK="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl6bGZodmFjanVrcmxoYWxxd2JjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODcxNTgxNDcsImV4cCI6MjEwMjczNDE0N30.mt6BTqLTbktOECFaoNpJiiehK2F64m34gcq18p_EKXg";</script>
 </head>
