@@ -836,12 +836,126 @@ main{display:block}
   .chat-widget-btn{min-height:52px;padding:0 16px 0 12px;font-size:13px}
   .chat-widget-btn svg{width:28px;flex-basis:28px}
 }
+
+/* ===== bubble mockups (?bubble=a | b) ===== */
+html.bub-a .chat-widget,html.bub-b .chat-widget{--ring:#f2ede1}
+html.bub-a .chat-widget-media,html.bub-b .chat-widget-media{border:4px solid #0c0c0e;box-shadow:6px 6px 0 #0c0c0e,0 0 0 4px #f2ede1 inset}
+html.bub-a .chat-widget-avatar::before,html.bub-b .chat-widget-avatar::before{content:"";position:absolute;inset:-14px;z-index:-1;border-radius:50%;
+  background:repeating-conic-gradient(#0c0c0e 0 3deg,transparent 3deg 9deg);-webkit-mask:radial-gradient(circle,transparent 58%,#000 60%,#000 70%,transparent 71%);mask:radial-gradient(circle,transparent 58%,#000 60%,#000 70%,transparent 71%);opacity:.85}
+html.bub-a .chat-widget-online,html.bub-b .chat-widget-online{border:3px solid #0c0c0e}
+html.bub-a .chat-widget-stem,html.bub-b .chat-widget-stem{background:#0c0c0e}
+html.bub-a .chat-widget-stem::after,html.bub-b .chat-widget-stem::after{border-top-color:#0c0c0e}
+html.bub-a .chat-widget-btn,html.bub-b .chat-widget-btn{border:3px solid #0c0c0e;border-radius:0;box-shadow:5px 5px 0 #0c0c0e;font:900 italic 15px/1 Inter,sans-serif;letter-spacing:.04em;text-transform:uppercase;transform:skewX(-6deg)}
+html.bub-a .chat-widget-btn>*,html.bub-b .chat-widget-btn>*{transform:skewX(6deg)}
+html.bub-a .chat-widget-btn{background:#1fa855}
+html.bub-a .chat-widget:hover .chat-widget-btn{background:#17904a}
+html.bub-b .chat-widget-btn{background:#d1361f}
+html.bub-b .chat-widget:hover .chat-widget-btn{background:#9e2a17}
+html.bub-b .chat-widget-online{background:#34d399}
+
+/* ===== bubble: ki energy ball (?bubble=ki) ===== */
+.chat-widget-aura{display:none}
+html.bub-ki .chat-widget-aura{display:block;position:absolute;inset:-30%;z-index:-1;pointer-events:none}
+html.bub-ki .chat-widget-aura i{position:absolute;inset:0;border-radius:50%}
+/* outer flame spikes */
+html.bub-ki .chat-widget-aura i:nth-child(1){background:repeating-conic-gradient(from 0deg,#ff8a3d 0 4deg,#d1361f 4deg 9deg,transparent 9deg 15deg);
+  -webkit-mask:radial-gradient(circle,transparent 44%,#000 47%,rgba(0,0,0,.85) 58%,transparent 70%);mask:radial-gradient(circle,transparent 44%,#000 47%,rgba(0,0,0,.85) 58%,transparent 70%);
+  animation:kiSpin 5s linear infinite;filter:blur(.6px)}
+/* inner counter-rotating spikes */
+html.bub-ki .chat-widget-aura i:nth-child(2){inset:9%;background:repeating-conic-gradient(from 7deg,#fff3dc 0 3deg,#ffb36b 3deg 6deg,transparent 6deg 13deg);
+  -webkit-mask:radial-gradient(circle,transparent 52%,#000 56%,transparent 68%);mask:radial-gradient(circle,transparent 52%,#000 56%,transparent 68%);
+  animation:kiSpin 3.2s linear infinite reverse;opacity:.9}
+/* charging glow */
+html.bub-ki .chat-widget-aura i:nth-child(3){inset:10%;background:radial-gradient(circle,rgba(255,243,220,0) 52%,rgba(255,236,200,.95) 56%,rgba(255,138,61,.75) 61%,rgba(209,54,31,.35) 68%,rgba(209,54,31,0) 76%);
+  animation:kiPulse 1.4s ease-in-out infinite}
+/* orbiting sparks */
+html.bub-ki .chat-widget-aura i:nth-child(4){inset:14%;animation:kiSpin 2.4s linear infinite}
+html.bub-ki .chat-widget-aura i:nth-child(4)::before,html.bub-ki .chat-widget-aura i:nth-child(4)::after{content:"";position:absolute;width:6px;height:6px;border-radius:50%;background:#fff3dc;box-shadow:0 0 8px 3px #ff8a3d}
+html.bub-ki .chat-widget-aura i:nth-child(4)::before{left:50%;top:-3px}
+html.bub-ki .chat-widget-aura i:nth-child(4)::after{left:6%;bottom:18%;width:4px;height:4px}
+html.bub-ki .chat-widget-media{border:4px solid #0c0c0e;box-shadow:0 0 0 3px #fff3dc,0 0 22px 6px rgba(255,138,61,.7),5px 7px 0 3px #0c0c0e}
+html.bub-ki .chat-widget-online{border:3px solid #0c0c0e}
+html.bub-ki .chat-widget-stem{background:#0c0c0e}
+html.bub-ki .chat-widget-stem::after{border-top-color:#0c0c0e}
+html.bub-ki .chat-widget-btn{background:#1fa855;border:3px solid #0c0c0e;border-radius:0;box-shadow:5px 5px 0 #0c0c0e;font:900 italic 15px/1 Inter,sans-serif;letter-spacing:.04em;text-transform:uppercase;transform:skewX(-6deg)}
+html.bub-ki .chat-widget-btn>*{transform:skewX(6deg)}
+html.bub-ki .chat-widget:hover .chat-widget-btn{background:#17904a}
+html.bub-ki .chat-widget:hover .chat-widget-aura i:nth-child(3){animation-duration:.6s}
+/* light manga film over Ken's loop */
+html.bub-ki .chat-widget-video{filter:saturate(.72) contrast(1.12) brightness(1.04)}
+html.bub-ki .chat-widget-media{position:relative}
+html.bub-ki .chat-widget-media::after{content:"";position:absolute;inset:0;border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle,rgba(12,12,14,.5) .8px,transparent 1.2px) 0 0/4px 4px,radial-gradient(circle,transparent 62%,rgba(12,12,14,.22) 100%);opacity:.32;mix-blend-mode:multiply}
+@keyframes kiSpin{to{transform:rotate(360deg)}}
+@keyframes kiPulse{0%,100%{transform:scale(.96);opacity:.75}50%{transform:scale(1.05);opacity:1}}
+@media (prefers-reduced-motion:reduce){html.bub-ki .chat-widget-aura i{animation:none!important}}
+
+/* phones: compact bubble, tucked into the lower-right corner */
+@media (max-width:760px){
+  .chat-widget{right:8px;bottom:calc(8px + env(safe-area-inset-bottom,0px));--bubble-size:62px}
+  .chat-widget-stem{height:7px;margin:2px 0 8px;width:3px}
+  .chat-widget-stem::after{border-left-width:6px;border-right-width:6px;border-top-width:7px;bottom:-6px}
+  .chat-widget-online{right:2px;bottom:2px;width:11px;height:11px;border-width:2px}
+  .chat-widget-btn{min-height:38px;padding:0 11px 0 9px;gap:7px;font-size:11px}
+  .chat-widget-btn svg{width:20px;flex-basis:20px}
+  html.bub-ki .chat-widget-aura{inset:-24%}
+  html.bub-ki .chat-widget-media{border-width:3px;box-shadow:0 0 0 2px #fff3dc,0 0 12px 3px rgba(255,138,61,.6),3px 4px 0 2px #0c0c0e}
+  html.bub-ki .chat-widget-btn{font-size:11px;box-shadow:3px 3px 0 #0c0c0e;border-width:2.5px}
+  html.bub-ki .chat-widget-aura i:nth-child(4)::before{width:4px;height:4px}
+}
+
+/* ===== five calm bubble ideas (?bubble=1..5) ===== */
+html[class*="bub-"] .chat-widget-btn{border-radius:0}
+/* shared ink ring for 1-5 */
+html.bub-1 .chat-widget-media,html.bub-2 .chat-widget-media,html.bub-3 .chat-widget-media,html.bub-5 .chat-widget-media{border:4px solid #0c0c0e;box-shadow:4px 5px 0 #0c0c0e}
+html.bub-1 .chat-widget-online,html.bub-2 .chat-widget-online,html.bub-3 .chat-widget-online,html.bub-4 .chat-widget-online,html.bub-5 .chat-widget-online{border:3px solid #0c0c0e}
+html.bub-1 .chat-widget-stem,html.bub-2 .chat-widget-stem,html.bub-4 .chat-widget-stem,html.bub-5 .chat-widget-stem{background:#0c0c0e}
+html.bub-1 .chat-widget-stem::after,html.bub-2 .chat-widget-stem::after,html.bub-4 .chat-widget-stem::after,html.bub-5 .chat-widget-stem::after{border-top-color:#0c0c0e}
+html.bub-1 .chat-widget-btn,html.bub-2 .chat-widget-btn,html.bub-4 .chat-widget-btn,html.bub-5 .chat-widget-btn{background:#1fa855;border:3px solid #0c0c0e;box-shadow:4px 4px 0 #0c0c0e;font:900 italic 14px/1 Inter,sans-serif;letter-spacing:.04em;text-transform:uppercase}
+/* light film on Ken for all ideas */
+html[class*="bub-"]:not(.bub-ki) .chat-widget-video{filter:saturate(.75) contrast(1.1) brightness(1.04)}
+
+/* 1 — Hanko: a red seal stamp 道 pressed on the ring */
+html.bub-1 .chat-widget-avatar::after{content:"道";position:absolute;left:-10px;top:-6px;width:38px;height:38px;display:grid;place-items:center;background:#d1361f;color:#f2ede1;
+  font:400 20px/1 "Dela Gothic One";border:2.5px solid #0c0c0e;rotate:-12deg;box-shadow:2px 2px 0 #0c0c0e;border-radius:4px}
+
+/* 2 — Impact pulse: still ring; every 7 s a single speed-line flash behind it */
+html.bub-2 .chat-widget-avatar::before{content:"";position:absolute;inset:-28%;z-index:-1;border-radius:50%;
+  background:repeating-conic-gradient(#0c0c0e 0 2deg,transparent 2deg 8deg);-webkit-mask:radial-gradient(circle,transparent 52%,#000 56%,transparent 72%);mask:radial-gradient(circle,transparent 52%,#000 56%,transparent 72%);
+  opacity:0;scale:.8;animation:impactPulse 7s ease-out infinite 2s}
+html.bub-2 .chat-widget:hover .chat-widget-avatar::before{animation:impactPulse 1.2s ease-out infinite}
+@keyframes impactPulse{0%{opacity:0;scale:.8}4%{opacity:.9;scale:1.05}12%{opacity:0;scale:1.15}100%{opacity:0;scale:1.15}}
+
+/* 3 — Speech bubble: the button becomes a manga speech balloon */
+html.bub-3 .chat-widget-stem{display:none}
+html.bub-3 .chat-widget-btn{position:relative;margin-top:14px;background:#f2ede1;color:#0c0c0e;border:3px solid #0c0c0e;border-radius:22px;box-shadow:4px 4px 0 #0c0c0e;font:700 18px/1 Kalam,cursive;letter-spacing:0;text-transform:none}
+html.bub-3 .chat-widget-btn::before{content:"";position:absolute;top:-15px;left:50%;width:22px;height:16px;background:#f2ede1;border-left:3px solid #0c0c0e;border-top:3px solid #0c0c0e;transform:translateX(-50%) skewX(-30deg) rotate(45deg) scale(.8)}
+html.bub-3 .chat-widget-btn svg{color:#1fa855}
+html.bub-3 .chat-widget:hover .chat-widget-btn{background:#fff;color:#0c0c0e}
+html.bub-3 .chat-widget-btn span{font-size:0}
+html.bub-3 .chat-widget-btn span::after{content:"¡Escríbeme por WhatsApp!";font-size:17px}
+
+/* 4 — Manga panel: Ken in a square ink panel with a diagonal cut + chapter strip */
+html.bub-4 .chat-widget-media{border-radius:0;border:4px solid #0c0c0e;box-shadow:5px 5px 0 #0c0c0e;clip-path:polygon(0 0,100% 0,100% 82%,82% 100%,0 100%)}
+html.bub-4 .chat-widget-online{right:-4px;bottom:auto;top:-4px}
+html.bub-4 .chat-widget-avatar::after{content:"相談 · WHATSAPP";position:absolute;left:-6px;bottom:-4px;padding:4px 6px 3px;background:#d1361f;color:#f2ede1;border:2px solid #0c0c0e;font:800 9px/1 Inter;letter-spacing:.14em;white-space:nowrap}
+
+/* 5 — Halftone ring + ¡Oss! sticker */
+html.bub-5 .chat-widget-avatar::before{content:"";position:absolute;inset:-13px;z-index:-1;border-radius:50%;
+  background:radial-gradient(circle,#0c0c0e 1.4px,transparent 1.8px) 0 0/7px 7px;-webkit-mask:radial-gradient(circle,transparent 60%,#000 62%,#000 100%);mask:radial-gradient(circle,transparent 60%,#000 62%,#000 100%);opacity:.55}
+html.bub-5 .chat-widget-avatar::after{content:"¡Oss!";position:absolute;right:-22px;top:-8px;padding:6px 8px 5px;background:#d1361f;color:#f2ede1;font:400 16px/1 Bangers;letter-spacing:.06em;border:2.5px solid #0c0c0e;rotate:10deg;box-shadow:2px 2px 0 #0c0c0e}
+@media (prefers-reduced-motion:reduce){html.bub-2 .chat-widget-avatar::before{animation:none}}
+
+/* option: ink WhatsApp button with green icon (?btn=ink) */
+html.btn-ink .chat-widget-btn{background:#0c0c0e !important;color:#f2ede1;border-color:#0c0c0e;box-shadow:4px 4px 0 #d1361f !important}
+html.btn-ink .chat-widget-btn svg{color:#25d366;fill:#25d366}
+html.btn-ink .chat-widget:hover .chat-widget-btn{background:#1b1b1f !important}
 </style>
 </head>
 <body>
 <script>
   // flag motion mode before paint
-  (function(){var s=new URLSearchParams(location.search).has('static'),r=matchMedia('(prefers-reduced-motion: reduce)').matches;var c=document.documentElement.classList;if(s)c.add('js-static');if(r)c.add('no-motion');c.add('js')})();
+  (function(){var q=new URLSearchParams(location.search),b=q.get('bubble')||'5';document.documentElement.classList.add('bub-'+b);if(q.get('btn'))document.documentElement.classList.add('btn-'+q.get('btn'));var s=q.has('static'),r=matchMedia('(prefers-reduced-motion: reduce)').matches;var c=document.documentElement.classList;if(s)c.add('js-static');if(r)c.add('no-motion');c.add('js')})();
 </script>
 
 <!-- ============ INTRO (skips on ?static / reduced motion / repeat visit) ============ -->
@@ -1354,6 +1468,7 @@ main{display:block}
 <!-- ============ KEN'S WHATSAPP BUBBLE — required ============ -->
 <a class="chat-widget" href="https://wa.me/5215547000332?text=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20sobre%20El%20Dojo." target="_blank" rel="noopener noreferrer" aria-label="Chatea con nosotros por WhatsApp">
   <span class="chat-widget-avatar">
+    <span class="chat-widget-aura" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
     <span class="chat-widget-media">
       <video class="chat-widget-video" src="assets/whatsapp-coach-bubble.mp4" poster="assets/whatsapp-coach-bubble.jpg" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
     </span>
