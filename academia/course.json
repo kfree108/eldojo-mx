@@ -1,0 +1,2245 @@
+{
+  "academy": {
+    "name": "Academia El Dojo",
+    "tagline": "Tu camino empieza en casa y continúa en el tatami. Gratis, a tu ritmo, con tu avance guardado.",
+    "dojo": "El Dojo · Huizaches 22, San Mateo Acatitlán, Valle de Bravo",
+    "how_it_works": "Cada camino tiene 4 módulos (uno por semana) y 4 lecciones por módulo. Cada lección trae un video, los puntos clave, un ejercicio para casa y una pregunta rápida. Al terminar cada módulo desbloqueas un hito.",
+    "safety_rules": [
+      "El tap manda: se suelta al instante, siempre.",
+      "Tapete o cobijas y dos metros libres; nunca sobre loseta.",
+      "Lento primero: la velocidad llega sola.",
+      "En casa nunca: llaves de pierna, derribos, golpes ni estrangulaciones a velocidad.",
+      "Si duele una articulación, la sesión termina ahí."
+    ]
+  },
+  "paths": [
+    {
+      "slug": "ninos",
+      "name": "Jiu Jitsu para Niños",
+      "kanji": "子",
+      "promise": "En cuatro semanas, tu hijo pasa de no saber nada a moverse con seguridad, escapar con calma y llegar a su primera clase con confianza.",
+      "who_for": "Niñas y niños de 7 a 12 años, con mamá, papá o un adulto como compañero. Cada lección trae notas para 7–9 y para 10–12 años.",
+      "age_tracks": "Un solo camino con notas por edad (7–9 y 10–12). El 70 % del contenido de las dos pistas anteriores era el mismo.",
+      "habit_plan": "Dos sesiones por semana (por ejemplo, martes y sábado) de 20–25 minutos. Marquen cada lección en el curso y celebren cada hito con algo sencillo: elegir la cena, una estrella en el refri.",
+      "intake_questions": [
+        {
+          "q": "¡Hola! ¿Cuántos años tiene tu hijo o hija?",
+          "options": [
+            "7 a 9",
+            "10 a 12",
+            "Otra edad"
+          ]
+        },
+        {
+          "q": "¿Ha practicado algún deporte de contacto o arte marcial?",
+          "options": [
+            "Nunca",
+            "Un poco",
+            "Sí, ya entrena"
+          ]
+        },
+        {
+          "q": "¿Quién va a practicar con él o ella en casa?",
+          "options": [
+            "Mamá o papá",
+            "Un hermano o primo",
+            "Todavía no sé"
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "n": 1,
+          "title": "Cuerpo de ninja",
+          "goal": "Moverse, caer y levantarse con seguridad, y conocer las reglas que cuidan a todos.",
+          "lessons": [
+            {
+              "id": "ninos-01",
+              "title": "El tap: la regla de oro",
+              "duration_min": 20,
+              "objective": "Que tu hijo sepa pedir «alto» con el tap y soltar al instante cuando se lo piden.",
+              "why_it_matters": "El tap es lo que hace que el jiu jitsu sea uno de los deportes más seguros para niños. Además enseña algo que sirve en todos lados: decir «basta» y respetar el «basta» de otros.",
+              "steps": [
+                "El tap son dos o tres golpecitos con la mano en el compañero. Si las manos están ocupadas, se dice «¡tap!» en voz alta.",
+                "Quien recibe el tap suelta de inmediato, sin preguntar y sin un segundo extra.",
+                "Practiquen el tap 10 veces cada uno, desde montada suave: uno da tap, el otro suelta y choca la mano.",
+                "Armen juntos el espacio de entrenamiento: tapete o cobijas dobladas, dos metros libres alrededor, sin muebles cerca."
+              ],
+              "common_mistakes": [
+                "Dar tap en el piso en vez de en el compañero: a veces no se siente.",
+                "Soltar despacio o «aguantar tantito»: el tap se respeta al instante."
+              ],
+              "safety": "Un adulto está presente en todas las sesiones y es el árbitro: cuando dice «alto», todo se detiene.",
+              "partner_drill": "Juego «semáforo»: el adulto dice verde (se mueven), amarillo (despacio) y rojo (todos sueltan y se sientan). 3 minutos. Después, 10 taps cada uno.",
+              "video": {
+                "youtube_id": "IN9Z58DJmq8",
+                "title": "Kids' Jiu Jitsu Basics | SAFETY!",
+                "channel": "McHugh Brazilian Jiu Jitsu",
+                "why_this_video": "Video corto de una academia infantil que explica cómo y cuándo dar tap, justo lo que necesita la primera sesión."
+              },
+              "self_check": {
+                "question": "Tu compañero da tap. ¿Qué haces?",
+                "options": [
+                  "Aprieto un poquito más para ganar",
+                  "Suelto al instante y chocamos la mano",
+                  "Le pregunto si está seguro"
+                ],
+                "answer": 1,
+                "explanation": "El tap se respeta siempre y al momento. Así nadie se lastima y todos confían en ti."
+              },
+              "age_notes": {
+                "7-9": "Hagan del tap un juego: quien suelta más rápido gana una estrella.",
+                "10-12": "Explícale que en el tatami dar tap temprano es de campeones, no de perdedores."
+              },
+              "parent_note": "Ustedes son el árbitro. La sesión dura lo que dure la diversión; si se cansa, se corta y se retoma otro día."
+            },
+            {
+              "id": "ninos-02",
+              "title": "Calentamiento de animales",
+              "duration_min": 25,
+              "objective": "Aprender un calentamiento divertido que prepara el cuerpo para el jiu jitsu.",
+              "why_it_matters": "Los movimientos de animales construyen fuerza, coordinación y los patrones que se usan en el tatami (el camarón, el oso, el cangrejo). Es el mismo tipo de calentamiento que hacemos en las clases de niños.",
+              "steps": [
+                "Oso: manos y pies en el piso, rodillas sin tocar, cruza la sala.",
+                "Cangrejo: panza al techo, camina hacia atrás sin sentarte.",
+                "Rana: salta desde cuclillas y cae suave, con las rodillas dobladas.",
+                "Camarón: acostado, empuja el piso con un pie y aleja la cadera de lado.",
+                "40 segundos por animal, descanso de 20 segundos entre cada uno."
+              ],
+              "common_mistakes": [
+                "Ir tan rápido que se pierde la forma: mejor lento y bonito.",
+                "Hacer rodadas o volteretas que no conocen: en casa se quedan fuera."
+              ],
+              "safety": "Hoy solo animales en el piso: sin rodadas, sin volteretas ni maromas por encima de la cabeza.",
+              "solo_drill": "Circuito de 4 animales (oso, cangrejo, rana, camarón), 40 s cada uno, 2 vueltas. Úsenlo como calentamiento en todas las lecciones que siguen.",
+              "video": {
+                "youtube_id": "3RlLmFucWas",
+                "title": "20 BJJ Animal Exercises for Kids and Adults | Solo Grappling Drills |",
+                "channel": "Evo BJJ",
+                "why_this_video": "Un profesor de jiu jitsu infantil muestra 20 animales con nombres divertidos; elijan los que se hacen en el piso y sáltense las rodadas."
+              },
+              "self_check": {
+                "question": "¿Para qué sirve el calentamiento de animales?",
+                "options": [
+                  "Para cansarse antes de empezar",
+                  "Para preparar el cuerpo y aprender movimientos de jiu jitsu",
+                  "Solo para pasar el rato"
+                ],
+                "answer": 1,
+                "explanation": "Cada animal entrena algo que vas a usar: el oso, la base; el camarón, los escapes."
+              },
+              "age_notes": {
+                "7-9": "Que el niño elija el orden de los animales: más motivación.",
+                "10-12": "Agreguen un reto: cuántos metros de camarón sin parar."
+              },
+              "parent_note": "Háganlo con él la primera vez. Verlos moverse juntos lo motiva más que cualquier instrucción."
+            },
+            {
+              "id": "ninos-03",
+              "title": "Caer sin lastimarse",
+              "duration_min": 20,
+              "objective": "Caer hacia atrás con la barbilla pegada al pecho y palmear el piso.",
+              "why_it_matters": "Saber caer protege la cabeza en el parque, en la bici y en el tatami. Es la habilidad de jiu jitsu que más sirve fuera de la clase.",
+              "steps": [
+                "Sentado en el tapete, brazos al frente.",
+                "Barbilla pegada al pecho, como si sujetaras una naranja bajo la barbilla.",
+                "Rueda hacia atrás con la espalda redonda; la cabeza nunca toca el piso.",
+                "Al tocar con la espalda, palmea el piso con las dos manos abiertas, brazos a 45 grados."
+              ],
+              "common_mistakes": [
+                "Soltar la barbilla y dejar que la cabeza pegue.",
+                "Estirar los brazos hacia atrás para detenerse: se palmea a los lados."
+              ],
+              "safety": "Solo desde sentado (o cuclillas para 10–12) y sobre tapete o cobijas. Nada de caídas desde de pie en casa.",
+              "solo_drill": "10 caídas desde sentado, despacio. Para 10–12: 10 más desde cuclillas. Un adulto revisa que la barbilla nunca se suelte.",
+              "video": {
+                "youtube_id": "BLhqDMqVQqo",
+                "title": "Seated Break Fall by Deborah Gracie",
+                "channel": "BJJ Fanatics",
+                "why_this_video": "Deborah Gracie enseña la caída desde sentado, la versión más suave y segura para empezar en casa."
+              },
+              "self_check": {
+                "question": "Al caer hacia atrás, ¿dónde va la barbilla?",
+                "options": [
+                  "Pegada al pecho",
+                  "Hacia el techo",
+                  "Da igual"
+                ],
+                "answer": 0,
+                "explanation": "La barbilla pegada al pecho mantiene la cabeza lejos del piso."
+              },
+              "age_notes": {
+                "7-9": "Solo desde sentado.",
+                "10-12": "Desde sentado y, cuando salga perfecta, desde cuclillas."
+              },
+              "parent_note": "Revisen la superficie antes de cada caída. Si la cabeza toca una sola vez, vuelvan a la versión más baja."
+            },
+            {
+              "id": "ninos-04",
+              "title": "Levantarse como ninja",
+              "duration_min": 20,
+              "objective": "Pararse desde el piso sin dar la espalda, con la levantada técnica.",
+              "why_it_matters": "Levantarse mirando al frente es una habilidad de seguridad y de jiu jitsu. Los niños la usan en juegos, en el tatami y en el recreo.",
+              "steps": [
+                "Sentado, una mano apoyada atrás y el pie contrario plantado.",
+                "Levanta la cadera apoyándote en esa mano y ese pie.",
+                "La otra pierna pasa por debajo, hacia atrás.",
+                "Llegas de pie, con las manos arriba y mirando al frente."
+              ],
+              "common_mistakes": [
+                "Levantarse dando la espalda.",
+                "Pasar la pierna por delante en vez de por debajo."
+              ],
+              "safety": "Hazlo despacio y lejos de muebles: el espacio libre de dos metros siempre.",
+              "solo_drill": "10 levantadas por lado. Reto: camarón hacia atrás, levantada técnica, repetir 5 veces cruzando la sala.",
+              "video": {
+                "youtube_id": "xRRiYZPtmIw",
+                "title": "Technical Stand Up - Solo BJJ Drills for Kids",
+                "channel": "Utopia Martial Arts",
+                "why_this_video": "Video de Utopia Martial Arts pensado para que los niños practiquen la levantada técnica solos en casa."
+              },
+              "self_check": {
+                "question": "Al levantarte del piso, ¿hacia dónde miras?",
+                "options": [
+                  "Hacia atrás",
+                  "Al frente, hacia tu compañero",
+                  "Al piso"
+                ],
+                "answer": 1,
+                "explanation": "Te levantas mirando al frente para no perder de vista lo que pasa."
+              },
+              "age_notes": {
+                "7-9": "Que lo haga primero en cámara lenta, contando en voz alta 1-2-3.",
+                "10-12": "Agreguen la levantada después de cada caída de la lección 3."
+              },
+              "parent_note": "Celebren el esfuerzo, no la perfección. «Qué bien te levantaste mirando al frente» funciona mejor que «así no»."
+            }
+          ],
+          "milestone": "Hito 1: sabe dar y respetar el tap, calienta solo, cae con la barbilla al pecho y se levanta mirando al frente.",
+          "cta": "¡Ya tiene cuerpo de ninja! Si quieren ver cómo se ve esto en un tatami de verdad, escríbenos por WhatsApp y te contamos qué grupo le toca por su edad."
+        },
+        {
+          "n": 2,
+          "title": "Montada y control lateral",
+          "goal": "Aguantar arriba con calma y salir de abajo con técnica.",
+          "lessons": [
+            {
+              "id": "ninos-05",
+              "title": "La montada: cobija pesada",
+              "duration_min": 25,
+              "objective": "Quedarse arriba en montada usando la cadera, no las manos.",
+              "why_it_matters": "La montada es una de las posiciones más importantes del jiu jitsu. Aprender a quedarse ahí con calma enseña equilibrio y paciencia.",
+              "steps": [
+                "Sentado sobre el estómago del compañero, rodillas apretando sus costillas.",
+                "Pies enganchados bajo sus muslos (ganchos de uva).",
+                "Cadera baja y pesada, pecho cerca de su pecho.",
+                "Si hace puente, manos al piso arriba de su cabeza y aguanta.",
+                "Si empuja tu pecho, camina las rodillas hacia sus axilas."
+              ],
+              "common_mistakes": [
+                "Sentarse alto y tieso: se cae al primer puente.",
+                "Apoyar todo el peso en las manos."
+              ],
+              "safety": "El de abajo debe poder respirar siempre: el peso va en la cadera, nunca sentado en el pecho ni en la panza con fuerza.",
+              "partner_drill": "3 rondas de 30 s: el de abajo se mueve suave, el de arriba aguanta. Cambian. Si el compañero es un adulto, el adulto se mueve al 30 % y solo corrige.",
+              "video": {
+                "youtube_id": "c4XkEoLnCcY",
+                "title": "Kids BJJ White Belt - Mount Control",
+                "channel": "Absolute MMA",
+                "why_this_video": "Clase de niños de Absolute MMA: niños mostrando el control de montada con los ganchos de uva."
+              },
+              "self_check": {
+                "question": "En la montada, ¿dónde va tu peso?",
+                "options": [
+                  "En las manos",
+                  "En la cadera",
+                  "En la cabeza"
+                ],
+                "answer": 1,
+                "explanation": "«Sé una cobija pesada, no una piedra»: el peso en la cadera te mantiene arriba."
+              },
+              "age_notes": {
+                "7-9": "Solo montada baja, la cobija pesada.",
+                "10-12": "Agreguen la montada alta: cuando empuje, rodillas a las axilas."
+              },
+              "parent_note": "Si el compañero es papá o mamá, ustedes son «el muñeco»: no compiten, se dejan mover y corrigen con cariño."
+            },
+            {
+              "id": "ninos-06",
+              "title": "El upa: atrapa y rueda",
+              "duration_min": 25,
+              "objective": "Salir de la montada atrapando brazo y pie, con un puente.",
+              "why_it_matters": "Es el primer escape que aprende todo jiujitsuka. Le enseña a tu hijo que estar abajo no es perder: hay una salida y él la conoce.",
+              "steps": [
+                "Atrapa un brazo: agarra su muñeca y pégala a tu pecho.",
+                "Atrapa el pie del mismo lado con tu pie.",
+                "Planta los dos pies y haz puente con la cadera hacia el techo.",
+                "Rueda por encima del hombro del lado atrapado y cae arriba."
+              ],
+              "common_mistakes": [
+                "Hacer puente sin atrapar: el compañero se sostiene con la mano.",
+                "Empujar el pecho del compañero con los brazos estirados."
+              ],
+              "safety": "El de arriba se deja rodar y cae suave sobre el tapete; nada de caer con todo el peso.",
+              "partner_drill": "5 upas por lado, lentos. Luego juego «Rey de la montaña»: 30 s, 1 punto por aguantar, 1 por escapar. Cambian.",
+              "video": {
+                "youtube_id": "2TAMkFRAykc",
+                "title": "Kids BJJ Grey Belt #3 - Bridge and Roll HD",
+                "channel": "Absolute MMA",
+                "why_this_video": "Clase infantil de Absolute MMA mostrando exactamente el puente y giro desde la montada."
+              },
+              "self_check": {
+                "question": "Para que el upa funcione, ¿qué atrapas?",
+                "options": [
+                  "Su cabeza",
+                  "Un brazo y el pie del mismo lado",
+                  "Los dos brazos"
+                ],
+                "answer": 1,
+                "explanation": "«Atrapa el brazo, atrapa el pie, puente al cielo.» Sin atrapar, el puente no lo voltea."
+              },
+              "age_notes": {
+                "7-9": "Que diga la frase en voz alta en cada repetición.",
+                "10-12": "Si el upa no sale, que pruebe el escape codo-rodilla (video extra)."
+              },
+              "parent_note": "Déjense rodar de verdad. Sentir que sí puede mover a alguien más grande es la mejor parte."
+            },
+            {
+              "id": "ninos-07",
+              "title": "Control lateral: cien kilos",
+              "duration_min": 25,
+              "objective": "Controlar de lado con el pecho, sin que entre luz entre los dos cuerpos.",
+              "why_it_matters": "El control lateral enseña a usar el peso con inteligencia en lugar de fuerza. Es la posición a la que llegan casi todos los pases.",
+              "steps": [
+                "Pecho con pecho, cruzado sobre el compañero.",
+                "Brazo cercano por debajo de su cabeza; brazo lejano bloqueando su cadera.",
+                "Cadera baja, dedos de los pies empujando el piso.",
+                "Si gira hacia ti, deja caer el peso y síguelo."
+              ],
+              "common_mistakes": [
+                "Quedarse en las rodillas, alto.",
+                "Apretar con los brazos en lugar de acomodar el peso."
+              ],
+              "safety": "Nada de presionar el cuello con el antebrazo: el brazo va por debajo de la cabeza, como almohada.",
+              "partner_drill": "3 rondas de 30 s: el de abajo intenta voltearse, el de arriba sigue. Cambian.",
+              "video": {
+                "youtube_id": "3CFEufZGvSE",
+                "title": "Kids BJJ White Belt - Side Control",
+                "channel": "Absolute MMA",
+                "why_this_video": "Absolute MMA, clase de niños: control lateral desde arriba con los detalles básicos."
+              },
+              "self_check": {
+                "question": "En control lateral, ¿qué es «que no entre luz»?",
+                "options": [
+                  "Apagar la luz del cuarto",
+                  "Que no queden huecos entre tu cuerpo y el suyo",
+                  "Cerrar los ojos"
+                ],
+                "answer": 1,
+                "explanation": "Codo y rodilla cierran los huecos para que no pueda meterse ni girar."
+              },
+              "age_notes": {
+                "7-9": "Juego: el de arriba es «una tortilla» pegada al de abajo.",
+                "10-12": "Practiquen la transición: cuando empuje, rodilla cruzando a montada."
+              },
+              "parent_note": "Recuerden la regla: nada al cuello con las manos o los brazos."
+            },
+            {
+              "id": "ninos-08",
+              "title": "Camarón a guardia",
+              "duration_min": 25,
+              "objective": "Salir de control lateral haciendo marco y camarón, y recuperar la guardia.",
+              "why_it_matters": "Aquí el camarón del calentamiento se vuelve un escape real. Es el movimiento que más va a usar en toda su vida de jiu jitsu.",
+              "steps": [
+                "Marco: antebrazo en su hombro, la otra mano en su cadera.",
+                "Puente pequeño y luego camarón alejando la cadera.",
+                "Mete la rodilla cercana entre los dos cuerpos.",
+                "Rodea con las dos piernas: guardia."
+              ],
+              "common_mistakes": [
+                "Empujar con los brazos estirados.",
+                "Hacer el camarón sin el marco: el compañero se vuelve a pegar."
+              ],
+              "safety": "El marco va en el hombro del compañero, nunca en su cuello ni en su cara.",
+              "partner_drill": "5 escapes por lado, lentos. Luego «Escapa o mantén»: 30 s, el de abajo busca guardia, el de arriba aguanta. Cambian.",
+              "video": {
+                "youtube_id": "noLU4JHr0Po",
+                "title": "Shrimp Reguard from Side Control - Brazilian Jiu-Jitsu for Kids",
+                "channel": "Utopia Martial Arts",
+                "why_this_video": "Utopia Martial Arts, jiu jitsu para niños: el camarón desde control lateral hasta recuperar la guardia."
+              },
+              "self_check": {
+                "question": "¿Qué va primero en este escape?",
+                "options": [
+                  "El camarón",
+                  "El marco",
+                  "Rodar"
+                ],
+                "answer": 1,
+                "explanation": "Primero el marco hace espacio; después el camarón y la rodilla lo conservan."
+              },
+              "age_notes": {
+                "7-9": "Frase: «Empuja, camarón, rodilla adentro».",
+                "10-12": "Si el camarón no alcanza, practiquen girar a rodillas (video extra)."
+              },
+              "parent_note": "Grábenlo en video un día: verse a sí mismo es muy motivante y les ayuda a corregir."
+            }
+          ],
+          "milestone": "Hito 2: aguanta 30 segundos en montada y en control lateral, y escapa de las dos con técnica.",
+          "cta": "Van con dos semanas de ventaja. Las clases de niños son lunes, martes y jueves de 16:00 a 17:00 (7–9 años) y martes y jueves de 17:30 a 18:30 (10–12 años) con Arturo. Escríbenos y te decimos qué grupo le toca."
+        },
+        {
+          "n": 3,
+          "title": "La guardia es tu escudo",
+          "goal": "Entender que estar abajo con guardia es una posición fuerte, y usar la confianza también fuera del tatami.",
+          "lessons": [
+            {
+              "id": "ninos-09",
+              "title": "Postura de jirafa",
+              "duration_min": 20,
+              "objective": "Mantener la postura derecha dentro de la guardia cerrada del compañero.",
+              "why_it_matters": "Dentro de la guardia, el de arriba que se encorva pierde. La buena postura protege y enseña a mantener la calma bajo presión.",
+              "steps": [
+                "Siéntate derecho, cabeza arriba, dentro de sus piernas cruzadas.",
+                "Manos en su pecho o en sus bíceps, codos adentro.",
+                "Rodillas abiertas para tener base.",
+                "Si te jala la cabeza, empuja el pecho y vuelve a sentarte derecho."
+              ],
+              "common_mistakes": [
+                "Encorvarse hacia adelante.",
+                "Poner las manos en el piso cerca de su cuerpo."
+              ],
+              "safety": "El de abajo jala suave: nada de jalones bruscos de cuello.",
+              "partner_drill": "3 rondas de 30 s: el de abajo jala suave la cabeza, el de arriba recupera la postura. Cambian.",
+              "video": {
+                "youtube_id": "1qXCprY_hW8",
+                "title": "Kids BJJ Grey / White Belt - Closed Guard Posture (Top)",
+                "channel": "Absolute MMA",
+                "why_this_video": "Absolute MMA, niños mostrando la postura arriba en la guardia cerrada."
+              },
+              "self_check": {
+                "question": "Dentro de la guardia, ¿cómo va tu espalda?",
+                "options": [
+                  "Encorvada",
+                  "Derecha, como jirafa",
+                  "Acostada"
+                ],
+                "answer": 1,
+                "explanation": "«Cabeza arriba, espalda derecha, como una jirafa.»"
+              },
+              "age_notes": {
+                "7-9": "Juego: que intente tocarle la nariz al de arriba; la jirafa no se deja.",
+                "10-12": "Agreguen pararse y abrir la guardia (video extra)."
+              },
+              "parent_note": "Mantengan los jalones suaves; el objetivo es la postura, no ganar."
+            },
+            {
+              "id": "ninos-10",
+              "title": "Romper la postura desde abajo",
+              "duration_min": 20,
+              "objective": "Desde la guardia cerrada, bajar la cabeza del compañero y controlar una muñeca.",
+              "why_it_matters": "Le enseña que desde abajo también se controla. Esa idea, «abajo no es perder», le da muchísima confianza.",
+              "steps": [
+                "Mano detrás de su cabeza; jala con la mano y con las piernas a la vez.",
+                "La otra mano controla una muñeca.",
+                "Mueve la cadera fuera del centro; no te quedes plano.",
+                "Cuando su cabeza baje, abrázala contra tu pecho."
+              ],
+              "common_mistakes": [
+                "Jalar solo con los brazos, sin las piernas.",
+                "Quedarse plano boca arriba."
+              ],
+              "safety": "Se jala la nuca, nunca el cuello ni el pelo.",
+              "partner_drill": "10 repeticiones lentas: postura arriba, romper postura, soltar. Cambian.",
+              "video": {
+                "youtube_id": "ePQ2zA94mxE",
+                "title": "Kids BJJ Grey / White Belt - Closed Guard Posture (Bottom)",
+                "channel": "Absolute MMA",
+                "why_this_video": "Absolute MMA, clase de niños: la otra mitad de la lección anterior, la guardia desde abajo."
+              },
+              "self_check": {
+                "question": "Para bajar la cabeza del compañero, ¿qué usas?",
+                "options": [
+                  "Solo los brazos",
+                  "La mano y las piernas al mismo tiempo",
+                  "Los dientes"
+                ],
+                "answer": 1,
+                "explanation": "«Jalan las piernas, jala la mano, gira la cadera.»"
+              },
+              "age_notes": {
+                "7-9": "Cuenten juntos: piernas-mano-cadera.",
+                "10-12": "Combínenlo con la lección anterior: uno rompe, el otro recupera, 2 minutos seguidos."
+              },
+              "parent_note": "Si el niño se frustra, cambien de papel: que él sea el de arriba un rato."
+            },
+            {
+              "id": "ninos-11",
+              "title": "Barrida de golpe de cadera",
+              "duration_min": 25,
+              "objective": "Barrer desde la guardia cerrada y caer en montada.",
+              "why_it_matters": "Es la primera vez que pasa de abajo a arriba con técnica. Esa sensación de «lo logré» es la que engancha a los niños con el jiu jitsu.",
+              "steps": [
+                "Abre la guardia, siéntate sobre un codo y luego apoya esa mano atrás.",
+                "El otro brazo pasa por encima de su hombro.",
+                "Sube la cadera hacia su axila, como si te pararas de lado.",
+                "Síguelo al voltearse: la rodilla cruza y caes en montada."
+              ],
+              "common_mistakes": [
+                "Volver a acostarse a medio camino.",
+                "Empujar con los brazos en lugar de usar la cadera."
+              ],
+              "safety": "El compañero cae de lado sobre el tapete, despacio; nadie se avienta.",
+              "partner_drill": "5 barridas por lado, lentas. Juego «Barre o abre»: 45 s, el de abajo anota si barre, el de arriba si mantiene la postura.",
+              "video": {
+                "youtube_id": "ezAwXXBbUNg",
+                "title": "Kids BJJ Grey Belt - Hip Bump Sweep",
+                "channel": "Absolute MMA",
+                "why_this_video": "Absolute MMA, niños demostrando la barrida de golpe de cadera paso a paso."
+              },
+              "self_check": {
+                "question": "En la barrida de golpe de cadera, ¿qué sube hacia su axila?",
+                "options": [
+                  "Tu cabeza",
+                  "Tu cadera",
+                  "Tu pie"
+                ],
+                "answer": 1,
+                "explanation": "«Siéntate, cadera a la axila, síguelo.»"
+              },
+              "age_notes": {
+                "7-9": "Primero solo sentarse y apoyar la mano, 10 veces, antes de barrer.",
+                "10-12": "Si el compañero apoya la mano para defenderse, que lo note: es la entrada de la kimura que verán en el dojo."
+              },
+              "parent_note": "Si eres el compañero adulto, déjate barrer y cae suave de lado. Que sienta que funciona."
+            },
+            {
+              "id": "ninos-12",
+              "title": "Valor con palabras",
+              "duration_min": 20,
+              "objective": "Practicar cómo responder con calma y firmeza cuando alguien molesta.",
+              "why_it_matters": "El jiu jitsu infantil no es para pelear: es para tener confianza. Saber qué decir, con postura y mirada firmes, resuelve la mayoría de los problemas sin tocar a nadie.",
+              "steps": [
+                "Postura firme: pies separados, espalda derecha, manos tranquilas al frente.",
+                "Mirada a los ojos y voz clara y tranquila: «Para, no me gusta».",
+                "Si sigue, alejarse y buscar a un adulto de confianza. Eso también es valor.",
+                "Platiquen en familia: ¿a qué adulto le avisarías en la escuela?"
+              ],
+              "common_mistakes": [
+                "Responder con insultos o empujones.",
+                "Hablar bajito mirando al piso."
+              ],
+              "safety": "En este juego no hay contacto: es solo postura, mirada y voz.",
+              "partner_drill": "Juego de roles, 5 minutos: el adulto dice algo molesto (suave) y el niño responde con postura, voz clara y se aleja. Cambien papeles.",
+              "video": {
+                "youtube_id": "p8Lxcc_ChE8",
+                "title": "Gracie BULLYPROOF - \"Verbal Jiu-Jitsu\"",
+                "channel": "Gracie Jiu-jitsu Academy",
+                "why_this_video": "El programa Bullyproof de la familia Gracie explica la «defensa verbal»: responder con respeto y firmeza antes de cualquier otra cosa."
+              },
+              "self_check": {
+                "question": "Si alguien te molesta en la escuela, ¿qué haces primero?",
+                "options": [
+                  "Lo empujo",
+                  "Le digo con voz firme que pare y, si sigue, busco a un adulto",
+                  "Me quedo callado y triste"
+                ],
+                "answer": 1,
+                "explanation": "La voz firme y pedir ayuda son la primera defensa. El jiu jitsu te da la confianza para hacerlo."
+              },
+              "age_notes": {
+                "7-9": "Practiquen una sola frase hasta que salga fuerte y clara.",
+                "10-12": "Pídanle que invente sus propias respuestas respetuosas."
+              },
+              "parent_note": "Esta lección vale tanto como cualquier técnica. Escuchen sin juzgar si les cuenta algo de la escuela."
+            }
+          ],
+          "milestone": "Hito 3: mantiene la postura, rompe la postura desde abajo, hace su primera barrida y sabe responder con palabras firmes.",
+          "cta": "Lo que viene (barridas contra alguien que no se deja, rondas con niños de su edad y su tamaño) solo pasa en el tatami. Pregúntanos por los horarios de niños; también hay Judo para niños los miércoles de 16:30 a 17:30 con Tal."
+        },
+        {
+          "n": 4,
+          "title": "Espalda, atrapa y suelta, y tatami",
+          "goal": "Conocer el control de espalda y su escape, la primera llave con la regla de atrapa y suelta, y prepararse para la primera clase.",
+          "lessons": [
+            {
+              "id": "ninos-13",
+              "title": "La mochila",
+              "duration_min": 25,
+              "objective": "Mantener el control de espalda con cinturón de seguridad y ganchos.",
+              "why_it_matters": "Es la posición favorita de los niños. Aprenderla como «mochila», sin estrangulaciones, les da control y diversión con total seguridad.",
+              "steps": [
+                "Pecho pegado a su espalda.",
+                "Cinturón de seguridad: un brazo por encima del hombro, el otro por debajo de la axila, manos unidas en su pecho.",
+                "Ganchos: pies por dentro de sus muslos. Nunca cruces los tobillos.",
+                "Si gira, síguelo y quédate pegado."
+              ],
+              "common_mistakes": [
+                "Cruzar los tobillos (lastima tus propios pies).",
+                "Poner el brazo en el cuello: aquí solo cinturón en el pecho."
+              ],
+              "safety": "En casa no hay estrangulaciones: las manos van unidas en el pecho, nunca en el cuello.",
+              "partner_drill": "Juego «La mochila»: el de arriba aguanta 30 s mientras el de abajo gatea suave. Cambian. 3 rondas.",
+              "video": {
+                "youtube_id": "dKqqdsJF60o",
+                "title": "Backpack Challenge! Grappling Game for Kids to Learn Back Control",
+                "channel": "Jiu-Jitsu For Kids",
+                "why_this_video": "Un juego infantil de control de espalda: exactamente la mochila, convertida en reto divertido."
+              },
+              "self_check": {
+                "question": "En la mochila, ¿cómo van tus tobillos?",
+                "options": [
+                  "Cruzados",
+                  "Sin cruzar, pies dentro de sus muslos",
+                  "En el aire"
+                ],
+                "answer": 1,
+                "explanation": "Los tobillos cruzados se pueden lastimar; los ganchos van por dentro, sin cruzar."
+              },
+              "age_notes": {
+                "7-9": "Solo la mochila sobre la tortuga, despacio.",
+                "10-12": "Agreguen tomar la espalda desde control lateral (video extra). La estrangulación se aprende en el dojo con coach."
+              },
+              "parent_note": "Si ven un brazo cerca del cuello, se para y se corrige con calma."
+            },
+            {
+              "id": "ninos-14",
+              "title": "Escapar de la mochila",
+              "duration_min": 25,
+              "objective": "Salir del control de espalda con dos manos en un brazo y deslizándose al piso.",
+              "why_it_matters": "Cada posición tiene su escape. Saberlo le quita el miedo a quedar abajo y le enseña a pensar con calma.",
+              "steps": [
+                "Barbilla abajo; dos manos en el brazo que pasa por tu hombro.",
+                "Desliza la cadera hacia el lado de ese brazo.",
+                "Pega la espalda y los hombros al piso.",
+                "Gira hacia el compañero y mete la rodilla: guardia."
+              ],
+              "common_mistakes": [
+                "Intentar pararse con el compañero en la espalda.",
+                "Usar una sola mano."
+              ],
+              "safety": "El de arriba se deja deslizar; nada de apretar el pecho fuerte.",
+              "partner_drill": "5 escapes por lado. Juego «La mochila, ronda 2»: el de abajo anota si escapa, el de arriba si se mantiene 30 s.",
+              "video": {
+                "youtube_id": "vvoKSMmHAQ0",
+                "title": "Kids BJJ Grey Belt - Back escape 1",
+                "channel": "Absolute MMA",
+                "why_this_video": "Absolute MMA, clase de niños: el escape de la espalda paso a paso."
+              },
+              "self_check": {
+                "question": "Para escapar de la espalda, ¿cuántas manos van en su brazo?",
+                "options": [
+                  "Una",
+                  "Dos",
+                  "Ninguna"
+                ],
+                "answer": 1,
+                "explanation": "«Dos manos en un brazo, deslízate al piso.»"
+              },
+              "age_notes": {
+                "7-9": "Frase: «Dos manos, al piso, gira».",
+                "10-12": "Encadenen: espalda, escape, guardia, barrida. 2 minutos seguidos."
+              },
+              "parent_note": "Recuerden siempre la respiración: «respira y piensa» es parte del escape."
+            },
+            {
+              "id": "ninos-15",
+              "title": "Americana: atrapa y suelta",
+              "duration_min": 25,
+              "objective": "Aplicar la americana desde montada despacio y soltar cuando el adulto cuenta hasta dos.",
+              "why_it_matters": "Su primera llave le enseña control y responsabilidad: la seguridad del compañero está en sus manos. Por eso se aprende con la regla de atrapa y suelta.",
+              "steps": [
+                "Desde montada, fija su muñeca en el piso junto a su cabeza, codo doblado.",
+                "Tu otra mano pasa por debajo de su codo y agarra tu muñeca (figura cuatro).",
+                "Desliza su codo hacia su cadera, despacio, «como pintando el piso».",
+                "Al primer tap o cuando el adulto cuenta «1, 2», sueltas."
+              ],
+              "common_mistakes": [
+                "Ir rápido o con fuerza.",
+                "Levantar su codo del piso en lugar de deslizarlo."
+              ],
+              "safety": "La presión la decide el adulto que mira, nunca el niño. Lento como miel y se suelta al «2».",
+              "partner_drill": "5 repeticiones lentas por lado con atrapa y suelta. Defensa: pulgar arriba, codo a las costillas, 5 por lado.",
+              "video": {
+                "youtube_id": "VfReGlF_DHI",
+                "title": "Kids BJJ Grey Belt - Americana from Mount",
+                "channel": "Absolute MMA",
+                "why_this_video": "Absolute MMA, niños demostrando la americana desde montada, con los pasos claros."
+              },
+              "self_check": {
+                "question": "¿Quién decide cuánta presión se usa en la americana?",
+                "options": [
+                  "El niño que la aplica",
+                  "El adulto que está mirando",
+                  "Nadie"
+                ],
+                "answer": 1,
+                "explanation": "Atrapa y suelta: el adulto cuenta y se suelta. Así se aprende con seguridad."
+              },
+              "age_notes": {
+                "7-9": "Solo la americana desde montada, siempre con conteo.",
+                "10-12": "Agreguen la defensa (video extra) y la americana desde control lateral."
+              },
+              "parent_note": "Esta lección siempre con un adulto mirando cada repetición. Si duele una articulación, se termina la sesión."
+            },
+            {
+              "id": "ninos-16",
+              "title": "Tu primera clase en El Dojo",
+              "duration_min": 15,
+              "objective": "Saber qué llevar, cómo es una clase de niños y las costumbres del tatami.",
+              "why_it_matters": "Llegar sabiendo qué esperar quita los nervios. Su primera clase se vuelve emoción en lugar de miedo.",
+              "steps": [
+                "Qué llevar: playera, short o pants deportivo, agua y uñas cortas. Sin aretes ni pulseras. No hace falta gi el primer día.",
+                "Lleguen 10 minutos antes para conocer a Arturo y llenar la Carta Responsiva.",
+                "Al entrar y salir del tatami se hace una reverencia; descalzos sobre el tatami, con sandalias fuera de él.",
+                "La clase: calentamiento con juegos, técnica, juegos de posición y despedida.",
+                "Al final, chocar la mano con cada compañero y decir «¡Oss!»."
+              ],
+              "common_mistakes": [
+                "Llegar justo a la hora y con prisa.",
+                "Entrar al tatami con zapatos."
+              ],
+              "safety": "Avísenle al coach de cualquier lesión, alergia o condición de salud antes de empezar.",
+              "solo_drill": "Ensayen en casa la reverencia de entrada y el «¡Oss!». Preparen juntos la mochila del primer día.",
+              "video": {
+                "youtube_id": "aHzWkxafDFQ",
+                "title": "A Parents Guide to BJJ for Kids",
+                "channel": "BJJ After Forty",
+                "why_this_video": "Un profesor de niños responde las dudas típicas de papás: cintas, cómo platicar después de clase y qué hacer si quiere dejarlo."
+              },
+              "self_check": {
+                "question": "¿Qué se hace al entrar al tatami?",
+                "options": [
+                  "Correr a jugar",
+                  "Una reverencia, descalzo",
+                  "Nada"
+                ],
+                "answer": 1,
+                "explanation": "La reverencia es una muestra de respeto al dojo, al coach y a los compañeros. ¡Oss!"
+              },
+              "age_notes": {
+                "7-9": "Su grupo: Jiu Jitsu Niños, lunes, martes y jueves de 16:00 a 17:00 con Arturo.",
+                "10-12": "Su grupo: Jiu Jitsu Juniors, martes y jueves de 17:30 a 18:30 con Arturo."
+              },
+              "parent_note": "Pueden quedarse a mirar la clase. Después pregúntenle «¿qué fue lo más divertido?» en lugar de «¿ganaste?».",
+              "class_pointer": {
+                "7-9": "Jiu Jitsu Niños · lunes, martes y jueves · 16:00–17:00 · Arturo",
+                "10-12": "Jiu Jitsu Juniors · martes y jueves · 17:30–18:30 · Arturo",
+                "alternativa": "Judo Niños · miércoles · 16:30–17:30 · Tal",
+                "nota": "Horarios sujetos a cambios; confírmalos por WhatsApp."
+              }
+            }
+          ],
+          "milestone": "Hito 4: completó la academia en casa. Sabe dar tap, caer, escapar de montada, control lateral y espalda, barrer y aplicar su primera llave con atrapa y suelta.",
+          "cta": "¡Terminaron! Su hijo ya tiene el ciclo completo. Lo que sigue es rodar con niños de su edad y su tamaño, con un coach a su lado. Escríbenos por WhatsApp y te decimos qué grupo le toca y qué necesita para su primer día. ¡Oss!"
+        }
+      ],
+      "extras": [
+        {
+          "youtube_id": "14j4IcSK2KM",
+          "label": "Escape codo-rodilla (10–12)",
+          "title": "Knee-Elbow Mount Escape for Kids by Coach Janis Rozenbergs",
+          "channel": "Satori BJJ"
+        },
+        {
+          "youtube_id": "ZNBCZBhGin4",
+          "label": "Pararse y abrir la guardia",
+          "title": "Kids BJJ Grey Belt - Closed Guard Opener",
+          "channel": "Absolute MMA"
+        },
+        {
+          "youtube_id": "ItRCQX1A1Eo",
+          "label": "Pase de rodilla",
+          "title": "Kids BJJ Yellow / White Belt - Knee Slice Pass",
+          "channel": "Absolute MMA"
+        },
+        {
+          "youtube_id": "pnCzYFODeNU",
+          "label": "Tomar la espalda desde control lateral (10–12)",
+          "title": "Kids BJJ Yellow Belt - Chair Sit to Back Control",
+          "channel": "Absolute MMA"
+        },
+        {
+          "youtube_id": "xc2LddRNm60",
+          "label": "Girar a rodillas desde control lateral (10–12)",
+          "title": "Side Control Escape - Thread the Needle & Belly Out",
+          "channel": "Utopia Martial Arts"
+        },
+        {
+          "youtube_id": "60r7lmHH-xE",
+          "label": "Defensa de la americana",
+          "title": "Kids BJJ August 2025 Technique Series - Americana Escape",
+          "channel": "Wolfpack MMA Wylie"
+        },
+        {
+          "youtube_id": "JxZW-gN1Q0o",
+          "label": "Montada alta",
+          "title": "High Mount Control - Brazilian Jiu-Jitsu for Kids",
+          "channel": "Utopia Martial Arts"
+        },
+        {
+          "youtube_id": "HaUYrDUYlgg",
+          "label": "Americana desde control lateral (10–12)",
+          "title": "Kids BJJ Yellow Belt - Americana from Side Control",
+          "channel": "Absolute MMA"
+        },
+        {
+          "youtube_id": "USjwbu7K2cA",
+          "label": "Control lateral a montada",
+          "title": "Kids BJJ Technique- Side Control to Mount Transition by Coach Janis",
+          "channel": "Satori BJJ"
+        }
+      ]
+    },
+    {
+      "slug": "mujeres",
+      "name": "Autodefensa para Mujeres",
+      "kanji": "力",
+      "promise": "En cuatro semanas te mueves con más confianza, pones límites claros y sabes salir de las situaciones más comunes, de pie y en el piso.",
+      "who_for": "Mujeres de cualquier edad y condición física, sin experiencia. El módulo 1 se hace sola; los demás con una amiga, hermana o pareja.",
+      "habit_plan": "Dos sesiones por semana de 25–30 minutos, más 3 minutos diarios de camarón y levantada. Tu racha cuenta los días que practicas, aunque sean 3 minutos.",
+      "intake_questions": [
+        {
+          "q": "¡Hola! ¿Qué te gustaría ganar con el curso?",
+          "options": [
+            "Sentirme más segura",
+            "Hacer ejercicio diferente",
+            "Las dos"
+          ]
+        },
+        {
+          "q": "¿Has practicado algún arte marcial?",
+          "options": [
+            "Nunca",
+            "Un poco",
+            "Sí"
+          ]
+        },
+        {
+          "q": "¿Tienes con quién practicar en casa?",
+          "options": [
+            "Sí",
+            "Voy a empezar sola",
+            "Todavía no sé"
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "n": 1,
+          "title": "Tu base: confianza, voz y movimiento",
+          "goal": "Construir la mentalidad, los límites y los movimientos que sostienen todo lo demás.",
+          "lessons": [
+            {
+              "id": "mujeres-01",
+              "title": "Tu fuerza empieza hoy",
+              "duration_min": 15,
+              "objective": "Entender por qué el jiu jitsu funciona para cualquier mujer y qué vas a lograr en estas cuatro semanas.",
+              "why_it_matters": "El jiu jitsu usa palanca, ángulo y técnica, no tamaño. Saberlo cambia cómo te mueves, cómo caminas y cómo te sientes.",
+              "steps": [
+                "Mira el video y anota una razón personal por la que empiezas.",
+                "Prepara tu espacio: tapete o cobijas, dos metros libres, ropa cómoda.",
+                "Aprende la señal de alto: dos golpecitos en tu compañera o di «¡tap!». Se suelta al instante, siempre.",
+                "Elige tus días: dos sesiones por semana de 30 a 45 minutos."
+              ],
+              "common_mistakes": [
+                "Pensar que necesitas estar en forma para empezar: empiezas como estás.",
+                "Querer ir rápido: lento primero, la velocidad llega sola."
+              ],
+              "safety": "Si tienes alguna lesión o condición de salud, adapta los movimientos y coméntalo en el dojo.",
+              "solo_drill": "Escribe en tu teléfono: «Empiezo porque…». Agenda tus dos sesiones de la semana.",
+              "video": {
+                "youtube_id": "o87EqXS9OC8",
+                "title": "Eve Torres on \"Why Women Don't Learn Self-Defense\"",
+                "channel": "Gracie Jiu-jitsu Academy",
+                "why_this_video": "Eve Torres cuenta qué la detenía para aprender defensa personal y todo lo que ganó en confianza al empezar."
+              },
+              "self_check": {
+                "question": "¿Qué hace que el jiu jitsu funcione contra alguien más grande?",
+                "options": [
+                  "La fuerza",
+                  "La técnica, el ángulo y la palanca",
+                  "La suerte"
+                ],
+                "answer": 1,
+                "explanation": "La técnica le gana al tamaño. Por eso este curso es para todas."
+              }
+            },
+            {
+              "id": "mujeres-02",
+              "title": "Tu límite: cuerpo, distancia y voz",
+              "duration_min": 25,
+              "objective": "Poner un límite claro con tu postura, tu distancia y tu voz.",
+              "why_it_matters": "La herramienta de autodefensa que más se usa es la que ni siquiera toca a nadie: un límite claro. Tu voz y tu postura comunican seguridad.",
+              "steps": [
+                "Postura: pies a lo ancho de los hombros, uno un poco adelante, rodillas suaves.",
+                "Manos arriba a la altura del pecho, palmas abiertas: una postura tranquila que ya te protege.",
+                "Voz firme y clara: «¡Alto! No te acerques».",
+                "Muévete en diagonal hacia atrás para mantener la distancia, nunca en línea recta."
+              ],
+              "common_mistakes": [
+                "Hablar bajito o con tono de disculpa.",
+                "Retroceder en línea recta."
+              ],
+              "safety": "Practica sola frente a un espejo; no hace falta contacto.",
+              "solo_drill": "Frente al espejo: 10 veces postura + voz firme. Después 2 minutos moviéndote en diagonal mientras imaginas que alguien avanza.",
+              "video": {
+                "youtube_id": "5g41-aK1LIY",
+                "title": "The #1 Self-Defense Tip for Women",
+                "channel": "GracieBreakdown",
+                "why_this_video": "La Academia Gracie explica por qué poner un límite con cuerpo, distancia y voz es la primera herramienta de autodefensa."
+              },
+              "self_check": {
+                "question": "¿Cuál es la primera herramienta de autodefensa?",
+                "options": [
+                  "Un golpe fuerte",
+                  "Un límite claro con postura, distancia y voz",
+                  "Correr sin mirar"
+                ],
+                "answer": 1,
+                "explanation": "Un límite claro resuelve la mayoría de las situaciones sin contacto."
+              }
+            },
+            {
+              "id": "mujeres-03",
+              "title": "Caer segura",
+              "duration_min": 20,
+              "objective": "Caer hacia atrás protegiendo la cabeza y palmeando el piso.",
+              "why_it_matters": "Saber caer te protege en el tatami y en la vida diaria: una escalera, la banqueta, un resbalón.",
+              "steps": [
+                "Sentada, brazos al frente, barbilla pegada al pecho.",
+                "Rueda hacia atrás con la espalda redonda; la cabeza no toca.",
+                "Al tocar con la espalda, palmea el piso con las dos manos, brazos a 45 grados.",
+                "Sube el nivel cuando salga perfecta: desde cuclillas."
+              ],
+              "common_mistakes": [
+                "Soltar la barbilla.",
+                "Apoyar las manos atrás para detenerte."
+              ],
+              "safety": "Siempre sobre tapete o cobijas; nunca sobre loseta.",
+              "solo_drill": "10 caídas desde sentada y 10 desde cuclillas.",
+              "video": {
+                "youtube_id": "BLhqDMqVQqo",
+                "title": "Seated Break Fall by Deborah Gracie",
+                "channel": "BJJ Fanatics",
+                "why_this_video": "Deborah Gracie, una de las pocas cintas negras de la familia Gracie, enseña la caída desde sentada."
+              },
+              "self_check": {
+                "question": "Al caer, ¿qué protege tu cabeza?",
+                "options": [
+                  "Los brazos estirados atrás",
+                  "La barbilla pegada al pecho",
+                  "Cerrar los ojos"
+                ],
+                "answer": 1,
+                "explanation": "Barbilla al pecho y manos al piso: la cabeza nunca toca."
+              }
+            },
+            {
+              "id": "mujeres-04",
+              "title": "El camarón",
+              "duration_min": 25,
+              "objective": "Dominar la fuga de cadera, el movimiento que crea espacio en todos los escapes.",
+              "why_it_matters": "Es el movimiento que más vas a usar en toda la academia. Si sabes hacer el camarón, sabes crear espacio.",
+              "steps": [
+                "Acostada boca arriba, rodillas dobladas.",
+                "Planta un pie, gira sobre el hombro del mismo lado y empuja el piso.",
+                "La cadera se aleja en diagonal; tu cuerpo queda de lado, en forma de C.",
+                "Los antebrazos quedan al frente como marcos."
+              ],
+              "common_mistakes": [
+                "Subir la cadera hacia el techo en vez de alejarla.",
+                "Dejar los brazos aplastados bajo el cuerpo."
+              ],
+              "safety": "Espacio libre alrededor: vas a desplazarte por la sala.",
+              "solo_drill": "Cruza la sala en camarón, ida y vuelta, 3 veces. Suma 10 puentes de cadera.",
+              "video": {
+                "youtube_id": "iWuND9i_a0o",
+                "title": "How To Do a Hip Escape",
+                "channel": "Gracie Barra Roundhay Leeds",
+                "why_this_video": "Gracie Barra Roundhay explica la fuga de cadera con detalle, ideal para practicarla sola."
+              },
+              "self_check": {
+                "question": "En el camarón, ¿hacia dónde va la cadera?",
+                "options": [
+                  "Hacia arriba",
+                  "En diagonal, alejándose",
+                  "Se queda quieta"
+                ],
+                "answer": 1,
+                "explanation": "La cadera se aleja en diagonal para crear espacio."
+              }
+            }
+          ],
+          "milestone": "Hito 1: pones un límite con voz firme, caes con seguridad y cruzas la sala en camarón sin pensarlo.",
+          "cta": "¡Ya tienes tu base! Los lunes por la mañana entrenamos solo mujeres en Jiu Jitsu Chicas con Arturo. Escríbenos y te contamos cómo es la clase."
+        },
+        {
+          "n": 2,
+          "title": "En el piso, con calma: guardia y marcos",
+          "goal": "Descubrir que desde abajo tienes control: guardia cerrada, postura y marcos.",
+          "lessons": [
+            {
+              "id": "mujeres-05",
+              "title": "La guardia cerrada: tu escudo",
+              "duration_min": 25,
+              "objective": "Cerrar la guardia y mantener a tu compañera a distancia con las piernas.",
+              "why_it_matters": "Con la guardia cerrada, estar abajo se vuelve una posición de control. Es la base del jiu jitsu para mujeres.",
+              "steps": [
+                "Cruza los tobillos detrás de su espalda baja y aprieta las rodillas.",
+                "Manos arriba, codos adentro, protegiendo la cara.",
+                "Si se levanta, jala su cuerpo hacia ti con las piernas.",
+                "Cadera activa: gira de lado a lado, nunca plana."
+              ],
+              "common_mistakes": [
+                "Estirar los brazos hacia ella.",
+                "Abrir las piernas sin querer."
+              ],
+              "safety": "Tu compañera trabaja suave; esto es para sentir la posición, no para competir.",
+              "partner_drill": "3 rondas de 60 s: tu compañera intenta pararse, tú mantienes la guardia. Cambian.",
+              "video": {
+                "youtube_id": "Q3-8kGqYu9A",
+                "title": "LIVE Women's Self-defense Seminar (Gracie Punch Block Series)",
+                "channel": "GracieBreakdown",
+                "why_this_video": "Seminario de autodefensa femenina de la Academia Gracie que muestra la guardia cerrada como posición de control."
+              },
+              "self_check": {
+                "question": "Con la guardia cerrada, ¿dónde van tus codos?",
+                "options": [
+                  "Abiertos",
+                  "Adentro, cerca del cuerpo",
+                  "En el piso"
+                ],
+                "answer": 1,
+                "explanation": "Codos adentro y manos arriba: protegida y lista."
+              }
+            },
+            {
+              "id": "mujeres-06",
+              "title": "Romper la postura",
+              "duration_min": 25,
+              "objective": "Desde la guardia, bajar la cabeza de tu compañera y controlar una muñeca.",
+              "why_it_matters": "Sin postura, quien está arriba no puede hacer casi nada. Con dos acciones simples tomas el control.",
+              "steps": [
+                "Una mano detrás de su nuca; jala con el brazo y las piernas a la vez.",
+                "Abraza su cabeza contra tu pecho.",
+                "La otra mano controla una de sus muñecas.",
+                "Saca tu cadera del centro."
+              ],
+              "common_mistakes": [
+                "Jalar solo con los brazos.",
+                "Quedarte plana."
+              ],
+              "safety": "Se jala la nuca, nunca el cuello; movimientos suaves.",
+              "partner_drill": "10 repeticiones: ella se sienta derecha, tú rompes la postura. Luego 2 rondas de 60 s.",
+              "video": {
+                "youtube_id": "yEhY2w7SWAE",
+                "title": "Clave importante para ROMPER PEGADA & POSTURA  desde GUARDIA CERRADA",
+                "channel": "Luna B",
+                "why_this_video": "Video en español con una instructora que explica la clave para romper la postura desde guardia cerrada."
+              },
+              "self_check": {
+                "question": "Para romper la postura, ¿qué usas?",
+                "options": [
+                  "Solo los brazos",
+                  "Brazo y piernas a la vez",
+                  "La cabeza"
+                ],
+                "answer": 1,
+                "explanation": "Jalan el brazo y las piernas juntos: así no depende de la fuerza."
+              }
+            },
+            {
+              "id": "mujeres-07",
+              "title": "Marcos: tu estructura",
+              "duration_min": 25,
+              "objective": "Usar los antebrazos como marcos para que el peso no te aplaste.",
+              "why_it_matters": "Un marco es hueso, no músculo. Por eso funciona contra alguien más pesado y te da espacio para escapar.",
+              "steps": [
+                "Un antebrazo en su hombro o su cuello, el otro en su cadera.",
+                "Codos pegados a tus costillas.",
+                "No empujes: sostén la estructura.",
+                "Con los marcos puestos, haz el camarón y mete la rodilla."
+              ],
+              "common_mistakes": [
+                "Estirar los brazos.",
+                "Empujar con fuerza en lugar de sostener."
+              ],
+              "safety": "Los marcos van en hombro y cadera, sin presionar la garganta de tu compañera.",
+              "partner_drill": "Tu compañera se acuesta encima con peso suave; tú pones marcos y haces camarón. 10 repeticiones por lado.",
+              "video": {
+                "youtube_id": "57YaKxCRqzk",
+                "title": "Frames (Concept)",
+                "channel": "Absolute MMA St Kilda - Melbourne",
+                "why_this_video": "Explicación clara del concepto de marcos: por qué la estructura multiplica tu fuerza."
+              },
+              "self_check": {
+                "question": "¿Qué hace funcionar un marco?",
+                "options": [
+                  "La fuerza del brazo",
+                  "La estructura de tus huesos",
+                  "La velocidad"
+                ],
+                "answer": 1,
+                "explanation": "El marco lo hace tu esqueleto, no tu fuerza."
+              }
+            },
+            {
+              "id": "mujeres-08",
+              "title": "Barre, levántate y sal",
+              "duration_min": 25,
+              "objective": "Hacer la barrida de golpe de cadera y levantarte de inmediato.",
+              "why_it_matters": "Pasar de abajo a arriba y ponerte de pie es la secuencia que más poder da. El objetivo no es quedarte: es quedar libre.",
+              "steps": [
+                "Abre la guardia, siéntate sobre un codo y luego apoya la mano.",
+                "El otro brazo pasa por encima de su hombro.",
+                "Sube la cadera hacia su axila y gira sobre ella.",
+                "En cuanto quedes arriba, levántate y da dos pasos atrás, mirándola."
+              ],
+              "common_mistakes": [
+                "Volver a acostarte a medio camino.",
+                "Quedarte arriba en lugar de levantarte."
+              ],
+              "safety": "Tu compañera cae de lado y despacio sobre el tapete.",
+              "partner_drill": "5 barridas por lado, cada una terminando de pie con distancia.",
+              "video": {
+                "youtube_id": "W4rjNC7fqXc",
+                "title": "Hip Bump Sweep Tutorial",
+                "channel": "Chelsea LaGrasse",
+                "why_this_video": "Chelsea LaGrasse enseña la barrida de golpe de cadera con mucho detalle."
+              },
+              "self_check": {
+                "question": "Después de barrer, ¿qué sigue?",
+                "options": [
+                  "Quedarte arriba peleando",
+                  "Levantarte y tomar distancia",
+                  "Acostarte"
+                ],
+                "answer": 1,
+                "explanation": "En defensa personal el objetivo es quedar libre."
+              }
+            }
+          ],
+          "milestone": "Hito 2: desde abajo controlas con la guardia, rompes la postura, sostienes marcos y terminas de pie.",
+          "cta": "Esto se siente aún mejor con una coach corrigiendo el detalle. Pregúntanos por Jiu Jitsu Chicas, los lunes por la mañana, un grupo donde todas empezaron desde cero."
+        },
+        {
+          "n": 3,
+          "title": "Escapes que funcionan con cualquiera",
+          "goal": "Salir de las posiciones de abajo más comunes con técnica y calma.",
+          "lessons": [
+            {
+              "id": "mujeres-09",
+              "title": "Upa: atrapa y rueda",
+              "duration_min": 25,
+              "objective": "Salir de la montada atrapando brazo y pie con un puente.",
+              "why_it_matters": "Es el escape más famoso del jiu jitsu y funciona contra alguien mucho más grande cuando atrapas bien.",
+              "steps": [
+                "Atrapa un brazo: su muñeca con las dos manos, pegada a tu pecho.",
+                "Atrapa su pie del mismo lado con tu pie, por fuera.",
+                "Pies cerca de tu cadera; puente fuerte en diagonal.",
+                "Rueda sobre el hombro atrapado y quedas arriba."
+              ],
+              "common_mistakes": [
+                "Puente sin atrapar.",
+                "Empujar su pecho con los brazos estirados."
+              ],
+              "safety": "Tu compañera se deja rodar y cae suave.",
+              "partner_drill": "5 upas por lado, lentos; luego 5 más a ritmo normal.",
+              "video": {
+                "youtube_id": "rFD5Lp6EPNk",
+                "title": "Women Empowered - Trap & Roll Keeri & John 3:20:20",
+                "channel": "TruStrength",
+                "why_this_video": "Clase del programa Women Empowered mostrando el «trap and roll», el mismo atrapa y rueda."
+              },
+              "self_check": {
+                "question": "¿Qué necesitas atrapar para el upa?",
+                "options": [
+                  "Su cabeza",
+                  "Un brazo y el pie del mismo lado",
+                  "Nada"
+                ],
+                "answer": 1,
+                "explanation": "Sin atrapar, el puente no la voltea."
+              }
+            },
+            {
+              "id": "mujeres-10",
+              "title": "Codo-rodilla",
+              "duration_min": 25,
+              "objective": "Recuperar la guardia desde la montada cuando el upa no sale.",
+              "why_it_matters": "El upa y el codo-rodilla son pareja: cuando uno no está, el otro sí.",
+              "steps": [
+                "Marco: antebrazo en su cadera, la otra mano en su rodilla.",
+                "Camarón alejando la cadera hacia ese lado.",
+                "Mete la rodilla entre las dos como cuña.",
+                "Saca el pie y recupera la guardia."
+              ],
+              "common_mistakes": [
+                "Hacer camarón sin marco.",
+                "Intentar sacar la pierna sin crear espacio."
+              ],
+              "safety": "Movimientos lentos; tu compañera no aplasta.",
+              "partner_drill": "5 por lado. Luego combinen: si ella apoya las manos, codo-rodilla; si no, upa.",
+              "video": {
+                "youtube_id": "PeXIyBRUg9A",
+                "title": "Bridge & Roll and Knee & Elbow Mount Escapes ⚡️ Jiu Jitsu w/ Jen Z",
+                "channel": "Jen Z",
+                "why_this_video": "Jen Z muestra el upa y el codo-rodilla juntos, justo como pareja de escapes."
+              },
+              "self_check": {
+                "question": "¿Cuándo usas el codo-rodilla?",
+                "options": [
+                  "Siempre primero",
+                  "Cuando el upa no sale porque ella apoya las manos",
+                  "Nunca"
+                ],
+                "answer": 1,
+                "explanation": "Siempre hay un escape disponible."
+              }
+            },
+            {
+              "id": "mujeres-11",
+              "title": "Escape de control lateral",
+              "duration_min": 25,
+              "objective": "Salir del control lateral con marcos y camarón.",
+              "why_it_matters": "Es la otra posición de abajo más común. Con marcos primero, el peso deja de ser un problema.",
+              "steps": [
+                "Primero los marcos: antebrazo en su hombro, mano en su cadera.",
+                "Puente pequeño para despegarla.",
+                "Camarón alejando la cadera.",
+                "Rodilla adentro y pies en sus caderas: guardia."
+              ],
+              "common_mistakes": [
+                "Empezar por la cadera sin marcos.",
+                "Brazos estirados."
+              ],
+              "safety": "Tu compañera usa peso suave; aumenten poco a poco.",
+              "partner_drill": "5 escapes por lado. Luego 3 rondas de 30 s: ella mantiene, tú escapas.",
+              "video": {
+                "youtube_id": "6szlLRFFFJM",
+                "title": "Natalie Day Teaches a Side Control Escape",
+                "channel": "Mauricio Gomes BJJ",
+                "why_this_video": "Natalie Day enseña el escape de control lateral paso a paso."
+              },
+              "self_check": {
+                "question": "¿Qué va primero en este escape?",
+                "options": [
+                  "La cadera",
+                  "Los marcos",
+                  "Rodar"
+                ],
+                "answer": 1,
+                "explanation": "Primero los marcos, luego la cadera."
+              }
+            },
+            {
+              "id": "mujeres-12",
+              "title": "Manos en el cuello: calma y upa",
+              "duration_min": 25,
+              "objective": "Responder con calma a un agarre de cuello en el piso usando el upa que ya sabes.",
+              "why_it_matters": "Lo bonito: no es una técnica nueva. Es tu upa aplicado con calma, y por eso lo dominas.",
+              "steps": [
+                "Barbilla abajo y hombros arriba.",
+                "Atrapa uno de sus brazos contra tu pecho con las dos manos.",
+                "Atrapa su pie de ese mismo lado.",
+                "Puente en diagonal, rueda y levántate."
+              ],
+              "common_mistakes": [
+                "Jalar sus manos hacia fuera con fuerza.",
+                "Olvidar atrapar el pie."
+              ],
+              "safety": "Tu compañera apoya las manos sin apretar el cuello: practiquen MUY lento.",
+              "partner_drill": "5 repeticiones por lado, lentísimas, con contacto suave. Terminen siempre de pie.",
+              "video": {
+                "youtube_id": "AaW7z4DPECw",
+                "title": "Women's Self Defense - Ground Choke Escape (Full Lesson)",
+                "channel": "DMBrazilianJiuJitsu",
+                "why_this_video": "Lección completa de autodefensa femenina sobre esta situación, con el escape de puente y giro."
+              },
+              "self_check": {
+                "question": "¿Cuál es la técnica para salir?",
+                "options": [
+                  "Una nueva y complicada",
+                  "El mismo upa: atrapa brazo y pie, puente y rueda",
+                  "Quedarse quieta"
+                ],
+                "answer": 1,
+                "explanation": "Tu upa sirve aquí también. Repetirlo lo vuelve automático."
+              }
+            }
+          ],
+          "milestone": "Hito 3: escapas de montada (dos maneras) y de control lateral, con calma y terminando de pie.",
+          "cta": "Ya tienes los escapes que más importan. El siguiente nivel es practicarlos con alguien que no coopera, con coach. Escríbenos y te contamos cómo es Jiu Jitsu Chicas."
+        },
+        {
+          "n": 4,
+          "title": "De pie, segura y libre",
+          "goal": "Soltar agarres comunes de pie, levantarte con base y llegar lista a tu primera clase.",
+          "lessons": [
+            {
+              "id": "mujeres-13",
+              "title": "Suelta un agarre de muñeca",
+              "duration_min": 20,
+              "objective": "Liberarte de un agarre de muñeca girando hacia el pulgar.",
+              "why_it_matters": "El pulgar es el punto débil de cualquier agarre. Con un giro inteligente sales sin necesitar fuerza.",
+              "steps": [
+                "No jales hacia atrás.",
+                "Gira tu muñeca hacia el hueco entre su pulgar y sus dedos.",
+                "Baja el codo y saca la mano en círculo hacia ti, con un paso atrás en diagonal.",
+                "Termina en postura con manos arriba y voz firme."
+              ],
+              "common_mistakes": [
+                "Jalar en línea recta.",
+                "Quedarte cerca después de soltarte."
+              ],
+              "safety": "Agarres suaves; nada de torcer la muñeca de tu compañera.",
+              "partner_drill": "10 por lado; luego 10 más con agarre a dos manos.",
+              "video": {
+                "youtube_id": "NTEtcRUZ2xM",
+                "title": "Self-Defense 101: The Wrist Release with Eve & Victoria Gracie",
+                "channel": "Meagan Kong",
+                "why_this_video": "Eve y Victoria Gracie enseñan cómo soltar un agarre de muñeca."
+              },
+              "self_check": {
+                "question": "¿Hacia dónde giras la muñeca?",
+                "options": [
+                  "Hacia el pulgar",
+                  "Hacia el meñique",
+                  "Hacia atrás"
+                ],
+                "answer": 0,
+                "explanation": "Contra el pulgar, no contra la mano completa."
+              }
+            },
+            {
+              "id": "mujeres-14",
+              "title": "Abrazo por detrás",
+              "duration_min": 25,
+              "objective": "Responder a un abrazo por detrás bajando tu centro y girando.",
+              "why_it_matters": "Un cuerpo bajo y estable es difícil de mover. Esta respuesta te da base y te deja salir de frente.",
+              "steps": [
+                "Baja el centro: cadera atrás, rodillas dobladas.",
+                "Atrapa uno de sus brazos con las dos manos.",
+                "Gira la cadera y crea espacio por un lado.",
+                "Sal mirándola de frente y toma distancia."
+              ],
+              "common_mistakes": [
+                "Quedarte alta y rígida.",
+                "Salir corriendo de espaldas sin crear espacio."
+              ],
+              "safety": "Tu compañera abraza firme pero sin apretar; todo lento.",
+              "partner_drill": "10 repeticiones: ella abraza sin avisar (suave), tú bajas, giras y sales.",
+              "video": {
+                "youtube_id": "Gyr9gOtRdJ8",
+                "title": "6 Creepy Hug Defenses for EVERY Woman",
+                "channel": "GracieBreakdown",
+                "why_this_video": "GracieBreakdown muestra respuestas a distintos abrazos; empieza por la primera y repítela hasta que salga sola."
+              },
+              "self_check": {
+                "question": "¿Qué haces primero ante un abrazo por detrás?",
+                "options": [
+                  "Saltar",
+                  "Bajar tu centro de gravedad",
+                  "Gritar sin moverte"
+                ],
+                "answer": 1,
+                "explanation": "Peso abajo primero: un cuerpo bajo no se levanta."
+              }
+            },
+            {
+              "id": "mujeres-15",
+              "title": "Levántate con base y sal",
+              "duration_min": 20,
+              "objective": "Pararte desde el piso sin dar la espalda y salir con distancia.",
+              "why_it_matters": "Todo el curso termina igual: de pie, con distancia y libre. La levantada técnica es el puente entre el piso y la salida.",
+              "steps": [
+                "Sentada, mano de un lado apoyada atrás, pie contrario plantado.",
+                "Levanta la cadera con esa mano y ese pie.",
+                "La otra pierna pasa por debajo, hacia atrás.",
+                "De pie, manos arriba, dos pasos atrás en diagonal y voz firme."
+              ],
+              "common_mistakes": [
+                "Levantarte de espaldas.",
+                "Quedarte cerca al terminar."
+              ],
+              "safety": "Espacio libre a tu alrededor; muévete lento hasta que salga fluido.",
+              "solo_drill": "10 levantadas por lado. Flujo final: camarón, levantada, postura, voz. 5 veces.",
+              "video": {
+                "youtube_id": "1txPD0Hw_JI",
+                "title": "Self-Defense 101: Stand up in base series",
+                "channel": "Ribeiro Jiu Jitsu Philadelphia",
+                "why_this_video": "Coach Natalie enseña a levantarse en base, una serie de autodefensa básica."
+              },
+              "self_check": {
+                "question": "¿Cómo te levantas del piso?",
+                "options": [
+                  "De espaldas, rápido",
+                  "Mirando al frente, con una mano y un pie de apoyo",
+                  "Saltando"
+                ],
+                "answer": 1,
+                "explanation": "Mirando al frente y con base, lista para tomar distancia."
+              }
+            },
+            {
+              "id": "mujeres-16",
+              "title": "Tu primera clase en El Dojo",
+              "duration_min": 15,
+              "objective": "Saber qué llevar, cómo es la clase y las costumbres del tatami.",
+              "why_it_matters": "Llegar sabiendo qué esperar convierte los nervios en emoción. Todas en la clase empezaron igual que tú.",
+              "steps": [
+                "Qué llevar: leggings o pants deportivo, playera o rashguard, agua, uñas cortas, sin joyería. No necesitas gi el primer día.",
+                "Llega 10 minutos antes para conocer a Arturo y llenar la Carta Responsiva.",
+                "Reverencia al entrar y salir del tatami; descalza sobre el tatami, sandalias fuera de él.",
+                "La clase: calentamiento, técnica en parejas y, si quieres, rondas suaves al final. Puedes mirar las rondas la primera vez.",
+                "Choca la mano con tus compañeras al empezar y al terminar. ¡Oss!"
+              ],
+              "common_mistakes": [
+                "Pensar que tienes que «estar lista» o en forma.",
+                "Ir al 100 % de fuerza: técnica y calma."
+              ],
+              "safety": "Avisa al coach de cualquier lesión o condición de salud antes de empezar.",
+              "solo_drill": "Prepara tu mochila hoy y elige el lunes en que vas a ir. Mándanos un mensaje para que te esperemos.",
+              "video": {
+                "youtube_id": "G8qtP5iR0Xg",
+                "title": "Jiu Jitsu Class Beginner Tips | BJJ Class What NOT to do | Tips for Females Starting Jiu Jitsu",
+                "channel": "REALIZE BJJ LIFE",
+                "why_this_video": "Crystal, practicante de jiu jitsu, comparte consejos para mujeres que empiezan: cómo ser buena compañera y manejar los nervios."
+              },
+              "self_check": {
+                "question": "¿Qué tan temprano conviene llegar a tu primera clase?",
+                "options": [
+                  "Justo a la hora",
+                  "Unos 10 minutos antes",
+                  "Media hora tarde"
+                ],
+                "answer": 1,
+                "explanation": "Diez minutos te dan tiempo de conocer a la coach, firmar y calentar tranquila."
+              },
+              "class_pointer": {
+                "principal": "Jiu Jitsu Chicas (solo mujeres) · lunes · por la mañana · Arturo",
+                "también": "Jiu Jitsu adultos (mixto) · martes y jueves 08:30–10:00 con Ken o 20:00–21:30 con Gabriel",
+                "nota": "Horarios sujetos a cambios; confírmalos por WhatsApp."
+              }
+            }
+          ],
+          "milestone": "Hito 4: completaste la academia en casa. Pones límites, caes segura, escapas de las posiciones de abajo, sueltas agarres de pie y terminas siempre libre.",
+          "cta": "¡Lo lograste! Lo que sigue es practicarlo con resistencia real y una coach que corrige. Ven a Jiu Jitsu Chicas los lunes: escríbenos por WhatsApp y te esperamos. ¡Oss!"
+        }
+      ],
+      "extras": [
+        {
+          "youtube_id": "KXE77mwEu14",
+          "label": "Postura y distancia (Leticia Ribeiro)",
+          "title": "GRACIE JIU-JITSU SELF DEFENSE - MASTER ROYLER GRACIE AND LETICIA RIBEIRO",
+          "channel": "lettyribeiro"
+        },
+        {
+          "youtube_id": "IuwQpxDXefc",
+          "label": "La guardia como paraguas contra golpes",
+          "title": "How to Defend Against Punches on the Ground (Self-Defense for Women)",
+          "channel": "GracieBreakdown"
+        },
+        {
+          "youtube_id": "SjJOmj90Knw",
+          "label": "Cubrirse y abrazar (Women Empowered)",
+          "title": "\"The False Surrender\" (Gracie Women Empowered DVD Sample Clip)",
+          "channel": "Gracie Jiu-jitsu Academy"
+        },
+        {
+          "youtube_id": "fRgLB7sg4Ys",
+          "label": "Agarre por el frente",
+          "title": "3 Choke Defenses For Women",
+          "channel": "GracieBreakdown"
+        },
+        {
+          "youtube_id": "CLcN_esKh20",
+          "label": "Agarre de pelo",
+          "title": "5 Hair Grab Defenses - Women's Self-defense Techniques",
+          "channel": "GracieBreakdown"
+        },
+        {
+          "youtube_id": "oqUIAYZXSQQ",
+          "label": "Contra la pared (Deborah Gracie)",
+          "title": "Break Free: Self-Defense Against Wall Attacks #bjj #selfdefense #womenempowerment",
+          "channel": "Deborah Gracie"
+        },
+        {
+          "youtube_id": "UQO3V3Uo3t4",
+          "label": "Brazo por detrás del cuello, de pie",
+          "title": "Three Rear Choke Defenses Everyone Should Know!",
+          "channel": "GracieBreakdown"
+        },
+        {
+          "youtube_id": "_QTNEn4xasI",
+          "label": "Romper agarres en el piso (Erika Dawn)",
+          "title": "6 JiuJitsu Grip Breaks You Need To Know",
+          "channel": "Erika Dawn"
+        },
+        {
+          "youtube_id": "u0edxg2fFmw",
+          "label": "Barrida y levantarse",
+          "title": "BJJ For The Street: Foot On Hip Sweep To Get Up",
+          "channel": "BJJ Fanatics"
+        },
+        {
+          "youtube_id": "VQIqhqHx1rs",
+          "label": "Triángulo desde la guardia",
+          "title": "Fox Fixes Your Triangle From Guard",
+          "channel": "Gaidama"
+        },
+        {
+          "youtube_id": "hKT7mbRcq2Q",
+          "label": "Kimura desde la guardia (Chelsah Lyons)",
+          "title": "Kimura Submission from Closed Guard",
+          "channel": "Chelsah' Lyons"
+        },
+        {
+          "youtube_id": "OG2YYZ8NqlE",
+          "label": "Palanca desde la guardia (Denise Houle)",
+          "title": "Denise Houle Armbar from Closed Guard",
+          "channel": "Elevate Jiu Jitsu MAG"
+        },
+        {
+          "youtube_id": "x7H2NYCfIbs",
+          "label": "Cuándo no buscar una sumisión",
+          "title": "Jiu Jitsu Submissions for Women's Self Defense | Girls Who Fight",
+          "channel": "Girls Who Fight"
+        }
+      ]
+    },
+    {
+      "slug": "fundamentos",
+      "name": "Fundamentos de Jiu Jitsu",
+      "kanji": "基",
+      "promise": "En cuatro semanas llegas a tu primera clase moviéndote como jiujitsuka: cadera ágil, escapes que funcionan y la calma de saber que estar abajo no es perder.",
+      "who_for": "Adultos que nunca han entrenado o vuelven después de tiempo. El módulo 1 se hace solo; los demás con alguien que se deje mover.",
+      "habit_plan": "Dos lecciones por semana y 10 minutos diarios de movilidad + camarón. Repetir una lección cuenta: cinco movimientos sólidos valen más que cincuenta a medias.",
+      "intake_questions": [
+        {
+          "q": "¡Hola! ¿Qué te trae al jiu jitsu?",
+          "options": [
+            "Ponerme en forma",
+            "Defensa personal",
+            "Probar algo nuevo"
+          ]
+        },
+        {
+          "q": "¿Cuánta experiencia tienes?",
+          "options": [
+            "Ninguna",
+            "Algo de otro arte marcial",
+            "Ya entrené jiu jitsu"
+          ]
+        },
+        {
+          "q": "¿Tienes con quién practicar en casa?",
+          "options": [
+            "Sí",
+            "No, voy solo",
+            "A veces"
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "n": 1,
+          "title": "Tu cuerpo, tu base",
+          "goal": "Seguridad, movilidad y los movimientos solos que sostienen todo el jiu jitsu.",
+          "lessons": [
+            {
+              "id": "fundamentos-01",
+              "title": "El tap y las reglas de casa",
+              "duration_min": 15,
+              "objective": "Saber dar tap, respetarlo y preparar un espacio seguro.",
+              "why_it_matters": "Nadie se lastima en jiu jitsu por dar tap temprano; se lastima por darlo tarde. Es la primera regla del tatami.",
+              "steps": [
+                "El tap: golpecitos claros en el compañero, o di «¡tap!» si tus manos están atrapadas.",
+                "Quien recibe el tap suelta al instante.",
+                "Espacio: tapete o cobijas, dos metros libres, sin muebles con esquinas.",
+                "En casa nunca: llaves de pierna, derribos ni estrangulaciones a velocidad."
+              ],
+              "common_mistakes": [
+                "Dar tap en el piso: tu compañero puede no oírlo.",
+                "«Aguantar tantito» en una articulación."
+              ],
+              "safety": "Si duele una articulación, la sesión termina ahí.",
+              "partner_drill": "Si tienes compañero: 10 taps cada uno desde montada suave. Si no: prepara tu espacio y agenda tus sesiones.",
+              "video": {
+                "youtube_id": "sBfx-lqdPgE",
+                "title": "Brazilian Jiu Jitsu Basics: What is Tapping Out?",
+                "channel": "Ritchie Yip",
+                "why_this_video": "El coach Ritchie Yip explica en menos de dos minutos qué es el tap y por qué se da en el compañero."
+              },
+              "self_check": {
+                "question": "¿Dónde es mejor dar el tap?",
+                "options": [
+                  "En el piso",
+                  "En tu compañero o diciendo «tap»",
+                  "No hace falta"
+                ],
+                "answer": 1,
+                "explanation": "En el compañero se siente siempre; en el piso a veces no se oye."
+              }
+            },
+            {
+              "id": "fundamentos-02",
+              "title": "Movilidad de 10 minutos",
+              "duration_min": 15,
+              "objective": "Aprender una rutina de movilidad para calentar antes de cada sesión.",
+              "why_it_matters": "Una cadera y unos hombros móviles hacen que todo salga más fácil y te cuidan de lesiones.",
+              "steps": [
+                "Sigue el video completo una vez, sin prisa.",
+                "Movimientos amplios y controlados; respira por la nariz.",
+                "Si algo molesta, haz una versión más corta del movimiento.",
+                "Repite esta rutina al inicio de cada lección."
+              ],
+              "common_mistakes": [
+                "Saltarte el calentamiento.",
+                "Rebotar en los estiramientos."
+              ],
+              "safety": "Movilidad sin dolor: incomodidad leve sí, dolor no.",
+              "solo_drill": "La rutina completa del video, 4 días esta semana.",
+              "video": {
+                "youtube_id": "_wxr7GGMnSg",
+                "title": "⭕ 10 Ejercicios BÁSICOS de movilidad para Brazilian Jiu-Jitsu Y que puedes hacer en casa 🤙",
+                "channel": "FAIXATUBE",
+                "why_this_video": "Rutina en español de 10 movimientos básicos de jiu jitsu para hacer en casa, sin compañero."
+              },
+              "self_check": {
+                "question": "¿Cuándo haces la rutina de movilidad?",
+                "options": [
+                  "Solo cuando te duele algo",
+                  "Al inicio de cada sesión",
+                  "Nunca"
+                ],
+                "answer": 1,
+                "explanation": "Es tu calentamiento fijo: prepara el cuerpo para lo que sigue."
+              }
+            },
+            {
+              "id": "fundamentos-03",
+              "title": "Camarón y puente",
+              "duration_min": 25,
+              "objective": "Dominar los dos movimientos de cadera que usan todos los escapes.",
+              "why_it_matters": "Todo escape es un camarón o un puente con adornos. Si estos salen bien, todo lo demás también.",
+              "steps": [
+                "Camarón: planta un pie, gira sobre el hombro y aleja la cadera en diagonal.",
+                "El cuerpo queda en forma de C, antebrazos al frente como marcos.",
+                "Puente: pies cerca de los glúteos, cadera alta, en diagonal sobre un hombro.",
+                "El peso pasa por los hombros, no por el cuello."
+              ],
+              "common_mistakes": [
+                "Camarón hacia arriba en vez de hacia atrás.",
+                "Puente recto al techo en vez de en diagonal."
+              ],
+              "safety": "El peso nunca sobre el cuello en el puente.",
+              "solo_drill": "Camarón cruzando la sala ida y vuelta 3 veces + 3 series de 15 puentes alternando lados.",
+              "video": {
+                "youtube_id": "B6k6ITH-P9k",
+                "title": "BJJ | Fuga de CADERA 🦐 (Shrimping) [Movimientos básicos]",
+                "channel": "HispaFight - MMA BJJ",
+                "why_this_video": "HispaFight explica la fuga de cadera en español, con los detalles básicos."
+              },
+              "self_check": {
+                "question": "¿Hacia dónde va la cadera en el camarón?",
+                "options": [
+                  "Hacia el techo",
+                  "En diagonal, alejándose",
+                  "A ningún lado"
+                ],
+                "answer": 1,
+                "explanation": "Alejar la cadera en diagonal es lo que crea espacio."
+              }
+            },
+            {
+              "id": "fundamentos-04",
+              "title": "Levantada técnica",
+              "duration_min": 20,
+              "objective": "Ponerte de pie desde el piso sin dar la espalda.",
+              "why_it_matters": "Levantarte con base es una habilidad del tatami y de la vida diaria. Se encadena con el camarón.",
+              "steps": [
+                "Sentado, mano atrás de un lado y pie contrario plantado.",
+                "Levanta la cadera apoyándote en esa mano y ese pie.",
+                "La otra pierna pasa por debajo, hacia atrás.",
+                "Llegas de pie mirando al frente, en base."
+              ],
+              "common_mistakes": [
+                "Levantarte de espaldas.",
+                "Pasar la pierna por delante."
+              ],
+              "safety": "Lento hasta que salga fluido; espacio libre alrededor.",
+              "solo_drill": "10 por lado. Flujo: camarón atrás, levantada, repetir 5 veces.",
+              "video": {
+                "youtube_id": "T6gFT1CK9W4",
+                "title": "BJJ | 🛸 GANGORRA y LEVANTADA técnica [Movimientos Básicos Jiu Jitsu] Gangoja en español",
+                "channel": "HispaFight - MMA BJJ",
+                "why_this_video": "HispaFight enseña la levantada técnica en español, movimiento básico de jiu jitsu."
+              },
+              "self_check": {
+                "question": "Al levantarte, ¿hacia dónde miras?",
+                "options": [
+                  "Hacia atrás",
+                  "Al frente",
+                  "Al techo"
+                ],
+                "answer": 1,
+                "explanation": "Levantarte mirando al frente te mantiene en control."
+              }
+            }
+          ],
+          "milestone": "Hito 1: sabes dar tap, tienes tu rutina de movilidad y dominas camarón, puente y levantada técnica.",
+          "cta": "¡Ya llegarías a tu primera clase sabiendo moverte! Escríbenos y te contamos qué horario de adultos te queda mejor."
+        },
+        {
+          "n": 2,
+          "title": "La guardia: atacar desde abajo",
+          "goal": "Entender la guardia cerrada como posición de ataque.",
+          "lessons": [
+            {
+              "id": "fundamentos-05",
+              "title": "Guardia cerrada: los fundamentos",
+              "duration_min": 25,
+              "objective": "Cerrar la guardia con buenos agarres y cadera activa.",
+              "why_it_matters": "La guardia es la posición que hace al jiu jitsu ser jiu jitsu: el de abajo controla y ataca.",
+              "steps": [
+                "Tobillos cruzados detrás de su espalda; rodillas apretando sus costillas.",
+                "Codos adentro, manos arriba.",
+                "Cadera activa: gira de lado a lado.",
+                "Agarres: nuca y muñeca, o los dos bíceps."
+              ],
+              "common_mistakes": [
+                "Brazos estirados hacia él.",
+                "Quedarte plano sin agarres."
+              ],
+              "safety": "Tu compañero trabaja suave mientras aprendes la posición.",
+              "partner_drill": "3 rondas de 60 s: él intenta abrir y pararse, tú mantienes la guardia.",
+              "video": {
+                "youtube_id": "YH6CMz10zKk",
+                "title": "Guía definitiva de Guardia Cerrada BJJ | Escuela de Grappling",
+                "channel": "Escuela de Grappling - Certified Killers",
+                "why_this_video": "Guía completa de guardia cerrada en español de Escuela de Grappling."
+              },
+              "self_check": {
+                "question": "Sin agarres, la guardia es…",
+                "options": [
+                  "Igual de fuerte",
+                  "Un abrazo sin control",
+                  "Una sumisión"
+                ],
+                "answer": 1,
+                "explanation": "Los agarres son los que convierten la guardia en control."
+              }
+            },
+            {
+              "id": "fundamentos-06",
+              "title": "Romper la postura",
+              "duration_min": 25,
+              "objective": "Bajar la cabeza del compañero y controlar una muñeca.",
+              "why_it_matters": "Casi todo lo que te pueden hacer desde arriba empieza con él derecho. Romper la postura lo apaga.",
+              "steps": [
+                "Agarre de nuca: jala con el brazo y las piernas a la vez.",
+                "Abraza su cabeza contra tu pecho.",
+                "Controla una muñeca con la otra mano.",
+                "Saca la cadera del centro."
+              ],
+              "common_mistakes": [
+                "Jalar solo con brazos.",
+                "Soltar la muñeca."
+              ],
+              "safety": "Se jala la nuca, nunca el cuello.",
+              "partner_drill": "10 repeticiones, luego 2 rondas: él recupera postura, tú la rompes.",
+              "video": {
+                "youtube_id": "ZKsfnBbBdjk",
+                "title": "Breaking Posture in Closed Guard ( The Complete Guide )",
+                "channel": "JonThomasBJJ",
+                "why_this_video": "JonThomasBJJ: guía completa para romper la postura en guardia cerrada."
+              },
+              "self_check": {
+                "question": "¿Qué controla tu otra mano?",
+                "options": [
+                  "Su cinturón",
+                  "Una muñeca",
+                  "Nada"
+                ],
+                "answer": 1,
+                "explanation": "Cabeza abajo y muñeca controlada."
+              }
+            },
+            {
+              "id": "fundamentos-07",
+              "title": "Golpe de cadera y tijera",
+              "duration_min": 30,
+              "objective": "Barrer desde la guardia con el golpe de cadera, y conocer la tijera como pareja.",
+              "why_it_matters": "Tu primera barrida te lleva de abajo a montada. Y cuando la defienden, la tijera está lista.",
+              "steps": [
+                "Abre, siéntate sobre un codo y apoya la mano atrás.",
+                "El otro brazo pasa sobre su hombro.",
+                "Cadera a la axila, gira y cae en montada.",
+                "Si apoya la mano atrás para defender, cambia a la tijera."
+              ],
+              "common_mistakes": [
+                "Volver a acostarte a medio camino.",
+                "Hacer la tijera sin jalarlo antes sobre tu espinilla."
+              ],
+              "safety": "Tu compañero cae de lado sobre el tapete, despacio.",
+              "partner_drill": "5 golpes de cadera por lado + 5 tijeras por lado (video extra).",
+              "video": {
+                "youtube_id": "86eSdQYSjxA",
+                "title": "The BJJ Hip Bump Sweep and How to Connect It to Other Attacks, by Jon Thomas",
+                "channel": "Stephan Kesting",
+                "why_this_video": "Jon Thomas, con Stephan Kesting, explica el golpe de cadera y cómo conectarlo con otros ataques."
+              },
+              "self_check": {
+                "question": "Si defiende el golpe de cadera, ¿qué tienes listo?",
+                "options": [
+                  "Nada",
+                  "La barrida de tijera u otro ataque",
+                  "Rendirte"
+                ],
+                "answer": 1,
+                "explanation": "Las barridas vienen en pareja: cuando defiende una, aparece la otra."
+              }
+            },
+            {
+              "id": "fundamentos-08",
+              "title": "Palanca de brazo desde guardia",
+              "duration_min": 25,
+              "objective": "Aplicar la palanca de brazo desde la guardia cerrada, despacio y con control.",
+              "why_it_matters": "Es la sumisión clásica de la guardia. Te enseña ángulo y control de cadera.",
+              "steps": [
+                "Atrapa la muñeca del brazo que empuja y fíjala contra tu pecho.",
+                "Pie en su cadera, gira 90 grados.",
+                "La pierna contraria pasa por encima de su cabeza; rodillas apretadas.",
+                "Sube la cadera MUY despacio; se suelta al primer tap."
+              ],
+              "common_mistakes": [
+                "Quedarte de frente sin girar.",
+                "Ir rápido: esta se cierra en un segundo."
+              ],
+              "safety": "Lento siempre; el compañero da tap temprano y tú sueltas al instante.",
+              "partner_drill": "5 por lado, lentas. Al terminar cada una, revisen el ángulo juntos.",
+              "video": {
+                "youtube_id": "vRufqYKR-G0",
+                "title": "🔴 APRENDE LA  LLAVE DE BRAZO DESDE LA GUARDIA,  Paso a Paso MUY  FÁCIL‼️  (Armlock) Bjj. ⬜⬜⬜⬜⬜⬛⬛⬛⬜",
+                "channel": "FAIXATUBE",
+                "why_this_video": "Explicación en español, paso a paso, de la llave de brazo desde la guardia."
+              },
+              "self_check": {
+                "question": "¿Cuándo se suelta la palanca?",
+                "options": [
+                  "Cuando ya no aguanta",
+                  "Al primer tap",
+                  "Nunca"
+                ],
+                "answer": 1,
+                "explanation": "Al primer tap, siempre. Así entrenas mañana también."
+              }
+            }
+          ],
+          "milestone": "Hito 2: cierras la guardia, rompes la postura, barres a montada y aplicas tu primera sumisión con control.",
+          "cta": "Contra alguien que coopera todo sale; el reto real es contra alguien que no. Eso se entrena en clase: martes y jueves 08:30 con Ken o 20:00 con Gabriel."
+        },
+        {
+          "n": 3,
+          "title": "Arriba manda el peso, abajo manda la calma",
+          "goal": "Controlar arriba sin fuerza y escapar de abajo con técnica.",
+          "lessons": [
+            {
+              "id": "fundamentos-09",
+              "title": "Mantener la montada",
+              "duration_min": 25,
+              "objective": "Quedarte en montada respondiendo al puente y al empuje.",
+              "why_it_matters": "Saber quedarte arriba te da tiempo, control y calma. Es una posición dominante.",
+              "steps": [
+                "Rodillas apretando, pies enganchados (ganchos de uva).",
+                "El peso en la cadera, no en las manos.",
+                "Si empuja: rodillas a sus axilas (montada alta).",
+                "Si hace puente: manos al piso arriba de su cabeza."
+              ],
+              "common_mistakes": [
+                "Sentarte alto y tieso.",
+                "Apoyar todo en las manos."
+              ],
+              "safety": "Peso en la cadera, sin sentarte con fuerza sobre su pecho.",
+              "partner_drill": "3 rondas de 60 s: él intenta escapar al 50 %, tú mantienes. Cambian.",
+              "video": {
+                "youtube_id": "flg5s7AQxCs",
+                "title": "4 Formas de mantenerse en la montada / 4 Ways to keep the mount position | TutoFighting",
+                "channel": "Cesar Alonso Fight",
+                "why_this_video": "Video en español con cuatro formas de mantenerse en la montada."
+              },
+              "self_check": {
+                "question": "Si empuja tu pecho, ¿qué haces?",
+                "options": [
+                  "Me bajo",
+                  "Subo las rodillas hacia sus axilas",
+                  "Me levanto"
+                ],
+                "answer": 1,
+                "explanation": "Empuja = sube. Puente = apoya."
+              }
+            },
+            {
+              "id": "fundamentos-10",
+              "title": "Escape de montada: upa",
+              "duration_min": 25,
+              "objective": "Salir de la montada atrapando brazo y pie con un puente.",
+              "why_it_matters": "Es el escape base de todo jiujitsuka y la mejor forma de mover a alguien más pesado.",
+              "steps": [
+                "Atrapa un brazo contra tu pecho con las dos manos.",
+                "Atrapa el pie del mismo lado.",
+                "Puente fuerte en diagonal sobre el hombro atrapado.",
+                "Rueda y cae dentro de su guardia, con postura."
+              ],
+              "common_mistakes": [
+                "Puente sin atrapar.",
+                "Empujar con brazos estirados."
+              ],
+              "safety": "Tu compañero se deja rodar y cae suave.",
+              "partner_drill": "5 por lado. Luego combina con el codo-rodilla (video extra) cuando apoye las manos.",
+              "video": {
+                "youtube_id": "fnH9r0xIVTQ",
+                "title": "LABORATORIO - Analizando el escape de montada con el puente o \"upa\"",
+                "channel": "BJJ Canarias",
+                "why_this_video": "Análisis en español del escape de montada con el puente o «upa»."
+              },
+              "self_check": {
+                "question": "Sin atrapar brazo y pie, el puente…",
+                "options": [
+                  "Funciona igual",
+                  "Solo lo levanta y vuelve a sentarse",
+                  "Es mejor"
+                ],
+                "answer": 1,
+                "explanation": "Atrapar es lo que hace que ruede."
+              }
+            },
+            {
+              "id": "fundamentos-11",
+              "title": "Control lateral desde arriba",
+              "duration_min": 25,
+              "objective": "Controlar de lado acomodando el peso en lugar de apretar.",
+              "why_it_matters": "Apretar cansa; el peso bien puesto no. Esta idea cambia tu jiu jitsu de arriba.",
+              "steps": [
+                "Pecho con pecho, cadera baja, dedos de los pies empujando.",
+                "Brazo cercano bajo su cabeza; brazo lejano bloquea la cadera.",
+                "Codo y rodilla cierran huecos.",
+                "Si gira hacia ti, deja caer el peso."
+              ],
+              "common_mistakes": [
+                "Quedarte en las rodillas alto.",
+                "Apretar con los brazos."
+              ],
+              "safety": "Nada de presionar la garganta con el antebrazo.",
+              "partner_drill": "3 rondas de 60 s: él intenta escapar al 50 %, tú mantienes.",
+              "video": {
+                "youtube_id": "5dRzDEnFTqY",
+                "title": "How to Hold Side Control Concepts (Hips, Shoulders, Neck)",
+                "channel": "Chewjitsu",
+                "why_this_video": "Chewjitsu explica los conceptos para mantener el control lateral: cadera, hombros y cuello."
+              },
+              "self_check": {
+                "question": "En control lateral, ¿apretar o acomodar?",
+                "options": [
+                  "Apretar fuerte",
+                  "Acomodar el peso",
+                  "Ninguno"
+                ],
+                "answer": 1,
+                "explanation": "El de arriba no aprieta: se acomoda."
+              }
+            },
+            {
+              "id": "fundamentos-12",
+              "title": "Escape de control lateral",
+              "duration_min": 25,
+              "objective": "Salir del control lateral con marcos, puente y camarón.",
+              "why_it_matters": "Es la posición de abajo donde más vas a estar al empezar. Saber salir te da tranquilidad en tus primeras rondas.",
+              "steps": [
+                "Primero los marcos: antebrazo en su hombro, mano en su cadera.",
+                "Puente pequeño para despegarlo.",
+                "Camarón y rodilla cruzando su estómago.",
+                "Si no alcanza, gira hacia él a tus rodillas."
+              ],
+              "common_mistakes": [
+                "Empezar por la cadera sin marcos.",
+                "Brazos estirados."
+              ],
+              "safety": "Peso progresivo: empiecen suave.",
+              "partner_drill": "5 escapes por lado. Luego 5 rondas de 2 min empezando abajo: sobrevivir es la habilidad.",
+              "video": {
+                "youtube_id": "Y4WcuqkWWr8",
+                "title": "4 ESCAPES DE 100KG QUE NECESITAS CONOCER  | TUTORIAL FUNDAMENTALES  | Escuela de grappling",
+                "channel": "Escuela de Grappling - Certified Killers",
+                "why_this_video": "Escuela de Grappling muestra cuatro escapes de cien kilos en español; empieza por el primero."
+              },
+              "self_check": {
+                "question": "¿Qué va primero?",
+                "options": [
+                  "La cadera",
+                  "Los marcos",
+                  "Rodar"
+                ],
+                "answer": 1,
+                "explanation": "Primero los marcos, luego la cadera."
+              }
+            }
+          ],
+          "milestone": "Hito 3: mantienes montada y control lateral un minuto, y escapas de los dos con técnica.",
+          "cta": "Ya tienes lo que muchos tardan meses en entender. El Open Mat del sábado (08:30–10:30) es práctica abierta: pregúntanos por WhatsApp."
+        },
+        {
+          "n": 4,
+          "title": "Pasa, termina y rola seguro",
+          "goal": "Pasar la guardia, terminar con una sumisión segura y prepararte para tu primer rolar y tu primera clase.",
+          "lessons": [
+            {
+              "id": "fundamentos-13",
+              "title": "Pase de rodilla",
+              "duration_min": 25,
+              "objective": "Pasar la guardia deslizando la rodilla y llegar a control lateral.",
+              "why_it_matters": "Es el pase más usado del mundo. Te enseña a atravesar las piernas con presión y control.",
+              "steps": [
+                "Desde guardia abierta, sujeta una pierna.",
+                "Desliza la rodilla cercana cruzando su muslo, hacia el piso.",
+                "Cabeza abajo y brazo bajo su cabeza.",
+                "Libera la pierna de atrás y acomódate en control lateral."
+              ],
+              "common_mistakes": [
+                "Dejar que consiga el underhook.",
+                "Quedarte alto."
+              ],
+              "safety": "Movimientos controlados; nada de caer con todo el peso sobre su rodilla.",
+              "partner_drill": "5 pases por lado; luego él retiene la guardia suave, 3 rondas de 60 s.",
+              "video": {
+                "youtube_id": "ZO1-G4RqQ_4",
+                "title": "BJJ No-Gi | 🦵 PASE de GUARDIA deslizando rodilla (KNEE SLIDE)",
+                "channel": "HispaFight - MMA BJJ",
+                "why_this_video": "HispaFight explica en español el pase deslizando rodilla (knee slide)."
+              },
+              "self_check": {
+                "question": "¿Qué no debes dejar que consiga?",
+                "options": [
+                  "Tu cinturón",
+                  "El underhook (brazo por debajo de tu axila)",
+                  "Nada"
+                ],
+                "answer": 1,
+                "explanation": "Si consigue el underhook, el pase se complica."
+              }
+            },
+            {
+              "id": "fundamentos-14",
+              "title": "Americana desde montada",
+              "duration_min": 25,
+              "objective": "Aplicar la americana desde montada con control total.",
+              "why_it_matters": "Una sumisión que puedes aplicar sin lastimar a nadie: perfecta para aprender control.",
+              "steps": [
+                "Fija su muñeca en el piso junto a su cabeza, codo doblado.",
+                "Tu otra mano pasa bajo su codo y agarra tu muñeca.",
+                "Desliza su codo hacia su cadera, como pintando el piso.",
+                "Despacio; se suelta al primer tap."
+              ],
+              "common_mistakes": [
+                "Levantar el codo del piso.",
+                "Ir rápido."
+              ],
+              "safety": "Lento siempre; tap temprano y suelta al instante.",
+              "partner_drill": "5 por lado, lentas. Defensa: pulgar arriba, codo a las costillas.",
+              "video": {
+                "youtube_id": "pXpBgf_Ty2E",
+                "title": "Americana desde la monta de jiu jitsu",
+                "channel": "Daniel Niño de Rivera",
+                "why_this_video": "Daniel Niño de Rivera enseña en español la americana desde la montada."
+              },
+              "self_check": {
+                "question": "¿Cómo se mueve su codo?",
+                "options": [
+                  "Hacia arriba",
+                  "Deslizándose hacia su cadera por el piso",
+                  "Hacia su cabeza"
+                ],
+                "answer": 1,
+                "explanation": "«Pinta el piso» con su codo, despacio."
+              }
+            },
+            {
+              "id": "fundamentos-15",
+              "title": "Tu primer rolar",
+              "duration_min": 15,
+              "objective": "Saber cómo es un rolar seguro: intensidad, tap y respeto.",
+              "why_it_matters": "El rolar es donde todo se junta. Llegar sabiendo las reglas lo hace divertido y seguro desde el primer día.",
+              "steps": [
+                "Choca la mano antes y después. Siempre.",
+                "Ve al 40 %: técnica y calma, no fuerza.",
+                "Da tap temprano y sin pena.",
+                "Si algo duele en una articulación, tap inmediato.",
+                "Tu meta en el primer rolar: respirar y sobrevivir, no ganar."
+              ],
+              "common_mistakes": [
+                "Ir al 100 % de fuerza.",
+                "Aguantar una llave por orgullo."
+              ],
+              "safety": "Nadie se lastima por dar tap temprano.",
+              "partner_drill": "Si tienes compañero: 3 rondas de 2 min al 30 %, solo posiciones, sin sumisiones. Si no: repasa el flujo camarón-levantada 5 min.",
+              "video": {
+                "youtube_id": "85Tef3NwuIc",
+                "title": "BJJ | ✅ Cómo hacer SPARRING (y cómo NO) ❌",
+                "channel": "HispaFight - MMA BJJ",
+                "why_this_video": "HispaFight explica en español cómo hacer sparring y cómo NO hacerlo."
+              },
+              "self_check": {
+                "question": "¿A qué intensidad vas en tu primer rolar?",
+                "options": [
+                  "Al 100 %",
+                  "Alrededor del 40 %",
+                  "Al 0 %, sin moverte"
+                ],
+                "answer": 1,
+                "explanation": "A 40 % aprendes, cuidas a tu compañero y te cuidas tú."
+              }
+            },
+            {
+              "id": "fundamentos-16",
+              "title": "Tu primera clase en El Dojo",
+              "duration_min": 15,
+              "objective": "Saber qué llevar, cómo es la clase y las costumbres del tatami.",
+              "why_it_matters": "Llegar sabiendo qué esperar te deja concentrarte en aprender. El tatami tiene costumbres sencillas que todos respetan.",
+              "steps": [
+                "Qué llevar: rashguard o playera, short o pants deportivo, agua, uñas cortas, sin joyería. No necesitas gi el primer día.",
+                "Llega 10 minutos antes para conocer al coach y llenar la Carta Responsiva.",
+                "Reverencia al entrar y salir del tatami; descalzo en el tatami, sandalias fuera.",
+                "La clase: calentamiento, técnica en parejas y rondas al final (la primera vez puedes rolar suave o mirar).",
+                "Choca la mano con tus compañeros y responde «¡Oss!»."
+              ],
+              "common_mistakes": [
+                "Llegar sin avisar de una lesión.",
+                "Querer demostrar algo: ve a aprender."
+              ],
+              "safety": "Avisa al coach de cualquier lesión o condición antes de empezar.",
+              "solo_drill": "Elige tu horario, prepara tu mochila y mándanos un mensaje para que te esperemos.",
+              "video": {
+                "youtube_id": "DYorbs8bX68",
+                "title": "Hagamos Jiu Jitsu - Episodio 1: Reglas del Tatami",
+                "channel": "cobrateam academia",
+                "why_this_video": "Un profesor de jiu jitsu explica en español las reglas del tatami: lo que todo alumno nuevo debe saber."
+              },
+              "self_check": {
+                "question": "¿Qué llevas a tu primera clase?",
+                "options": [
+                  "Zapatos y joyería",
+                  "Ropa deportiva, agua y uñas cortas",
+                  "Nada"
+                ],
+                "answer": 1,
+                "explanation": "Ropa cómoda, agua y uñas cortas. El gi puede esperar."
+              },
+              "class_pointer": {
+                "principal": "Jiu Jitsu adultos · martes y jueves · 08:30–10:00 (Ken) o 20:00–21:30 (Gabriel)",
+                "práctica": "Open Mat · sábado · 08:30–10:30",
+                "también": "Wrestling · miércoles y viernes 08:30–10:00 (Mato) · Judo Juniors y Adultos · miércoles 18:00–19:30 (Tal) · Aikido · lunes 18:30 y miércoles 19:30 (Félix)",
+                "nota": "Horarios sujetos a cambios; confírmalos por WhatsApp."
+              }
+            }
+          ],
+          "milestone": "Hito 4: completaste la academia en casa. Te mueves, controlas, escapas, pasas, terminas con control y sabes rolar seguro.",
+          "cta": "¡Terminaste! Lo único que falta es gente y resistencia real. Escríbenos por WhatsApp, te decimos qué horario te conviene y te esperamos en el tatami. ¡Oss!"
+        }
+      ],
+      "extras": [
+        {
+          "youtube_id": "miNH8SY6tFw",
+          "label": "Caída hacia atrás (ushiro ukemi)",
+          "title": "Aprendiendo caídas en 1 minuto: Ushiro ukemi (caída hacia atrás) #judo",
+          "channel": "Judo Gaman"
+        },
+        {
+          "youtube_id": "KuZtR1mogvY",
+          "label": "Base, postura y conexión",
+          "title": "How Base, Posture and Connection Work in BJJ",
+          "channel": "SBG PDX & Vancouver BJJ and MMA Videos"
+        },
+        {
+          "youtube_id": "yRrxsgf2RKw",
+          "label": "Barrida de tijera",
+          "title": "BJJ | 🔄 RASPADO de TIJERA | Técnicas de Jiu Jitsu en español",
+          "channel": "HispaFight - MMA BJJ"
+        },
+        {
+          "youtube_id": "_D_Sl_OHii4",
+          "label": "Escape codo-rodilla",
+          "title": "BJJ Breakdown: How to do the Elbow Knee Escape from Bottom Mount",
+          "channel": "Ritchie Yip"
+        },
+        {
+          "youtube_id": "XZAXPH6F9rQ",
+          "label": "Control de espalda",
+          "title": "BJJ | 🤼‍♂️ La ESPALDA 👥 (Control de Espalda) - Posiciones Jiu Jitsu - En Español",
+          "channel": "HispaFight - MMA BJJ"
+        },
+        {
+          "youtube_id": "l5K4RhtNToc",
+          "label": "Escape de la espalda",
+          "title": "BJJ 🥋 | Cómo SALIR de la ESPALDA en Jiu Jitsu",
+          "channel": "HispaFight - MMA BJJ"
+        },
+        {
+          "youtube_id": "BPEXBXJpLEw",
+          "label": "Triángulo",
+          "title": "BJJ | 🔺TRIÁNGULO | Técnicas de Jiu Jitsu en español - Sumisiones #4",
+          "channel": "HispaFight - MMA BJJ"
+        },
+        {
+          "youtube_id": "mVkKOPNGvjA",
+          "label": "Kimura desde guardia",
+          "title": "Kimura From Closed Guard For White Belts (Small Details To Improve Success)",
+          "channel": "Chewjitsu"
+        },
+        {
+          "youtube_id": "UbcqJETDUY8",
+          "label": "Guillotina desde guardia",
+          "title": "Guillotine Choke from Full Guard (Every White Belt Should Know This One)",
+          "channel": "Chewjitsu"
+        },
+        {
+          "youtube_id": "mPDafcPeF7s",
+          "label": "Media guardia con escudo de rodilla",
+          "title": "How to Do the Perfect Knee Shield",
+          "channel": "Bernardo Faria BJJ Fanatics"
+        },
+        {
+          "youtube_id": "pW2YL_n8Q_U",
+          "label": "Barrida desde media guardia",
+          "title": "The main sweep to know from half guard (Lachlan Giles)",
+          "channel": "Absolute MMA St Kilda - Melbourne"
+        },
+        {
+          "youtube_id": "bqilRrhC96c",
+          "label": "Pase de toreo",
+          "title": "BJJ 🥋 | Pase de TOREADA Básica [Toreando Pass] 🐮",
+          "channel": "HispaFight - MMA BJJ"
+        },
+        {
+          "youtube_id": "T1OagPvmBps",
+          "label": "Rodilla en el estómago",
+          "title": "BJJ | 💩 RODILLA en ESTÓMAGO | Técnicas de Jiu Jitsu en español - Posiciones #7",
+          "channel": "HispaFight - MMA BJJ"
+        },
+        {
+          "youtube_id": "iUap4TaYVQc",
+          "label": "Palanca desde montada",
+          "title": "How To Do the Armbar From Mount in Jiu Jitsu | Jiu Jitsu Tutorial",
+          "channel": "Matt Arroyo Jiu Jitsu "
+        },
+        {
+          "youtube_id": "piqdrIYyk0o",
+          "label": "Respeto y humildad en tu primera clase",
+          "title": "¿Qué 2 cosas tengo que Aprender en mi Primera Clase de Jiu Jitsu?",
+          "channel": "Deportivo Duato"
+        }
+      ]
+    }
+  ]
+}
