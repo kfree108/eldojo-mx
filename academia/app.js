@@ -33,7 +33,7 @@
   // portable progress: done-set as a bitmask over lessons in order → base32 code (?r=)
   const A32 = 'abcdefghijklmnopqrstuvwxyz234567';
   function code() { let bits = LESSONS.map(l => S.done[l.id] ? 1 : 0).join(''); while (bits.length % 5) bits += '0'; let s = ''; for (let i = 0; i < bits.length; i += 5) s += A32[parseInt(bits.slice(i, i + 5), 2)]; return s; }
-  function restore(c) { if (!/^[a-z2-7]{1,20}$/.test(c)) return; const bits = [...c].map(ch => A32.indexOf(ch).toString(2).padStart(5, '0')).join(''); LESSONS.forEach((l, i) => { if (bits[i] === '1') S.done[l.id] = S.done[l.id] || Date.now(); }); S.gate = true; }
+  function restore(c) { if (!/^[a-z2-7]{1,20}$/.test(c)) return; const bits = [...c].map(ch => A32.indexOf(ch).toString(2).padStart(5, '0')).join(''); let any = false; LESSONS.forEach((l, i) => { if (bits[i] === '1') { any = true; S.done[l.id] = S.done[l.id] || Date.now(); } }); if (any) S.gate = true; }   // only real progress skips the welcome video
   function myLink() { const u = new URL(location.href); u.hash = ''; u.search = ''; u.searchParams.set('r', code()); if (S.track) u.searchParams.set('edad', S.track); if (token()) u.searchParams.set('u', token()); return u.toString(); }
 
   let syncT;
@@ -285,7 +285,7 @@
   // ---------------------------------------------------------------- boot
   fetch(ROOT + 'academia/course.json').then(r => r.json()).then(data => {
     C = data; PTH = C.paths.find(p => p.slug === PATH); LESSONS = PTH.modules.flatMap(m => m.lessons);
-    if (Q.get('r')) { restore(Q.get('r')); S.started = S.started || Date.now(); save(); }
+    if (Q.get('r')) { restore(Q.get('r')); if (nDone()) S.started = S.started || Date.now(); save(); }
     if (token() && !S.started) S.started = 0;
     $('#gate video').src = `${ROOT}academia/video/bienvenida-${PATH}.mp4`;
     addEventListener('hashchange', render); render(); sync();
