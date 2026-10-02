@@ -944,6 +944,17 @@ html.bub-4 .chat-widget-avatar::after{content:"相談 · WHATSAPP";position:abso
 html.bub-5 .chat-widget-avatar::before{content:"";position:absolute;inset:-13px;z-index:-1;border-radius:50%;
   background:radial-gradient(circle,#0c0c0e 1.4px,transparent 1.8px) 0 0/7px 7px;-webkit-mask:radial-gradient(circle,transparent 60%,#000 62%,#000 100%);mask:radial-gradient(circle,transparent 60%,#000 62%,#000 100%);opacity:.55}
 html.bub-5 .chat-widget-avatar::after{content:"¡Oss!";position:absolute;right:-22px;top:-8px;padding:6px 8px 5px;background:#d1361f;color:#f2ede1;font:400 16px/1 Bangers;letter-spacing:.06em;border:2.5px solid #0c0c0e;rotate:10deg;box-shadow:2px 2px 0 #0c0c0e}
+/* phones (Ken 2026-10-02): bigger video so Ken is visible; ¡Oss! sits outside the circle, never over his face */
+@media (max-width:760px){
+  .chat-widget{--bubble-size:86px;right:6px;align-items:flex-end}
+  .chat-widget-avatar,.chat-widget-stem{margin-right:6px}
+  .chat-widget-stem{align-self:flex-end;margin-right:47px}
+  html.bub-5 .chat-widget-avatar::before{inset:-9px}
+  html.bub-5 .chat-widget-avatar::after{right:auto;left:-34px;top:-14px;padding:4px 6px 3px;font-size:12px;border-width:2px;rotate:-10deg}
+  .chat-widget-online{right:4px;bottom:4px;width:13px;height:13px}
+  html.bub-5 .chat-widget-btn,.chat-widget-btn{min-height:32px;padding:0 9px 0 7px;gap:5px;font-size:10px;letter-spacing:.03em;box-shadow:3px 3px 0 #0c0c0e;border-width:2px}
+  .chat-widget-btn svg{width:16px;flex-basis:16px}
+}
 @media (prefers-reduced-motion:reduce){html.bub-2 .chat-widget-avatar::before{animation:none}}
 
 /* option: ink WhatsApp button with green icon (?btn=ink) */
