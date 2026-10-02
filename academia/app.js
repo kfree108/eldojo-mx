@@ -22,7 +22,7 @@
   const TOKEN = (Q.get('u') || '').trim();
   if (/^[a-zA-Z0-9]{16,32}$/.test(TOKEN)) { try { localStorage.setItem(KEY + ':u', TOKEN); } catch (e) {} }
   const token = () => { try { return localStorage.getItem(KEY + ':u') || ''; } catch (e) { return ''; } };
-  if (Q.get('edad') === '7-9' || Q.get('edad') === '10-12') S.track = Q.get('edad');
+  if (['7-9', '10-12', '13-17'].includes(Q.get('edad'))) S.track = Q.get('edad');
   if (Q.get('n')) S.name = Q.get('n').slice(0, 40);
 
   let C, PTH, LESSONS = [];
@@ -114,7 +114,8 @@
             <label class="field"><span>${kids ? 'Nombre de tu hijo o hija' : '¿Cómo te llamas?'}</span><input name="n" maxlength="40" value="${esc(S.name)}" placeholder="${kids ? 'Ej. León' : 'Tu nombre'}" required></label>
             ${kids ? `<div class="field"><span>Edad</span><div class="ages">
               <button type="button" class="age" data-age="7-9" aria-pressed="${S.track === '7-9'}">7 a 9<small>años</small></button>
-              <button type="button" class="age" data-age="10-12" aria-pressed="${S.track === '10-12'}">10 a 12<small>años</small></button></div></div>` : ''}
+              <button type="button" class="age" data-age="10-12" aria-pressed="${S.track === '10-12'}">10 a 12<small>años</small></button>
+              <button type="button" class="age" data-age="13-17" aria-pressed="${S.track === '13-17'}">13 a 17<small>años</small></button></div></div>` : ''}
             <button class="btn" style="width:100%;margin-top:18px" type="submit">${nDone() ? 'Continuar mi curso' : 'Entrar a mi curso'} <span class="arr">→</span></button>
             <p class="hint">${token() ? 'Tu avance se guarda en tu enlace personal de WhatsApp: ábrelo en cualquier teléfono y sigues donde te quedaste.' : 'Tu avance se guarda en este teléfono. Pídenos tu enlace personal por WhatsApp para seguir en cualquier lugar.'}</p>
           </form>
