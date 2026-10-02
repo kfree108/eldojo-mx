@@ -1,5 +1,5 @@
 {
-  "url": "https://equality-detailed-saw-handles.trycloudflare.com/waiver",
-  "nota": "Donde se guarda la carta responsiva. El tunel de cloudflared cambia de URL al reiniciarse; si dejan de llegar cartas, es esto. Actualiza esta linea y listo.",
-  "actualizado": "2026-09-01 17:59"
+  "url": "https://bot-eldojo.fullcircleagency.com/waiver",
+  "nota": "Donde se guarda la carta responsiva. Es la direccion permanente del bot (guarda en disco y en Supabase con la llave del servidor). La pagina ya trae esta misma URL por defecto; este archivo solo la cambia si contiene una URL https de fullcircleagency.com o eldojo.mx.",
+  "actualizado": "2026-10-02"
 }
