@@ -92,7 +92,7 @@
     return `<section class="screen on cover" aria-label="Portada">
       <div class="cover__grid">
         <div class="pn cover__art">
-          <div class="tone"><video src="${COVER[PATH]}.mp4" poster="${COVER[PATH]}.jpg" autoplay muted loop playsinline preload="metadata"></video></div>
+          <div class="tone tone--${{ ninos: 'plain', mujeres: 'red', fundamentos: 'navy' }[PATH]}"><video src="${COVER[PATH]}.mp4" poster="${COVER[PATH]}.jpg" autoplay muted loop playsinline preload="metadata"></video></div>
           <div class="cover__kanji" translate="no" aria-hidden="true">${PTH.kanji}</div>
           <div class="cover__ttl">
             <span class="tag"><span class="jp" translate="no">入門</span><span class="label">${esc(C.academy.name)} · Gratis</span></span>
@@ -250,7 +250,7 @@
   // ---------------------------------------------------------------- router
   function render() {
     const h = location.hash.slice(1);
-    $('#modal').classList.remove('on');
+    $('#modal').classList.remove('on'); if (!$('#gate').classList.contains('on')) B.classList.remove('no-chat');
     if (!S.started && !h.startsWith('l/') && h !== 'inicio' && h !== 'fin') { app.innerHTML = viewCover(); bindCover(); }
     else if (h.startsWith('l/') && lessonById(h.slice(2))) { app.innerHTML = viewLesson(lessonById(h.slice(2))); bindLesson(lessonById(h.slice(2))); }
     else if (h === 'fin') app.innerHTML = viewFin();
@@ -269,6 +269,8 @@
   }
   function bindLesson(l) {
     mountPlayer($('#player'), l.video);
+    // the big chat bubble steps aside while the lesson buttons are on screen (same as eldojo.mx)
+    if (window.IntersectionObserver) { const io = new IntersectionObserver(es => B.classList.toggle('no-chat', es.some(e => e.isIntersecting))); io.observe($('.lnav')); }
     $$('#quiz .opt').forEach(b => b.onclick = () => {          // update in place: no re-render, no jump to the top
       const k = +b.dataset.k, q = l.self_check; S.quiz[l.id] = k; save();
       $$('#quiz .opt').forEach(o => { o.setAttribute('aria-pressed', +o.dataset.k === k); o.classList.toggle('reveal', +o.dataset.k === q.answer); });
