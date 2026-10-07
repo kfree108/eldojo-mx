@@ -2,7 +2,11 @@
    Shell page sets <body data-path="ninos|mujeres|fundamentos" data-root="../">.
    Flow: cover (name + age) → welcome video gate (must be watched to the end) → course map → lessons → finish.
    Progress: localStorage per path, portable restore code (?r=), and — when Jessica's personal link carries ?u=<token>
-   and config.js has the Supabase URL + anon key — synced through public.course_progress_sync (bot_course_progress.sql). */
+   and config.js has the Supabase URL + anon key — synced through public.course_progress_sync (bot_course_progress.sql).
+   Access: one code per course (CODES). Jessica's WhatsApp link carries ?c=<code> so nothing is typed; without a valid
+   code the cover asks for it. Welcome video: watched once, never forced twice — the "watched" flag rides in
+   localStorage, in the address bar (?v=1, via replaceState) and in the WhatsApp restore link, and the gate always
+   offers "ya lo vi" after a few seconds for people arriving on a new phone or in-app browser. */
 (() => {
   const B = document.body, PATH = B.dataset.path, ROOT = B.dataset.root || '../';
   const WA = '5215547000332';
@@ -14,9 +18,13 @@
   const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const wa = text => `https://wa.me/${WA}?text=${encodeURIComponent(text)}`;
   const JP_N = ['一', '二', '三', '四', '五', '六', '七', '八', '九', '十'];
+  // Access codes — one per course, sent by Jessica on WhatsApp. Letters only, case-insensitive, spaces/dashes ignored.
+  const CODES = { ninos: 'LEON', mujeres: 'FUERZA', fundamentos: 'BASE' };
+  const normCode = c => String(c || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
+  const okCode = c => !!normCode(c) && normCode(c) === CODES[PATH];
 
   // ---------------------------------------------------------------- state
-  let S = { name: '', track: '', done: {}, quiz: {}, gate: false, started: 0, seenMs: {} };
+  let S = { name: '', track: '', done: {}, quiz: {}, gate: false, code: false, started: 0, seenMs: {} };
   try { Object.assign(S, JSON.parse(localStorage.getItem(KEY) || '{}')); } catch (e) {}
   const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} sync(); };
   const TOKEN = (Q.get('u') || '').trim();
@@ -24,6 +32,8 @@
   const token = () => { try { return localStorage.getItem(KEY + ':u') || ''; } catch (e) { return ''; } };
   if (['7-9', '10-12', '13-17'].includes(Q.get('edad'))) S.track = Q.get('edad');
   if (Q.get('n')) S.name = Q.get('n').slice(0, 40);
+  if (okCode(Q.get('c'))) S.code = true;                 // came through Jessica's link: no code to type
+  if (Q.get('v') === '1') S.gate = true;                 // this link already carries "welcome video watched"
 
   let C, PTH, LESSONS = [];
   const total = () => LESSONS.length;
@@ -34,7 +44,9 @@
   const A32 = 'abcdefghijklmnopqrstuvwxyz234567';
   function code() { let bits = LESSONS.map(l => S.done[l.id] ? 1 : 0).join(''); while (bits.length % 5) bits += '0'; let s = ''; for (let i = 0; i < bits.length; i += 5) s += A32[parseInt(bits.slice(i, i + 5), 2)]; return s; }
   function restore(c) { if (!/^[a-z2-7]{1,20}$/.test(c)) return; const bits = [...c].map(ch => A32.indexOf(ch).toString(2).padStart(5, '0')).join(''); let any = false; LESSONS.forEach((l, i) => { if (bits[i] === '1') { any = true; S.done[l.id] = S.done[l.id] || Date.now(); } }); if (any) S.gate = true; }   // only real progress skips the welcome video
-  function myLink() { const u = new URL(location.href); u.hash = ''; u.search = ''; u.searchParams.set('r', code()); if (S.track) u.searchParams.set('edad', S.track); if (token()) u.searchParams.set('u', token()); return u.toString(); }
+  function myLink() { const u = new URL(location.href); u.hash = ''; u.search = ''; u.searchParams.set('r', code()); if (S.track) u.searchParams.set('edad', S.track); if (S.code) u.searchParams.set('c', CODES[PATH]); if (S.gate) u.searchParams.set('v', '1'); if (token()) u.searchParams.set('u', token()); return u.toString(); }
+  // after the welcome video: stamp the address bar so a bookmark, "add to home screen" or a copied link never asks for it again
+  function stampWatched() { try { const u = new URL(location.href); u.searchParams.set('v', '1'); if (S.code) u.searchParams.set('c', CODES[PATH]); if (S.track) u.searchParams.set('edad', S.track); history.replaceState(null, '', u.toString()); } catch (e) {} }
 
   let syncT;
   function sync() {
@@ -116,8 +128,10 @@
               <button type="button" class="age" data-age="7-9" aria-pressed="${S.track === '7-9'}">7 a 9<small>años</small></button>
               <button type="button" class="age" data-age="10-12" aria-pressed="${S.track === '10-12'}">10 a 12<small>años</small></button>
               <button type="button" class="age" data-age="13-17" aria-pressed="${S.track === '13-17'}">13 a 17<small>años</small></button></div></div>` : ''}
+            ${S.code ? '' : `<label class="field" id="codeField"><span>Código de acceso</span><input name="c" maxlength="20" autocapitalize="characters" autocomplete="off" placeholder="Te lo mandamos por WhatsApp" required></label>
+            <p class="hint" id="codeHint">¿No tienes código? <a href="${wa(`Hola, quiero el código de acceso del curso de ${PTH.name}.`)}" target="_blank" rel="noopener" style="text-decoration:underline">Pídelo por WhatsApp</a> y te llega al momento.</p>`}
             <button class="btn" style="width:100%;margin-top:18px" type="submit">${nDone() ? 'Continuar mi curso' : 'Entrar a mi curso'} <span class="arr">→</span></button>
-            <p class="hint">${token() ? 'Tu avance se guarda en tu enlace personal de WhatsApp: ábrelo en cualquier teléfono y sigues donde te quedaste.' : 'Tu avance se guarda en este teléfono. Pídenos tu enlace personal por WhatsApp para seguir en cualquier lugar.'}</p>
+            <p class="hint">${token() ? 'Tu avance se guarda en tu enlace personal de WhatsApp: ábrelo en cualquier teléfono y sigues donde te quedaste.' : 'Tu avance se guarda en este teléfono. Abajo puedes mandarte tu enlace por WhatsApp para seguir desde cualquier lugar.'}</p>
           </form>
         </div>
       </div>
@@ -242,9 +256,13 @@
     play.onclick = () => { v.muted = false; mute.textContent = '🔊'; v.play().catch(() => { v.muted = true; mute.textContent = '🔇'; v.play(); }); };
     v.onclick = () => v.paused ? v.play() : v.pause();
     mute.onclick = () => { v.muted = !v.muted; mute.textContent = v.muted ? '🔇' : '🔊'; };
-    setTimeout(() => { if (!unlocked && watched < 1) skip.style.display = 'inline'; }, 45000);   // only if it never started
+    // never make anyone sit through the welcome twice: a new phone or an in-app browser has no memory of the first time,
+    // so after a few seconds the gate offers a way in. (The "no carga" wording takes over if it never started playing.)
+    skip.textContent = 'Ya vi la bienvenida · entrar directo';
+    setTimeout(() => { if (!unlocked) skip.style.display = 'inline'; }, 6000);
+    setTimeout(() => { if (!unlocked && watched < 1) { skip.textContent = '¿El video no carga? Entra aquí'; skip.style.display = 'inline'; } }, 45000);
     skip.onclick = e => { e.preventDefault(); unlock(); };
-    btn.onclick = () => { v.pause(); g.classList.remove('on'); B.classList.remove('no-chat'); B.style.overflow = ''; S.gate = true; save(); onDone(); };
+    btn.onclick = () => { v.pause(); g.classList.remove('on'); B.classList.remove('no-chat'); B.style.overflow = ''; S.gate = true; save(); stampWatched(); onDone(); };
   }
 
   // ---------------------------------------------------------------- router
@@ -262,6 +280,10 @@
     $$('.age').forEach(b => b.onclick = () => { S.track = b.dataset.age; $$('.age').forEach(x => x.setAttribute('aria-pressed', x === b)); });
     $('#startForm').onsubmit = e => {
       e.preventDefault(); S.name = e.target.n.value.trim().slice(0, 40);
+      if (!S.code) {
+        if (okCode(e.target.c.value)) S.code = true;
+        else { const f = $('#codeField'); f.animate([{ transform: 'translateX(-6px)' }, { transform: 'translateX(6px)' }, { transform: 'none' }], 260); $('#codeHint').innerHTML = `<b style="color:var(--red)">Ese código no es de este curso.</b> <a href="${wa(`Hola, quiero el código de acceso del curso de ${PTH.name}.`)}" target="_blank" rel="noopener" style="text-decoration:underline">Pídelo por WhatsApp</a>`; return; }
+      }
       if (PATH === 'ninos' && !S.track) { $('.ages').animate([{ transform: 'translateX(-6px)' }, { transform: 'translateX(6px)' }, { transform: 'none' }], 260); return; }
       S.started = S.started || Date.now(); save();
       if (!S.gate) gate(() => { location.hash = '#inicio'; render(); }); else { location.hash = '#inicio'; render(); }
@@ -291,6 +313,7 @@
     if (Q.get('r')) { restore(Q.get('r')); if (nDone()) S.started = S.started || Date.now(); save(); }
     if (token() && !S.started) S.started = 0;
     $('#gate video').src = `${ROOT}academia/video/bienvenida-${PATH}.mp4`;
+    if (S.gate) stampWatched();
     addEventListener('hashchange', render); render(); sync();
     if (S.started && !S.gate) gate(() => { location.hash = '#inicio'; render(); });
   });
