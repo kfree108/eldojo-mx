@@ -1,0 +1,31 @@
+{
+  "_about": "The ONE El Dojo class schedule. Edit this file, then run: python3 tools/horario.py — it rewrites every schedule on the site (home timetable, Jiu-Jitsu page, Entrena de visita, Google opening hours). The check-in app (kfree108/el-dojo-checkin) compares its own schedule to https://eldojo.mx/horario.json every day and fails loudly if they differ, so change both together.",
+  "timezone": "America/Mexico_City",
+  "updated": "2026-10-14",
+  "classes": [
+    { "day": 1, "start": "08:30", "end": "09:30", "art": "bjj", "title": "Jiu Jitsu Chicas", "ages": null, "instructor": "Arturo", "app_class": "JIU_JITSU_CHICAS", "visita": "Jiu Jitsu (chicas)" },
+    { "day": 1, "start": "16:00", "end": "17:00", "art": "bjj", "title": "Jiu Jitsu Niños", "ages": "7 a 9 años", "instructor": "Arturo", "app_class": "JIU_JITSU_KIDS_7_9" },
+    { "day": 1, "start": "18:30", "end": "20:00", "art": "aikido", "title": "Aikido", "ages": null, "instructor": "Félix", "app_class": "AIKIDO", "visita": "Aikido" },
+    { "day": 1, "start": "20:00", "end": "21:00", "art": "aikido", "title": "Aikido Armas", "ages": null, "instructor": "Félix", "app_class": "AIKIDO_WEAPONS", "visita": "Aikido armas" },
+
+    { "day": 2, "start": "08:30", "end": "10:00", "art": "bjj", "title": "Jiu Jitsu", "ages": null, "instructor": "Ken", "app_class": "JIU_JITSU", "visita": "Jiu Jitsu" },
+    { "day": 2, "start": "16:00", "end": "17:00", "art": "bjj", "title": "Jiu Jitsu Niños", "ages": "7 a 9 años", "instructor": "Arturo", "app_class": "JIU_JITSU_KIDS_7_9" },
+    { "day": 2, "start": "17:30", "end": "18:30", "art": "bjj", "title": "Jiu Jitsu Juniors", "ages": "10 a 12 años", "instructor": "Arturo", "app_class": "JIU_JITSU_JUNIORS_10_12" },
+    { "day": 2, "start": "19:00", "end": "20:00", "art": "bjj", "title": "Jiu Jitsu Jóvenes", "ages": "14 a 17 años", "instructor": null, "app_class": "JIU_JITSU_JOVENES_14_17" },
+    { "day": 2, "start": "20:00", "end": "21:30", "art": "bjj", "title": "Jiu Jitsu", "ages": null, "instructor": "Gabriel", "app_class": "JIU_JITSU", "visita": "Jiu Jitsu" },
+
+    { "day": 3, "start": "08:30", "end": "10:00", "art": "lucha", "title": "Wrestling", "ages": null, "instructor": "Mato", "app_class": "LUCHA", "visita": "Lucha" },
+    { "day": 3, "start": "16:30", "end": "17:30", "art": "judo", "title": "Judo Niños", "ages": null, "instructor": "Tal", "app_class": "JUDO_KIDS" },
+    { "day": 3, "start": "18:00", "end": "19:00", "art": "judo", "title": "Judo Juniors y Adultos", "ages": null, "instructor": "Tal", "app_class": "JUDO_JUNIORS_ADULTS", "visita": "Judo" },
+    { "day": 3, "start": "19:30", "end": "21:00", "art": "aikido", "title": "Aikido", "ages": null, "instructor": "Félix", "app_class": "AIKIDO", "visita": "Aikido" },
+
+    { "day": 4, "start": "08:30", "end": "10:00", "art": "bjj", "title": "Jiu Jitsu", "ages": null, "instructor": "Ken", "app_class": "JIU_JITSU", "visita": "Jiu Jitsu" },
+    { "day": 4, "start": "16:00", "end": "17:00", "art": "bjj", "title": "Jiu Jitsu Niños", "ages": "7 a 9 años", "instructor": "Arturo", "app_class": "JIU_JITSU_KIDS_7_9" },
+    { "day": 4, "start": "17:30", "end": "18:30", "art": "bjj", "title": "Jiu Jitsu Juniors", "ages": "10 a 12 años", "instructor": "Arturo", "app_class": "JIU_JITSU_JUNIORS_10_12" },
+    { "day": 4, "start": "20:00", "end": "21:30", "art": "bjj", "title": "Jiu Jitsu", "ages": null, "instructor": "Gabriel", "app_class": "JIU_JITSU", "visita": "Jiu Jitsu" },
+
+    { "day": 5, "start": "08:30", "end": "10:00", "art": "lucha", "title": "Wrestling", "ages": null, "instructor": "Mato", "app_class": "LUCHA", "visita": "Lucha" },
+
+    { "day": 6, "start": "08:30", "end": "10:30", "art": "bjj", "title": "Jiu Jitsu · Open Mat", "ages": null, "instructor": "Práctica abierta", "app_class": "JIU_JITSU_OPEN_MAT", "visita": "Jiu Jitsu · Open Mat" }
+  ]
+}

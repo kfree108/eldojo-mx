@@ -1,0 +1,19 @@
+name: Horario en sync
+
+# Fails if any page's class times disagree with horario.json (the one schedule).
+# Fix: edit horario.json, run `python3 tools/horario.py`, commit.
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - run: python3 tools/horario.py --check

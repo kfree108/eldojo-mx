@@ -1587,21 +1587,17 @@ const DAYS = [
   { wd: 1, s: 'Lun', l: 'Lunes', k: '月' }, { wd: 2, s: 'Mar', l: 'Martes', k: '火' }, { wd: 3, s: 'Mié', l: 'Miércoles', k: '水' },
   { wd: 4, s: 'Jue', l: 'Jueves', k: '木' }, { wd: 5, s: 'Vie', l: 'Viernes', k: '金' }, { wd: 6, s: 'Sáb', l: 'Sábado', k: '土' }
 ];
+// horario:start — generated from /horario.json by tools/horario.py; edit horario.json, not this block
 // [start, end, art, class, detail]
-const THU = [
-  ['08:30', '10:00', 'bjj', 'Jiu Jitsu', 'Ken'],
-  ['16:00', '17:00', 'bjj', 'Jiu Jitsu Niños', '7 a 9 años · Arturo'],
-  ['17:30', '18:30', 'bjj', 'Jiu Jitsu Juniors', '10 a 12 años · Arturo'],
-  ['20:00', '21:30', 'bjj', 'Jiu Jitsu', 'Gabriel']
-];
 const SCHED = {
   1: [['08:30', '09:30', 'bjj', 'Jiu Jitsu Chicas', 'Arturo'], ['16:00', '17:00', 'bjj', 'Jiu Jitsu Niños', '7 a 9 años · Arturo'], ['18:30', '20:00', 'aikido', 'Aikido', 'Félix'], ['20:00', '21:00', 'aikido', 'Aikido Armas', 'Félix']],
-  2: [THU[0], THU[1], THU[2], ['19:00', '20:00', 'bjj', 'Jiu Jitsu Jóvenes', '14 a 17 años'], THU[3]],
-  3: [['08:30', '10:00', 'lucha', 'Wrestling', 'Mato'], ['16:30', '17:30', 'judo', 'Judo Niños', 'Tal'], ['18:00', '19:30', 'judo', 'Judo Juniors y Adultos', 'Tal'], ['19:30', '21:00', 'aikido', 'Aikido', 'Félix']],
-  4: THU,
+  2: [['08:30', '10:00', 'bjj', 'Jiu Jitsu', 'Ken'], ['16:00', '17:00', 'bjj', 'Jiu Jitsu Niños', '7 a 9 años · Arturo'], ['17:30', '18:30', 'bjj', 'Jiu Jitsu Juniors', '10 a 12 años · Arturo'], ['19:00', '20:00', 'bjj', 'Jiu Jitsu Jóvenes', '14 a 17 años'], ['20:00', '21:30', 'bjj', 'Jiu Jitsu', 'Gabriel']],
+  3: [['08:30', '10:00', 'lucha', 'Wrestling', 'Mato'], ['16:30', '17:30', 'judo', 'Judo Niños', 'Tal'], ['18:00', '19:00', 'judo', 'Judo Juniors y Adultos', 'Tal'], ['19:30', '21:00', 'aikido', 'Aikido', 'Félix']],
+  4: [['08:30', '10:00', 'bjj', 'Jiu Jitsu', 'Ken'], ['16:00', '17:00', 'bjj', 'Jiu Jitsu Niños', '7 a 9 años · Arturo'], ['17:30', '18:30', 'bjj', 'Jiu Jitsu Juniors', '10 a 12 años · Arturo'], ['20:00', '21:30', 'bjj', 'Jiu Jitsu', 'Gabriel']],
   5: [['08:30', '10:00', 'lucha', 'Wrestling', 'Mato']],
   6: [['08:30', '10:30', 'bjj', 'Jiu Jitsu · Open Mat', 'Práctica abierta']]
 };
+// horario:end
 const CLASSES = []; let cid = 0;
 DAYS.forEach(d => SCHED[d.wd].forEach(c => CLASSES.push({ wd: d.wd, day: d, start: c[0], end: c[1], art: c[2], title: c[3], who: c[4], id: ++cid })));
 $('#clsCount').textContent = CLASSES.length;
