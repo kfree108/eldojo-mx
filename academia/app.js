@@ -219,8 +219,9 @@
       <h1 class="ttl" style="margin-top:16px"><span class="ln">¡Lo</span><span class="ln"><em>lograste${hi() ? ', ' + esc(hi()) : ''}!</em></span></h1>
       <div class="pn belt"><span class="label">Cinturón de casa</span><div class="belt__bar" aria-hidden="true"></div>
         <p>${nDone()} de ${total()} lecciones completadas. El siguiente capítulo se escribe en el tatami.</p>
-        ${cp.principal ? `<p style="margin-top:10px"><b>Tu clase:</b> ${esc(cp.principal)}</p>` : ''}</div>
-      <a class="btn btn--wa" href="${wa(`Hola, ${S.name ? (PATH === 'ninos' ? S.name + ' terminó' : 'soy ' + S.name + ' y terminé') : 'terminé'} el curso de ${PTH.name} de la Academia El Dojo. ¿Qué día podemos ir a la primera clase?`)}" target="_blank" rel="noopener">Agendar mi primera clase por WhatsApp →</a>
+        ${cp.principal ? `<p style="margin-top:10px"><b>Tu clase:</b> ${esc(cp.principal)}</p>` : ''}
+        <p style="margin-top:10px"><b>Tu premio:</b> por terminar el curso, tu primera clase en El Dojo es gratis.</p></div>
+      <a class="btn btn--wa" href="${wa(`Hola, ${S.name ? (PATH === 'ninos' ? S.name + ' terminó' : 'soy ' + S.name + ' y terminé') : 'terminé'} el curso de ${PTH.name} de la Academia El Dojo. ¿Qué día podemos ir a la primera clase gratis?`)}" target="_blank" rel="noopener">Agendar mi clase gratis por WhatsApp →</a>
       <p style="margin-top:18px"><a href="#inicio" style="text-decoration:underline">Volver a mi curso</a></p>
     </div></section>`;
   }
